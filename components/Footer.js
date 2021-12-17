@@ -26,10 +26,6 @@ function Footer() {
             href="https://github.com/achintyajha"
           >
             Github
-          </a>{" "}
-          |{" "}
-          <a className="special_link" href="/feed.xml">
-            RSS
           </a>
         </div>
       </div>

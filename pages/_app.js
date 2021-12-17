@@ -1,5 +1,3 @@
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 import "../styles/globals.scss";
 
 export default function MyApp({ Component, pageProps }) {
