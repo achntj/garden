@@ -1,0 +1,633 @@
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-bg);
+  font: 18px/1.4 $helvetica;
+  color: var(--color-text);
+  @include mobile {
+    font-size: 18px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $helvetica;
+  color: var(--color-text-secondary);
+  font-weight: bold;
+
+  line-height: 1.1;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  // @include mobile {
+  //   line-height: 1.1;
+  // }
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+h1 {
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  color: $gray;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.625em;
+}
+
+a {
+  color: var(--color-eminent);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 3px;
+  background-color: var(--color-highlight);
+  border-radius: 3px;
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    transition-duration: 0.5s;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--color-text);
+  }
+}
+
+p a {
+  white-space: nowrap;
+}
+
+// Royal Links
+p > a {
+  color: var(--color-link);
+}
+
+ul,
+ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul,
+ul ol,
+ul ul,
+ol ol {
+  margin: 0;
+}
+
+ul ul,
+ol ul {
+  list-style-type: circle;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: (var(--color-selection));
+  background: var(--color-highlight);
+}
+::selection {
+  color: (var(--color-selection));
+  background: var(--color-highlight);
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.entry hr {
+  border-color: transparent;
+  border-top: 3px dotted var(--color-highlight);
+  margin-top: 20px;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+.wrapper-masthead {
+  border-top: 3px solid var(--color-accent);
+  margin-bottom: 20px;
+  // border-bottom: 2px solid var(--color-highlight);
+}
+
+.masthead {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.wrapper-masthead .container {
+  padding: 0;
+  // max-width: 100%;
+  // Round lower border
+  border-radius: 0 0 10px 10px;
+  // =====
+  background-color: var(--color-nav);
+}
+
+.masthead a {
+  padding: 0px;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.site-info {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: $helvetica;
+  font-size: 1.2em;
+  // letter-spacing: 1px;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.site-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+nav {
+  // float: right;
+  // margin-top: 13px; // @TODO: Vertically middle align
+  font-family: $helvetica;
+  font-size: 18px;
+
+  .rss {
+    color: var(--color-suppresed);
+  }
+
+  @include mobile {
+    float: left;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+    .rss {
+      display: none;
+    }
+  }
+
+  a {
+    margin-right: 20px;
+    color: var(--color-text);
+    text-align: right;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #118339;
+      transition-duration: 0.5s;
+    }
+
+    @include mobile {
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+/*********************/
+/* MY / CLASSES */
+/*********************/
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 15px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.img_div {
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+  float: right;
+  overflow: hidden;
+  position: relative;
+  margin: 10px 0px 10px 0px;
+}
+
+@media (max-width: 300px) {
+  .img_div {
+    display: none;
+  }
+}
+
+.me_home {
+  box-shadow: none !important;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.meta {
+  color: var(--color-tertiary);
+}
+
+.hero {
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--color-highlight);
+}
+
+.newsletter {
+  // border-bottom: 2px solid var(--color-highlight);
+  border-top: 2px solid var(--color-highlight);
+}
+
+.newsletter_contents {
+  margin: 20px;
+}
+
+.email {
+  display: block;
+}
+
+.email_input {
+  font-size: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: $darkGray;
+  background: #fff;
+  box-shadow: 0 5px 12px -2px rgba(0, 0, 0, 0.4);
+  transform: none;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 100%;
+  display: inline-block;
+  transform: none;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  box-shadow: 0 5px 12px -2px rgba(0, 0, 0, 0.4);
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
+  background-color: var(--color-accent);
+  border-radius: 3px;
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    transition-duration: 0.5s;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    text-decoration-color: $white;
+  }
+  @include mobile {
+    margin-top: 20px;
+  }
+}
+
+.post {
+  padding-bottom: 1em;
+  // border-bottom: 2px solid var(--color-highlight);
+  cursor: pointer;
+}
+
+.post a {
+  padding: 0px;
+  background-color: transparent;
+
+  &:hover,
+  &:active {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+  }
+}
+
+.post-list {
+  margin-left: 10%;
+}
+
+.post-list a {
+  white-space: normal;
+}
+
+.span_header {
+  color: var(--color-accent);
+  font-size: 20px;
+  font-weight: 400;
+
+  &:hover,
+  &:active {
+    transition: 0.4s;
+    color: var(--color-eminent);
+    text-decoration: none;
+  }
+}
+
+.entry img {
+  box-shadow: 0 5px 12px -2px rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 0px auto;
+}
+
+img + em {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  color: $gray;
+}
+
+.posts {
+  border-top: 2px solid var(--color-highlight);
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+blockquote {
+  margin: 1.8em 0.8em;
+  border-left: 5px solid #efefef;
+  padding: 0.1em 1em;
+  color: $gray;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.post-description {
+  color: var(--color-tertiary);
+}
+
+// .wrapper-footer {
+//   margin-top: 50px;
+//   border-top: 1px solid #ddd;
+//   border-bottom: 1px solid #ddd;
+//   background-color: $lightGray;
+// }
+
+footer {
+  font-style: italic;
+  margin: 30px auto 0px auto;
+  max-width: 700px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.footer_links {
+  font-style: normal;
+}
+
+.footer_links a {
+  padding: 0;
+}
+
+.special_link {
+  background-color: transparent;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.linkedin {
+  color: #0a66c2;
+}
+
+.github {
+  color: #238636;
+}
+
+.mail {
+  color: #ea4335;
+}
+
+.footer_container {
+  border-top: 3px solid var(--color-highlight);
+  padding: 20px 10px;
+  color: var(--color-suppresed);
+}
+
+.post-nav {
+  padding-top: 10px;
+}
+
+.prev-post {
+  text-align: left;
+}
+
+.next-post {
+  text-align: right;
+}
+
+/*********************/
+/* BUTTON */
+/*********************/
+
+.container-new {
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    width: auto;
+  }
+}
+
+@media (max-width: 279px) {
+  .container-new {
+    // display: none;
+  }
+}
+
+.container-new button {
+  color: var(--font-color);
+  background: var(--color-primary);
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #ccc; */
+  // background-color: var(--color-accent);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: all 0.3s ease 0s;
+  background: transparent url("/public/images/sun.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .slider:before {
+  background: transparent url("/public/images/moon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+// @import "svg-icons";
