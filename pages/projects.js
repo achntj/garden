@@ -37,7 +37,7 @@ export default function Projects() {
         <a href="https://github.com/achintyajha">Github</a>
       </p>
       {projects.map((project) => (
-        <p>
+        <p key={project.url}>
           <strong>
             <a href={project.url}>{project.name}</a>
           </strong>{" "}

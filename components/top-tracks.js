@@ -8,7 +8,7 @@ export default function TopTracks() {
     return (
       <>
         {data.tracks.map((track) => (
-          <div className="s-list">
+          <div key={track.title} className="s-list">
             <div className="s-list-img">
               <img src={track.imageUrl} alt="" />
             </div>
