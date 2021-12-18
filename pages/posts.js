@@ -61,5 +61,5 @@ export async function getStaticProps() {
 }
 
 Posts.getLayout = function getLayout(page) {
-  return <Base>{page}</Base>;
+  return <Base title="Posts">{page}</Base>;
 };

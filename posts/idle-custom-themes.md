@@ -1,6 +1,6 @@
 ---
-title: Using a custom theme on IDLE (on a Macintosh system)
-date: 16 September 2021
+title: Using a custom theme on IDLE
+date: "September 16, 2021"
 description: Changing themes on idle is not something everyone does; incase you are interested, here it is!
 oneline: It's easy ahaha
 location: New Delhi, India

@@ -1,6 +1,6 @@
 ---
 title: A little bit about Curation Algorithms
-date: 22nd April, 2021
+date: "April 22, 2021"
 description: In this article I talk about curation algorithms and some of their lesser known flaws. These algorithms are present everywhere and it is important to know how these work.
 oneline: These guys are everywhere
 location: New Delhi, India

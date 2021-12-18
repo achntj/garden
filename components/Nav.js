@@ -20,9 +20,9 @@ function Nav() {
           </div>
 
           <nav>
-            <Link href="/about">About</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="/posts">Posts</Link>
+            <Link href="/about">About</Link>{" "}
+            <Link href="/projects">Projects</Link>{" "}
+            <Link href="/posts">Posts</Link>{" "}
           </nav>
         </header>
       </div>

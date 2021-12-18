@@ -38,5 +38,5 @@ export default function About() {
 }
 
 About.getLayout = function getLayout(page) {
-  return <Base>{page}</Base>;
+  return <Base title="About">{page}</Base>;
 };

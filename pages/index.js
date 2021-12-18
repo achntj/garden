@@ -125,5 +125,5 @@ export async function getStaticProps() {
 }
 
 Home.getLayout = function getLayout(page) {
-  return <Base>{page}</Base>;
+  return <Base title="Home">{page}</Base>;
 };
