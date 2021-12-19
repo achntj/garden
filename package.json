@@ -8,6 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^12.0.7",
     "gray-matter": "^4.0.3",
     "isomorphic-unfetch": "^3.1.0",
     "marked": "^4.0.7",
