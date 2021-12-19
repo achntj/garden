@@ -24,7 +24,7 @@ export default function Projects() {
     },
     {
       name: "Weather",
-      url: "https://achintyajha.in/weather.github.io/",
+      url: "https://achintyajha.github.io/weather.github.io/",
       desc: " A simple weather app made using the weather API.",
     },
   ];
