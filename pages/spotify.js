@@ -19,5 +19,5 @@ export default function Spotify() {
 }
 
 Spotify.getLayout = function getLayout(page) {
-  return <Base title="Posts">{page}</Base>;
+  return <Base title="Spotify">{page}</Base>;
 };

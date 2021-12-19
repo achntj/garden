@@ -15,7 +15,7 @@ export default function Posts({ posts }) {
           <>
             <p className="post-list">
               <b>
-                <Link href={`posts/${post.slug}`}>
+                <Link key={index} href={`posts/${post.slug}`}>
                   {post.frontmatter.title}
                 </Link>
               </b>
@@ -61,5 +61,12 @@ export async function getStaticProps() {
 }
 
 Posts.getLayout = function getLayout(page) {
-  return <Base title="Posts">{page}</Base>;
+  return (
+    <Base
+      title="Posts"
+      description="My thoughts on tech, design, and workflow."
+    >
+      {page}
+    </Base>
+  );
 };

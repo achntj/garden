@@ -514,6 +514,7 @@ blockquote {
 
 .spotify-link {
   color: var(--color-accent);
+  padding: 0;
 }
 .spotify-link:hover {
   text-decoration: none;
@@ -530,7 +531,8 @@ blockquote {
 }
 
 .s-list-text {
-  display: flex;
+  margin: 0;
+  overflow: scroll;
   margin-left: 10px;
 }
 
