@@ -1,10 +1,10 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Post from "../../components/Post";
-import { sortByDate } from "../../utils";
+import Post from "../components/Post";
+import { sortByDate } from "../utils";
 import Link from "next/link";
-import Base from "../../components/Base";
+import Base from "../components/Base";
 
 export default function Posts({ posts }) {
   return (
@@ -31,7 +31,7 @@ export default function Posts({ posts }) {
 
 export async function getStaticProps() {
   // get files from the posts directory
-  const files = fs.readdirSync(path.join("posts"));
+  const files = fs.readdirSync(path.join("content/posts"));
 
   // get slug and frontmatter from posts
   const posts = files.map((filename) => {
@@ -40,7 +40,7 @@ export async function getStaticProps() {
 
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
-      path.join("posts", filename),
+      path.join("content/posts", filename),
       "utf-8"
     );
 

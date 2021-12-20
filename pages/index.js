@@ -95,7 +95,7 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
   // get files from the posts directory
-  const files = fs.readdirSync(path.join("posts"));
+  const files = fs.readdirSync(path.join("content/posts"));
 
   // get slug and frontmatter from posts
   const posts = files.map((filename) => {
@@ -104,7 +104,7 @@ export async function getStaticProps() {
 
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
-      path.join("posts", filename),
+      path.join("content/posts", filename),
       "utf-8"
     );
 

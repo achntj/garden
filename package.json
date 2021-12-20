@@ -4,19 +4,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node ./scripts/generate-sitemap.mjs",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^12.0.7",
-    "babel-plugin-prismjs": "^2.1.0",
+    "globby": "^11.0.4",
     "gray-matter": "^4.0.3",
     "isomorphic-unfetch": "^3.1.0",
     "marked": "^4.0.7",
     "motion": "^10.4.0",
     "next": "12.0.7",
-    "prismjs": "^1.25.0",
+    "prettier": "^2.5.1",
     "querystring": "^0.2.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",

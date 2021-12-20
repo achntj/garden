@@ -3,13 +3,7 @@ import Head from "next/head";
 import Nav from "./Nav";
 import Footer from "./Footer";
 
-import React, { useEffect } from "react";
-import Prism from "prismjs";
-
 export default function Base({ children, ...pageProps }) {
-  useEffect(() => {
-    Prism.highlightAll();
-  }, []);
   return (
     <>
       <Head>
