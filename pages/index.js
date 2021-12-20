@@ -19,7 +19,7 @@ export default function Home({ posts }) {
           <br />
           I&lsquo;m a high school senior at Ahlcon International School,
           studying Computer Science. Currently, I am an Artificial Intelligence
-          intern at
+          intern at{" "}
           <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
             Tech Mahindra
           </a>
