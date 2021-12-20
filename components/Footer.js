@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer_links">
           <a
             className="special_link twitter"
-            href="https://twitter.com/achintyajha05"
+            href="https://twitter.com/achintyajha_"
           >
             Twitter
           </a>{" "}

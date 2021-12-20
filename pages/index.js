@@ -35,7 +35,7 @@ export default function Home({ posts }) {
           You can contact me through
           <a
             className="special_link twitter"
-            href="https://www.twitter.com/achintyajha05"
+            href="https://www.twitter.com/achintyajha_"
           >
             Twitter
           </a>
