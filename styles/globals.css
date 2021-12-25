@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose {
+  max-width: 100%;
+}
+
+.prose a {
+  @apply text-sky-500;
+}
+
+.prose a:hover {
+  @apply no-underline text-sky-600;
+}
+
+img + em {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  color: #666;
+}

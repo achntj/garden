@@ -21,11 +21,15 @@ export default function Base({ children, ...pageProps }) {
           }
         />
       </Head>
-      <Nav />
-      <div id="main" role="main" className="container">
-        {children}
+      <div className="border-t-4 border-accent">
+        <div className="max-w-[700px] mx-auto">
+          <Nav />
+          <div className="px-4 text-gray-700 prose hover:prose-a:underline">
+            {children}
+          </div>
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </>
   );
 }

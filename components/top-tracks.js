@@ -8,17 +8,15 @@ export default function TopTracks() {
     return (
       <>
         {data.tracks.map((track) => (
-          <div key={track.title} className="s-list">
-            <img className="s-list-img" src={track.imageUrl} alt="" />
-            <p className="s-list-text">
-              <a
-                className="spotify-link"
-                href={track.songUrl}
-                key={track.songUrl}
-              >
-                {track.title}
+          <div
+            key={track.title}
+            className="bg-gray-100 mt-5 rounded p-4 flex not-prose hover:bg-gray-200 text-base"
+          >
+            <img className="w-16 h-16 rounded" src={track.imageUrl} alt="" />
+            <p className="ml-5">
+              <a href={track.songUrl} key={track.songUrl}>
+                <p className="text-accent">{track.title}</p>
               </a>
-              <br />
               <span>{track.artist}</span>
             </p>
           </div>

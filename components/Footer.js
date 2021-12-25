@@ -3,28 +3,22 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <div className="footer_container">
-        Achintya, 2021
+      <div className="mt-10 text-gray-600 py-2 border-t-4 border-dashed p-4 text-base">
+        <i>__Achintya, 2021__</i>
         <br />
         <div className="footer_links">
-          <a
-            className="special_link twitter"
-            href="https://twitter.com/achintyajha_"
-          >
+          <a className="text-sky-400" href="https://twitter.com/achintyajha_">
             Twitter
           </a>{" "}
           |{" "}
           <a
-            className="special_link linkedin"
+            className="text-blue-500"
             href="https://linkedin.com/in/achintyajha"
           >
             LinkedIn
           </a>{" "}
           |{" "}
-          <a
-            className="special_link github"
-            href="https://github.com/achintyajha"
-          >
+          <a className="text-emerald-500" href="https://github.com/achintyajha">
             Github
           </a>
         </div>

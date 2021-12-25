@@ -13,14 +13,26 @@ export default function Posts({ posts }) {
         <h1>Posts</h1>
         {posts.map((post, index) => (
           <>
-            <p className="post-list">
-              <b>
-                <Link key={index} href={`posts/${post.slug}`}>
-                  {post.frontmatter.title}
-                </Link>
-              </b>
-              <br />
-              {post.frontmatter.oneline}
+            <p
+              className="border border-gray-100
+              rounded
+              p-2
+              font-medium
+              hover:bg-gray-100
+              mb-2
+              hover:cursor-pointer"
+            >
+              <Link key={index} href={`posts/${post.slug}`}>
+                <div>
+                  <span className="text-rose-500">
+                    <b>{post.frontmatter.title}</b>
+                  </span>
+                  <br />
+                  {post.frontmatter.description}
+                  <br />
+                  <a>Read More</a>
+                </div>
+              </Link>
             </p>
           </>
         ))}

@@ -11,9 +11,11 @@ export default function Home({ posts }) {
   return (
     <>
       <div className="entry">
-        <div className="img_div">
-          <img className="me_home" src="images/me.jpeg" alt="Achintya Jha" />
-        </div>
+        <img
+          className="rounded-full float-right w-[120px] h-[120px] mt-[10px] mb-0"
+          src="images/me.jpeg"
+          alt="Achintya Jha"
+        />
         <p>
           <b>Hi, I&lsquo;m Achintya!</b>
           <br />
@@ -32,32 +34,26 @@ export default function Home({ posts }) {
           and the others at my{" "}
           <a href="https://github.com/achintyajha">GitHub</a> profile.
           <br />
-          You can contact me through
+          You can contact me through{" "}
           <a
-            className="special_link twitter"
+            className="text-sky-400"
             href="https://www.twitter.com/achintyajha_"
           >
             Twitter
           </a>
           ,{" "}
-          <a
-            className="special_link github"
-            href="https://github.com/achintyajha"
-          >
+          <a className="text-emerald-500" href="https://github.com/achintyajha">
             GitHub
           </a>
           ,{" "}
           <a
-            className="special_link linkedin"
+            className="text-blue-500"
             href="https://linkedin.com/in/achintyajha"
           >
             LinkedIn
           </a>{" "}
-          or via
-          <a
-            className="special_link mail"
-            href="mailto:achintya@achintyajha.com"
-          >
+          or via{" "}
+          <a className="text-rose-500" href="mailto:achintya@achintyajha.com">
             Email
           </a>
           .
@@ -68,7 +64,7 @@ export default function Home({ posts }) {
         <h2>Posts</h2>
         <p>
           Lately, I have also been writing about tech on my blog. My most recent
-          posts are listed here, for all posts check out-
+          posts are listed here, for all posts check out-{" "}
           <Link href="/posts">Posts</Link>
         </p>
         {posts.map((post, index) => (
@@ -76,7 +72,7 @@ export default function Home({ posts }) {
         ))}
       </div>
 
-      <div className="newsletter">
+      {/* <div className="newsletter">
         <h2>Newsletter</h2>
         <p>
           This is the place where you will find me talking about what I have
@@ -84,10 +80,14 @@ export default function Home({ posts }) {
           for my newsletter to hear about programming, data science, and some
           old school stuff!
         </p>
-        <a className="button" href="https://newsletter.achintyajha.in">
+        <a
+          className="not-prose bg-accent text-white rounded px-4 py-2"
+          href="https://newsletter.achintyajha.in"
+        >
           Join
         </a>
-      </div>
+      </div> */}
+      <hr />
       <NowPlaying />
     </>
   );

@@ -27,7 +27,6 @@ export default function PostPage({
             </span>
           </p>
         </div>
-        <br />
         <div
           className="entry"
           dangerouslySetInnerHTML={{ __html: marked(content) }}
