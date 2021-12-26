@@ -22,7 +22,7 @@ export default function Base({ children, ...pageProps }) {
         />
       </Head>
       <div className="border-t-4 border-accent">
-        <div className="max-w-[700px] mx-auto">
+        <div className="max-w-[700px] mx-auto flex flex-col min-h-screen">
           <Nav />
           <div className="px-4 text-gray-700 prose hover:prose-a:underline">
             {children}

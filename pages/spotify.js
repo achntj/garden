@@ -1,5 +1,4 @@
 import Base from "../components/Base";
-import NowPlaying from "../components/now-playing";
 import TopTracks from "../components/top-tracks";
 
 export default function Spotify() {
