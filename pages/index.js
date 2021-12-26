@@ -36,24 +36,27 @@ export default function Home({ posts }) {
           <br />
           You can contact me through{" "}
           <a
-            className="text-sky-400"
+            className="!text-sky-600"
             href="https://www.twitter.com/achintyajha_"
           >
             Twitter
           </a>
           ,{" "}
-          <a className="text-emerald-500" href="https://github.com/achintyajha">
+          <a
+            className="!text-emerald-500"
+            href="https://github.com/achintyajha"
+          >
             GitHub
           </a>
           ,{" "}
           <a
-            className="text-blue-500"
+            className="!text-blue-500"
             href="https://linkedin.com/in/achintyajha"
           >
             LinkedIn
           </a>{" "}
           or via{" "}
-          <a className="text-rose-500" href="mailto:achintya@achintyajha.com">
+          <a className="!text-rose-500" href="mailto:achintya@achintyajha.com">
             Email
           </a>
           .
