@@ -88,7 +88,9 @@ export default function Home({ posts }) {
         </a>
       </div> */}
       <hr />
-      <NowPlaying />
+      <div className="not-prose">
+        <NowPlaying />
+      </div>
     </>
   );
 }
