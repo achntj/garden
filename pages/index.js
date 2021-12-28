@@ -10,7 +10,7 @@ import NowPlaying from "../components/now-playing";
 export default function Home({ posts }) {
   return (
     <>
-      <div className="entry">
+      <div>
         <img
           className="rounded-full float-right w-[120px] h-[120px] mt-[10px] mb-0"
           src="images/me.jpeg"
@@ -20,19 +20,11 @@ export default function Home({ posts }) {
           <b>Hi, I&lsquo;m Achintya!</b>
           <br />
           I&lsquo;m a high school senior at Ahlcon International School,
-          studying Computer Science. Currently, I am an Artificial Intelligence
-          intern at{" "}
+          studying Computer Science. Currently, I am working on NLP at{" "}
           <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
             Tech Mahindra
-          </a>
-          , where I&lsquo;m mostly working on Natural Language Processing and
-          Machine Learning.
-          <br />
-          You can find some of my projects <Link href="/projects/">
-            here
-          </Link>{" "}
-          and the others at my{" "}
-          <a href="https://github.com/achintyajha">GitHub</a> profile.
+          </a>{" "}
+          and building <a href="https://sentimate.ml/">Sentimate</a> alongside.
           <br />
           You can contact me through{" "}
           <a
@@ -54,8 +46,8 @@ export default function Home({ posts }) {
             href="https://linkedin.com/in/achintyajha"
           >
             LinkedIn
-          </a>{" "}
-          or via{" "}
+          </a>
+          , or via{" "}
           <a className="!text-rose-500" href="mailto:achintya@achintyajha.com">
             Email
           </a>
@@ -63,7 +55,7 @@ export default function Home({ posts }) {
           <br />
         </p>
       </div>
-      <div className="posts">
+      <div>
         <h2>Posts</h2>
         <p>
           Lately, I have also been writing about tech on my blog. My most recent
@@ -74,24 +66,8 @@ export default function Home({ posts }) {
           <Post key={index} post={post} />
         ))}
       </div>
-
-      {/* <div className="newsletter">
-        <h2>Newsletter</h2>
-        <p>
-          This is the place where you will find me talking about what I have
-          been making, writing, and thinking over the week. Consider signing up
-          for my newsletter to hear about programming, data science, and some
-          old school stuff!
-        </p>
-        <a
-          className="not-prose bg-accent text-white rounded px-4 py-2"
-          href="https://newsletter.achintyajha.in"
-        >
-          Join
-        </a>
-      </div> */}
       <hr />
-      <div className="not-prose">
+      <div>
         <NowPlaying />
       </div>
     </>

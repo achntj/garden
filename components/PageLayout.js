@@ -4,7 +4,7 @@ function PageLayout({ children, ...pageProps }) {
   return (
     <>
       <Base title={pageProps.title} description={pageProps.description}>
-        <article className="page">
+        <article>
           <h1>{pageProps.title}</h1>
 
           <div className="page-entry">{children}</div>
