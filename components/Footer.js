@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="mt-10 text-gray-600 py-2 border-t-4 border-dashed p-4 text-base">
-        <i>__Achintya, 2021__</i>
+        <i>__Achintya, 2022__</i>
         <br />
         <a className="text-sky-400" href="https://twitter.com/achintyajha_">
           Twitter
