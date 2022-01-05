@@ -24,7 +24,7 @@ export default function Home({ posts }) {
           <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
             Tech Mahindra
           </a>{" "}
-          and building <a href="https://sentimate.ml/">Sentimate</a> alongside.
+          and building <a href="https://sentimate.org/">Sentimate</a> alongside.
           <br />
           You can contact me through{" "}
           <a
