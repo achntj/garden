@@ -10,7 +10,7 @@ Writing the same lines to push to your remote repo is a waste of time (2 seconds
 
 ```zsh
 git add .
-git commit -am "i am inefficient"
+git commit -m "i am inefficient"
 git push origin master
 ```
 
@@ -29,9 +29,9 @@ git_pushall() {
     git add .                                                               
     if [ -n "$1" ]                           
     then                                                                    
-        git commit -am "$1"                                                 
+        git commit -m "$1"                                                 
     else                                                                    
-        git commit -am update                                               
+        git commit -m update                                               
     fi                                                                      
         git push origin master                                                  
 }   
