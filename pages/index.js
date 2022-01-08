@@ -53,6 +53,7 @@ export default function Home({ posts }) {
           </a>
           .
           <br />
+          <b>FAQ- Built With:</b> Next.JS, React, MDX, Tailwind, Vercel.
         </p>
       </div>
       <div>
