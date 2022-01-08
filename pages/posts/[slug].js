@@ -21,7 +21,7 @@ export default function PostPage({
         <div className="hero">
           <h1>{title}</h1>
           <p className="meta">
-            <span>{date} • 10 mins</span>
+            <span>{date}</span>
             <span style={{ float: "right" }}>
               {location ? location : "New Delhi, India"}
             </span>

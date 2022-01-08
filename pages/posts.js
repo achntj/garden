@@ -22,7 +22,7 @@ export default function Posts({ posts }) {
               mb-2
               hover:cursor-pointer"
             >
-              <Link key={index} href={`posts/${post.slug}`}>
+              <Link passHref key={index} href={`posts/${post.slug}`}>
                 <div>
                   <span className="text-rose-500">
                     <b>{post.frontmatter.title}</b>

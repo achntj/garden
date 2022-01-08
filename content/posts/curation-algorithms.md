@@ -6,7 +6,7 @@ oneline: These guys are everywhere
 location: New Delhi, India
 ---
 
-![](/images/posts/curation2.png)
+![Amazon Recommendations](/images/posts/curation2.png)
 _Typical Amazon Recommendations_
 
 Curation Algorithms, at first, may sound like some recent, revolutionary technology, but it’s something that’s been around for decades. As the name itself suggests, these are algorithms that curate; they organize and personalize content using algorithms (a set of rules).

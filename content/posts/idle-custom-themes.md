@@ -6,7 +6,7 @@ oneline: It's easy ahaha
 location: New Delhi, India
 ---
 
-![](/images/posts/dracula.png)
+![Dracula Theme Preview](/images/posts/dracula.png)
 _Dracula Theme on IDLE!_
 
 ## Step 1: Find your ~/.idlerc file
@@ -31,4 +31,4 @@ This will open the ~/.idlerc folder with the custom theme config file. Now open 
 
 ## Step 3: Update the theme on IDLE
 
-Now paste the theme code snippet into this file and save it. It's simpler from here on. Open IDLE Preferences, go to highlights, and choose the custom theme. Dead simple right? I never knew it untill today!
+Now paste the theme code snippet into this file and save it. It's simpler from here on. Open IDLE Preferences, go to highlights, and choose the custom theme. Dead simple right?
