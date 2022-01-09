@@ -4,6 +4,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx, mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: [
+        "Helvetica Neue",
+        "Helvetica",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "system-ui",
+        "sans-serif",
+      ],
+    },
     extend: {
       fontSize: {
         base: "1.125em",

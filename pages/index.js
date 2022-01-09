@@ -17,9 +17,8 @@ export default function Home({ posts }) {
           alt="Achintya Jha"
         />
         <p>
-          <b>Hi, I&lsquo;m Achintya!</b>
-          <br />
-          I&lsquo;m a high school senior at Ahlcon International School,
+          <b>Hi, I{"'"}m Achintya!</b>
+          <br />I{"'"}m a high school senior at Ahlcon International School,
           studying Computer Science. Currently, I am working on NLP at{" "}
           <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
             Tech Mahindra
