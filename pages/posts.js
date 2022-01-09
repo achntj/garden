@@ -29,8 +29,6 @@ export default function Posts({ posts }) {
                   </span>
                   <br />
                   {post.frontmatter.description}
-                  <br />
-                  <a>Read More</a>
                 </div>
               </Link>
             </p>
