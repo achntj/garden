@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 function Nav() {
   return (
-    <div className="bg-gray-100 rounded-b drop-shadow-lg p-4 mb-5">
+    <div className="bg-gray-100 rounded-b drop-shadow-lg p-4 mb-5 border-t-4 border-accent">
       <div className="container">
         <header className="masthead clearfix">
           <div className="site-info">

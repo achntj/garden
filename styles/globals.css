@@ -8,6 +8,7 @@
 
 .prose a {
   @apply text-sky-500;
+  @apply transition;
 }
 
 .prose a:hover {

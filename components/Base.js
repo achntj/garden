@@ -21,10 +21,10 @@ export default function Base({ children, ...pageProps }) {
           }
         />
       </Head>
-      <div className="border-t-4 border-accent">
-        <div className="max-w-[700px] mx-auto flex flex-col min-h-screen">
+      <div className="bg-slate-50">
+        <div className="max-w-[700px] shadow-lg mx-auto flex flex-col min-h-screen bg-white">
           <Nav />
-          <div className="px-4 text-gray-700 prose">{children}</div>
+          <div className="px-4 text-gray-700 prose flex-grow">{children}</div>
           <Footer />
         </div>
       </div>
