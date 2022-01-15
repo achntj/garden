@@ -50,7 +50,7 @@ source ~/.zshrc
 Now whenever you need to push a change, here's what you type-
 
 ```zsh
-git_pushall "I am speeeeeeed"
+git_pushall "some message"
 ```
 
 ***
