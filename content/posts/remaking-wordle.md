@@ -1,8 +1,8 @@
 ---
 title: Making a wordle clone
 date: "January 15, 2022"
-description: Write a function to make life easier with git. Push to a remote repository in one step!
-oneline: Technically, it's not even an alias
+description: I built this version due to the sudden motivation I got from a similar project. It ended up working out!
+oneline: ...In 2 hours
 location: New Delhi, India
 ---
 
