@@ -1,6 +1,6 @@
 ---
 title: A Handy Little Alias (for git)
-date: "4th September, 2021"
+date: "September 4, 2021"
 description: Write a function to make life easier with git. Push to a remote repository in one step!
 oneline: Technically, it's not even an alias
 location: New Delhi, India
@@ -25,19 +25,19 @@ vim ~/.zshrc
 ## Step 2: Write this function
 
 ```zsh
-git_pushall() {                                                             
-    git add .                                                               
-    if [ -n "$1" ]                           
-    then                                                                    
-        git commit -m "$1"                                                 
-    else                                                                    
-        git commit -m update                                               
-    fi                                                                      
-        git push origin master                                                  
-}   
+git_pushall() {
+    git add .
+    if [ -n "$1" ]
+    then
+        git commit -m "$1"
+    else
+        git commit -m update
+    fi
+        git push origin master
+}
 ```
 
-This is pretty self explanatory, but what we are doing is that we are writing a function that takes the commit message as a parameter. It executes three steps: *git add*, *git commit* and *git push*. If we don't pass in an argument then it uses the default message: "update". ***Pretty cool so far***.
+This is pretty self explanatory, but what we are doing is that we are writing a function that takes the commit message as a parameter. It executes three steps: _git add_, _git commit_ and _git push_. If we don't pass in an argument then it uses the default message: "update". **_Pretty cool so far_**.
 
 ## Step 3: Save the changes
 
@@ -53,6 +53,6 @@ Now whenever you need to push a change, here's what you type-
 git_pushall "some message"
 ```
 
-***
+---
 
 I hope this helps and suggestions/changes are welcome :)
