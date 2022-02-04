@@ -37,7 +37,7 @@ git_pushall() {
 }
 ```
 
-This is pretty self explanatory, but what we are doing is that we are writing a function that takes the commit message as a parameter. It executes three steps: _git add_, _git commit_ and _git push_. If we don't pass in an argument then it uses the default message: "update". **_Pretty cool so far_**.
+This is pretty self explanatory, but what we are doing is that we are writing a function that takes the commit message as a parameter. It executes three steps: _git add_, _git commit_ and _git push_. If we don't pass in an argument then it uses the default message: "update". _Pretty cool so far_.
 
 ## Step 3: Save the changes
 
@@ -52,6 +52,8 @@ Now whenever you need to push a change, here's what you type-
 ```zsh
 git_pushall "some message"
 ```
+
+^ If you are working with multiple branches, you can pass that as a parameter too!
 
 ---
 

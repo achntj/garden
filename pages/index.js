@@ -51,17 +51,13 @@ export default function Home({ posts }) {
             Email
           </a>
           .
-          <br />
-          <b>FAQ- Built With:</b> Next.JS, React, MDX, Tailwind, Vercel.
+          <br />(<b>This Website{"'"}s Tech Stack:</b> Next.JS, React, MDX,
+          Tailwind CSS, Vercel.)
         </p>
       </div>
       <div>
         <h2>Posts</h2>
-        <p>
-          Lately, I have also been writing about tech on my blog. My most recent
-          posts are listed here, for all posts check out-{" "}
-          <Link href="/posts">Posts</Link>
-        </p>
+        <p>Short Essays on interesting technologies and my side-projects.</p>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
