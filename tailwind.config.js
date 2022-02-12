@@ -33,7 +33,7 @@ module.exports = {
               marginBottom: "1em",
               fontSize: "1.125em",
             },
-            h2: {
+            "h2, h3": {
               marginTop: "1em",
             },
           },
