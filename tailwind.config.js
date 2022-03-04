@@ -57,11 +57,11 @@ module.exports = {
         },
         "gradient-x": {
           "0%, 100%": {
-            "background-size": "200% 200%",
+            "background-size": "800% 800%",
             "background-position": "left center",
           },
           "50%": {
-            "background-size": "200% 200%",
+            "background-size": "800% 800%",
             "background-position": "right center",
           },
         },
