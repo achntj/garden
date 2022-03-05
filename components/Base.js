@@ -21,7 +21,7 @@ export default function Base({ children, ...pageProps }) {
           }
         />
       </Head>
-      <div className="bg-gradient-to-r from-[#d7ffe98f] to-[#ffffff] via-[#f2d2ff75] animate-gradient-x">
+      <div className="bg-gradient-to-r from-[#e6dfffec] via-[#dcfff7d0] to-[#fff] animate-gradient-x">
         <div className="max-w-[700px] shadow-lg mx-auto flex flex-col min-h-screen bg-white">
           <Nav />
           <div className="px-4 text-gray-700 prose flex-grow">{children}</div>
