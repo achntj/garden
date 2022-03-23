@@ -33,7 +33,7 @@ export default function Projects() {
     {
       name: "Climate Crew",
       url: "https://climate-crew.ml/",
-      desc: `[National Winner - NASA Space Apps 2020]\nThis website, features self-authored unique stories, from our team, that provide a historical as well as mythological perspective to Climate.`,
+      desc: `[National Winner - NASA Space Apps 2020]\nThis website features self-authored unique stories, from our team, that provide a historical as well as mythological perspective to Climate.`,
       color: "#f97f0f",
       stack: "Hugo, Golang, HTML, SCSS",
     },
