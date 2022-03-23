@@ -7,7 +7,7 @@ location: New Delhi, India
 ---
 
 ![Dracula Theme Preview](/images/posts/dracula.png)
-_Dracula Theme on IDLE!_
+_The Dracula Theme_
 
 ## Step 1: Find your ~/.idlerc file
 
