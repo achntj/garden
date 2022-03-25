@@ -14,7 +14,9 @@ export default function Post({ post }) {
               mb-2"
         >
           <div>
-            <p className="text-accent mt-0 mb-0">{post.frontmatter.title}</p>
+            <p className="antialiased text-accent mt-0 mb-0">
+              {post.frontmatter.title}
+            </p>
             <span className="text-gray-400 text-sm">
               {post.frontmatter.date}{" "}
             </span>
