@@ -22,7 +22,7 @@ function Footer() {
           Github
         </a>
         <br />
-        <Link href="design.txt">Design Influence</Link>
+        <Link href="/design.txt">Design Influence</Link>
       </div>
     </footer>
   );
