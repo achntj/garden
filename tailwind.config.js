@@ -40,7 +40,7 @@ module.exports = {
         },
       },
       animation: {
-        "gradient-x": "gradient-x 8s ease infinite",
+        "gradient-x": "gradient-x 16s ease infinite",
         "gradient-y": "gradient-y 8s ease infinite",
         "gradient-xy": "gradient-xy 8s ease infinite",
       },

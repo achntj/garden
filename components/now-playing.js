@@ -6,7 +6,7 @@ export default function NowPlaying() {
   // "not-playing";
   return (
     <>
-      <div className="not-prose bg-gray-100 mt-5 rounded p-4 flex text-base items-center">
+      <div className="not-prose mt-5 rounded p-4 flex text-base items-center">
         {data?.isPlaying ? (
           <>
             <img

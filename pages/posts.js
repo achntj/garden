@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Post from "../components/Post";
 import { sortByDate } from "../utils";
 import Link from "next/link";
 import Base from "../components/Base";
@@ -14,18 +13,23 @@ export default function Posts({ posts }) {
         {posts.map((post, index) => (
           <>
             <p
-              className="border border-gray-100
+              className="
+              group
               rounded
               p-2
               font-medium
-              hover:bg-gray-100
+              transition
+              ease-in-out
               mb-2
               hover:cursor-pointer"
             >
               <Link passHref key={index} href={`posts/${post.slug}`}>
                 <div>
-                  <span className="text-rose-500">
+                  <span className="text-sky-400">
                     <b>{post.frontmatter.title}</b>
+                  </span>
+                  <span className="ml-2 transition-[margin] group-hover:ml-5">
+                    &rarr;
                   </span>
                   <br />
                   {post.frontmatter.description}

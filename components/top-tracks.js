@@ -8,18 +8,18 @@ export default function TopTracks() {
     return (
       <>
         {data.tracks.map((track) => (
-          <div
-            key={track.title}
-            className="bg-gray-100 mt-5 rounded p-4 flex not-prose hover:bg-gray-200 text-base"
-          >
-            <img className="w-16 h-16 rounded" src={track.imageUrl} alt="" />
-            <p className="ml-5">
-              <a href={track.songUrl} key={track.songUrl}>
+          <a href={track.songUrl} key={track.songUrl}>
+            <div
+              key={track.title}
+              className="mt-5 rounded p-4 flex not-prose text-base font-normal transition hover:bg-purple-100"
+            >
+              <img className="w-16 h-16 rounded" src={track.imageUrl} alt="" />
+              <p className="ml-5">
                 <p className="text-accent">{track.title}</p>
-              </a>
-              <span>{track.artist}</span>
-            </p>
-          </div>
+                <span>{track.artist}</span>
+              </p>
+            </div>
+          </a>
         ))}
       </>
     );
