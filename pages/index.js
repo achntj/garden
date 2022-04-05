@@ -18,7 +18,15 @@ export default function Home({ posts }) {
         /> */}
         <b>Hi, I{"'"}m Achintya!</b> &rarr;{" "}
         <span className="sm:inline-block block">
-          pronounced [uh-chin-t-yaa]
+          pronounced [uh-chin-
+          <a
+            href="https://en.wikipedia.org/wiki/Voiceless_dental_and_alveolar_plosives"
+            target="_blank"
+            rel="noreferrer"
+          >
+            t̪
+          </a>
+          -yaa]
         </span>
         <br />I{"'"}m a high school senior at Ahlcon International School,
         studying Computer Science. Currently, I am working on NLP at{" "}
