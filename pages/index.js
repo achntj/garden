@@ -87,7 +87,7 @@ export default function Home({ posts }) {
         </a>
         , &{" "}
         <a target="_blank" rel="noreferrer" href="https://tailwindcss.com/">
-          tailwindcss
+          Tailwind CSS
         </a>
         .
       </p>

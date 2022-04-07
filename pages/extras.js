@@ -33,7 +33,7 @@ export default function Extras() {
       <p>
         Apart from programming, I spend quite a bit of time in my other
         pursuits, which majorly include Taekwondo and Guitar. So here{"'"}s a
-        super small collection of a few major certificates from the past year.
+        small collection of a few major-certificates from the past year.
       </p>
       <div className="entry">
         {extras.map((extra) => (
