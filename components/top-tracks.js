@@ -14,9 +14,9 @@ export default function TopTracks() {
               className="mt-5 rounded p-4 flex not-prose text-base font-normal transition hover:bg-purple-100"
             >
               <img className="w-16 h-16 rounded" src={track.imageUrl} alt="" />
-              <p className="ml-5">
-                <p className="text-accent">{track.title}</p>
-                <span>{track.artist}</span>
+              <p className="ml-5 overflow-scroll whitespace-nowrap">
+                <p>{track.title}</p>
+                <span className="text-gray-700">{track.artist}</span>
               </p>
             </div>
           </a>
