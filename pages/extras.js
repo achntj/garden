@@ -28,7 +28,7 @@ export default function Extras() {
     <div>
       <h1>
         Extras
-        <p className="text-xs font-normal">flex</p>
+       // <p className="text-xs font-normal">flex</p>
       </h1>
       <p>
         Apart from programming, I spend quite a bit of time in my other
