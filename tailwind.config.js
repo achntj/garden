@@ -27,6 +27,21 @@ module.exports = {
           css: {
             a: {
               textDecoration: "none",
+              transitionProperty:
+                "color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
+              transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+              transitionDuration: "150ms",
+              color: "rgb(14 165 233 / var(--tw-text-opacity))",
+            },
+            "a:hover": {
+              textDecoration: "none",
+              color: "rgb(2 132 199 / var(--tw-text-opacity))",
+            },
+            "img + em": {
+              display: "block",
+              textAlign: "center",
+              margin: "20px",
+              color: "#666",
             },
             p: {
               marginTop: "1em",
