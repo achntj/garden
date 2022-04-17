@@ -1,11 +1,9 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Post from "../components/Post";
 import { sortByDate } from "../utils";
 import Link from "next/link";
 import Base from "../components/Base";
-import NowPlaying from "../components/now-playing";
 
 export default function Home({ posts }) {
   return (
