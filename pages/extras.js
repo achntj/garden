@@ -1,5 +1,10 @@
 import Base from "../components/Base";
-import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+
+function cn(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function Extras() {
   const extras = [
@@ -7,23 +12,32 @@ export default function Extras() {
       image: "taekwondo",
       alt: "Black Belt Certification",
       desc: "World Taekwondo - Taekwondo Black Belt Dan 1",
+      width: 423.63,
+      height: 600,
     },
     {
       image: "guitar",
       alt: "Guitar Grade 5 Certification",
       desc: "Trinity College London - Guitar Grade 5",
+      width: 424.17,
+      height: 600,
     },
     {
       image: "sakura",
       alt: "Sakura Science Program",
       desc: "Sakura Science Program, Japan - Robotics",
+      width: 668,
+      height: 478.5,
     },
     {
       image: "nasa",
       alt: "NASA Space Apps Challenge",
       desc: "NASA Space Apps Challenge - Global Nominee",
+      width: 668,
+      height: 485.81,
     },
   ];
+  const [isLoading, setLoading] = useState(true);
   return (
     <div>
       <h1>
@@ -37,13 +51,21 @@ export default function Extras() {
       </p>
       <div className="entry">
         {extras.map((extra) => (
-          <div key={extra.image}>
-            <img
-              className="rounded max-h-[600px] mt-[10px] mb-5"
-              src={`images/${extra.image}.jpeg`}
+          <div className="text-center extra" key={extra.image}>
+            <Image
               alt={extra.alt}
+              src={`/images/${extra.image}.jpeg`}
+              width={extra.width}
+              height={extra.height}
+              className={cn(
+                "duration-1000 ease-in-out",
+                isLoading
+                  ? "grayscale blur-2xl scale-110"
+                  : "grayscale-0 blur-0 scale-100"
+              )}
+              onLoadingComplete={() => setLoading(false)}
             />
-            <em>{extra.desc}</em>
+            <em className="block m-5 text-[#666]">{extra.desc}</em>
           </div>
         ))}
       </div>
