@@ -14,7 +14,8 @@ export default function Home({ posts }) {
           src="images/me.jpeg"
           alt="Achintya Jha"
         /> */}
-        <b>Hi, I{"'"}m Achintya!</b> &rarr;{" "}
+        <b>Hi, I{"'"}m Achintya!</b>{" "}
+        <span className="hidden sm:inline">&rarr; </span>
         <span className="sm:inline-block block">
           pronounced [uh-chin-
           <a
@@ -31,7 +32,7 @@ export default function Home({ posts }) {
         <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
           Tech Mahindra
         </a>{" "}
-        and building <a href="https://sentimate.org/">Sentimate</a> alongside.
+        and building <a href="https://sentimate.org/">SentiMate</a> alongside.
       </p>
       <p>
         You can find some of my other side projects{" "}
