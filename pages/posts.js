@@ -21,7 +21,8 @@ export default function Posts({ posts }) {
               transition
               ease-in-out
               mb-2
-              hover:cursor-pointer"
+              hover:cursor-pointer
+              hover:shadow-md"
             >
               <Link passHref key={index} href={`posts/${post.slug}`}>
                 <div>

@@ -11,7 +11,7 @@ export default function TopTracks() {
           <a href={track.songUrl} key={track.songUrl}>
             <div
               key={track.title}
-              className="mt-5 rounded p-4 flex not-prose text-base font-normal transition hover:bg-purple-100"
+              className="mt-5 rounded p-4 flex not-prose text-base font-normal transition hover:drop-shadow-md"
             >
               <img className="w-16 h-16 rounded" src={track.imageUrl} alt="" />
               <p className="ml-5 overflow-scroll whitespace-nowrap">
