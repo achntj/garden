@@ -74,7 +74,7 @@ export default function Projects() {
                   {project.desc}
                 </p>
                 <div
-                  className="text-3xl p-2 text-white w-fit grid"
+                  className="text-3xl p-2 text-white w-fit sm:grid hidden"
                   style={{ clipPath: "inset(0 0 0 0 )" }}
                 >
                   <div className="[grid-area:1/1] flex items-center justify-center h-10 w-10 transition ease-in-out group-hover:delay-200 translate-y-10 -translate-x-10 group-hover:translate-y-0 group-hover:translate-x-0">
