@@ -18,7 +18,7 @@ export default function ImageComp({ props }) {
             width={props.width}
             height={props.height}
             className={cn(
-              "duration-1000 ease-in-out",
+              "duration-700 ease-in-out",
               isLoading
                 ? "grayscale blur-2xl scale-110"
                 : "grayscale-0 blur-0 scale-100"
