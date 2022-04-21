@@ -7,7 +7,7 @@ export default function Spotify() {
       <h1>Favourites</h1>
       <p>
         Straight from{" "}
-        <a href="https://open.spotify.com/user/31wko7pz4vhcmx6rftimndpomdqm">
+        <a href="https://open.spotify.com/user/1r6wxfc5wa72s61y2k92m8tsb">
           my Spotify account
         </a>
         .
