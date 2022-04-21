@@ -4,10 +4,16 @@ date: "January 15, 2022"
 description: I built this version due to the sudden motivation I got from a similar project. It ended up working out!
 oneline: ...In 2 hours
 location: New Delhi, India
+cover:
+    image: wordle.png
+    alt: Wordle UI
+    desc: The Wordle Interface
+    width: 529
+    height: 691
 ---
 
-![Wordle UI](/images/posts/wordle.png)
-_The Wordle Interface_
+<!-- ![Wordle UI](/images/posts/wordle.png)
+_The Wordle Interface_ -->
 
 If you haven't heard about [Wordle](https://www.powerlanguage.co.uk/wordle/) (yet), you should probably check it out. Just like most recent 'internet-breaking' trends, it is a _simple_ game which offers a great user experience. No Login, no newsletter, no nothing. Just come, play, and leave. Plus, it saves data in the localstorage; so, you get stats without any unnecessary process to go through in between.
 

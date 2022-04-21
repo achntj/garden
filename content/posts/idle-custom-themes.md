@@ -4,10 +4,16 @@ date: "September 16, 2021"
 description: Changing themes on idle is not something everyone does; incase you are interested, here it is!
 oneline: It's easy ahaha
 location: New Delhi, India
+cover:
+    image: dracula.png
+    alt: Dracula Theme Preview
+    desc: The Dracula Theme
+    width: 668
+    height: 428
 ---
 
-![Dracula Theme Preview](/images/posts/dracula.png)
-_The Dracula Theme_
+<!-- ![Dracula Theme Preview](/images/posts/dracula.png)
+_The Dracula Theme_ -->
 
 ## Step 1: Find your ~/.idlerc file
 

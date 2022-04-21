@@ -4,10 +4,16 @@ date: "April 22, 2021"
 description: In this article I talk about curation algorithms and some of their lesser known flaws. These algorithms are present everywhere and it is important to know how these work.
 oneline: These guys are everywhere
 location: New Delhi, India
+cover:
+    image: curation2.png
+    alt: Amazon Recommendations
+    desc: Typical Amazon Recommendation 
+    width: 668
+    height: 653 
 ---
 
-![Amazon Recommendations](/images/posts/curation2.png)
-_Typical Amazon Recommendations_
+<!-- ![Amazon Recommendations](/images/posts/curation2.png)
+_Typical Amazon Recommendations_ -->
 
 Curation Algorithms, at first, may sound like some recent, revolutionary technology, but it’s something that’s been around for decades. As the name itself suggests, these are algorithms that curate; they organize and personalize content using algorithms (a set of rules).
 

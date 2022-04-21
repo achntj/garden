@@ -2,12 +2,17 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import Link from "next/link";
+import ImageComp from "../../components/ImageComp";
 import Head from "next/head";
 import Base from "../../components/Base";
+import { useState } from "react";
+
+function cn(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function PostPage({
-  frontmatter: { title, date, description, location },
+  frontmatter: { title, date, description, location, cover },
   slug,
   content,
 }) {
@@ -27,6 +32,7 @@ export default function PostPage({
             </span>
           </p>
         </div>
+        <ImageComp props={cover} />
         <div
           className="entry"
           dangerouslySetInnerHTML={{ __html: marked(content) }}
