@@ -1,4 +1,4 @@
-import Base from "../components/Base";
+import HeadContainer from "../components/HeadContainer";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -39,47 +39,41 @@ export default function Extras() {
   ];
   const [isLoading, setLoading] = useState(true);
   return (
-    <div>
-      <h1>
-        Extras
-        {/* <p className="text-xs font-normal">flex</p> */}
-      </h1>
-      <p>
-        Apart from programming, I spend quite a bit of time in my other
-        pursuits, which majorly include Taekwondo and Guitar. So here{"'"}s a
-        small collection of a few major-certificates from the past year.
-      </p>
-      <div className="entry">
-        {extras.map((extra) => (
-          <div className="text-center extra" key={extra.image}>
-            <Image
-              alt={extra.alt}
-              src={`/images/${extra.image}.jpeg`}
-              width={extra.width}
-              height={extra.height}
-              className={cn(
-                "duration-1000 ease-in-out",
-                isLoading
-                  ? "grayscale blur-2xl scale-110"
-                  : "grayscale-0 blur-0 scale-100"
-              )}
-              onLoadingComplete={() => setLoading(false)}
-            />
-            <em className="block m-5 text-[#666]">{extra.desc}</em>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-Extras.getLayout = function getLayout(page) {
-  return (
-    <Base
+    <HeadContainer
       title="Extras"
       description="My other pursuits that form a big part of my life."
     >
-      {page}
-    </Base>
+      <div>
+        <h1>
+          Extras
+          {/* <p className="text-xs font-normal">flex</p> */}
+        </h1>
+        <p>
+          Apart from programming, I spend quite a bit of time in my other
+          pursuits, which majorly include Taekwondo and Guitar. So here{"'"}s a
+          small collection of a few major-certificates from the past year.
+        </p>
+        <div className="entry">
+          {extras.map((extra) => (
+            <div className="text-center extra" key={extra.image}>
+              <Image
+                alt={extra.alt}
+                src={`/images/${extra.image}.jpeg`}
+                width={extra.width}
+                height={extra.height}
+                className={cn(
+                  "duration-1000 ease-in-out",
+                  isLoading
+                    ? "grayscale blur-2xl scale-110"
+                    : "grayscale-0 blur-0 scale-100"
+                )}
+                onLoadingComplete={() => setLoading(false)}
+              />
+              <em className="block m-5 text-[#666]">{extra.desc}</em>
+            </div>
+          ))}
+        </div>
+      </div>
+    </HeadContainer>
   );
-};
+}

@@ -1,4 +1,4 @@
-import Base from "../components/Base";
+import HeadContainer from "../components/HeadContainer";
 
 export default function Projects() {
   const projects = [
@@ -53,52 +53,46 @@ export default function Projects() {
     },
   ];
   return (
-    <div>
-      <h1>Projects</h1>
-      <p>
-        Check out my other projects at{" "}
-        <a href="https://github.com/achintyajha">Github</a>.
-      </p>
-      {projects.map(
-        (project) =>
-          project.url && (
-            <a href={project.url}>
-              <div
-                className="min-h-[220px] flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group"
-                style={{ backgroundColor: `${project.color}` }}
-                key={project.name}
-              >
-                <h3 className="text-white">{project.name}</h3>
-                {/* <p className="text-rose-500">{project.stack}</p> */}
-                <p className="text-gray-50 font-normal whitespace-pre-line">
-                  {project.desc}
-                </p>
-                <div
-                  className="text-3xl p-2 text-white w-fit sm:grid hidden"
-                  style={{ clipPath: "inset(0 0 0 0 )" }}
-                >
-                  <div className="[grid-area:1/1] flex items-center justify-center h-10 w-10 transition ease-in-out group-hover:delay-200 translate-y-10 -translate-x-10 group-hover:translate-y-0 group-hover:translate-x-0">
-                    ↗
-                  </div>
-                  <div className="[grid-area:1/1] flex items-center justify-center h-10 w-10 transition ease-in-out delay-200 group-hover:delay-[0s] duration-300 group-hover:-translate-y-10 group-hover:translate-x-10">
-                    ↗
-                  </div>
-                </div>
-              </div>
-            </a>
-          )
-      )}
-    </div>
-  );
-}
-
-Projects.getLayout = function getLayout(page) {
-  return (
-    <Base
+    <HeadContainer
       title="Projects"
       description="A curated list of select projects that I have created over the years."
     >
-      {page}
-    </Base>
+      <div>
+        <h1>Projects</h1>
+        <p>
+          Check out my other projects at{" "}
+          <a href="https://github.com/achintyajha">Github</a>.
+        </p>
+        {projects.map(
+          (project) =>
+            project.url && (
+              <a href={project.url}>
+                <div
+                  className="min-h-[220px] flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group dark:!bg-gray-800"
+                  style={{ backgroundColor: `${project.color}` }}
+                  key={project.name}
+                >
+                  <h3 className="text-white">{project.name}</h3>
+                  {/* <p className="text-rose-500">{project.stack}</p> */}
+                  <p className="text-gray-50 font-normal whitespace-pre-line dark:text-gray-400">
+                    {project.desc}
+                  </p>
+                  <div
+                    className="text-3xl p-2 text-white w-fit sm:grid hidden"
+                    style={{ clipPath: "inset(0 0 0 0 )" }}
+                  >
+                    <div className="[grid-area:1/1] flex items-center justify-center h-10 w-10 transition ease-in-out group-hover:delay-200 translate-y-10 -translate-x-10 group-hover:translate-y-0 group-hover:translate-x-0">
+                      ↗
+                    </div>
+                    <div className="[grid-area:1/1] flex items-center justify-center h-10 w-10 transition ease-in-out delay-200 group-hover:delay-[0s] duration-300 group-hover:-translate-y-10 group-hover:translate-x-10">
+                      ↗
+                    </div>
+                  </div>
+                </div>
+              </a>
+            )
+        )}
+      </div>
+    </HeadContainer>
   );
-};
+}

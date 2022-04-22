@@ -16,7 +16,9 @@ export default function TopTracks() {
               <img className="w-16 h-16 rounded" src={track.imageUrl} alt="" />
               <p className="ml-5 overflow-scroll whitespace-nowrap">
                 <p>{track.title}</p>
-                <span className="text-gray-700">{track.artist}</span>
+                <span className="text-gray-700 dark:text-zinc-400">
+                  {track.artist}
+                </span>
               </p>
             </div>
           </a>

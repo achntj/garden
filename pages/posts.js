@@ -3,17 +3,21 @@ import path from "path";
 import matter from "gray-matter";
 import { sortByDate } from "../utils";
 import Link from "next/link";
-import Base from "../components/Base";
+import HeadContainer from "../components/HeadContainer";
 
 export default function Posts({ posts }) {
   return (
     <>
-      <div>
-        <h1>Posts</h1>
-        {posts.map((post, index) => (
-          <>
-            <p
-              className="
+      <HeadContainer
+        title="Posts"
+        description="My thoughts on tech, design, and workflow."
+      >
+        <div>
+          <h1>Posts</h1>
+          {posts.map((post, index) => (
+            <>
+              <p
+                className="
               group
               rounded
               p-2
@@ -23,23 +27,24 @@ export default function Posts({ posts }) {
               mb-2
               hover:cursor-pointer
               hover:shadow-md"
-            >
-              <Link passHref key={index} href={`posts/${post.slug}`}>
-                <div>
-                  <span className="text-sky-400">
-                    <b>{post.frontmatter.title}</b>
-                  </span>
-                  <span className="ml-2 transition-[margin] group-hover:ml-5">
-                    &rarr;
-                  </span>
-                  <br />
-                  {post.frontmatter.description}
-                </div>
-              </Link>
-            </p>
-          </>
-        ))}
-      </div>
+              >
+                <Link passHref key={index} href={`posts/${post.slug}`}>
+                  <div>
+                    <span className="text-sky-400">
+                      <b>{post.frontmatter.title}</b>
+                    </span>
+                    <span className="ml-2 transition-[margin] group-hover:ml-5">
+                      &rarr;
+                    </span>
+                    <br />
+                    {post.frontmatter.description}
+                  </div>
+                </Link>
+              </p>
+            </>
+          ))}
+        </div>
+      </HeadContainer>
     </>
   );
 }
@@ -74,14 +79,3 @@ export async function getStaticProps() {
     },
   };
 }
-
-Posts.getLayout = function getLayout(page) {
-  return (
-    <Base
-      title="Posts"
-      description="My thoughts on tech, design, and workflow."
-    >
-      {page}
-    </Base>
-  );
-};
