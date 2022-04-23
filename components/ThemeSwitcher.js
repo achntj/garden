@@ -15,7 +15,6 @@ export default function ThemeSwitcher() {
       className=" rounded-lg  flex justify-center transition-all w-9 h-9 p-2 hover:bg-zinc-50 dark:hover:bg-zinc-700"
       onClick={() => {
         setTheme(theme === "dark" ? "light" : "dark");
-        console.log({ theme });
       }}
     >
       {mounted && (
