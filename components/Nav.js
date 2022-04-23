@@ -53,7 +53,8 @@ function Nav() {
             mt-3
             sm:mt-0
             dark:text-zinc-400
-            not-prose"
+            not-prose
+            items-center"
         >
           <Link href="/projects">Projects</Link>{" "}
           <Link href="/posts">Posts</Link> <Link href="/extras">Extras</Link>{" "}
