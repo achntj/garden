@@ -17,7 +17,11 @@ export default function PostPage({
 }) {
   return (
     <>
-      <HeadContainer title={title} description={description}>
+      <HeadContainer
+        title={title}
+        description={description}
+        image={cover.image}
+      >
         <article className="all_posts">
           <div className="hero">
             <h1>{title}</h1>
