@@ -1,10 +1,11 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { marked } from "marked";
 
-import ImageComp from "../../components/ImageComp";
 import HeadContainer from "../../components/HeadContainer";
+
+import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote } from "next-mdx-remote";
 
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -13,15 +14,11 @@ function cn(...classes) {
 export default function PostPage({
   frontmatter: { title, date, description, location, cover },
   slug,
-  content,
+  source,
 }) {
   return (
     <>
-      <HeadContainer
-        title={title}
-        description={description}
-        image={cover.image}
-      >
+      <HeadContainer title={title} description={description} image={cover}>
         <article className="all_posts">
           <div className="hero">
             <h1>{title}</h1>
@@ -32,11 +29,9 @@ export default function PostPage({
               </span>
             </p>
           </div>
-          <ImageComp props={cover} />
-          <div
-            className="entry"
-            dangerouslySetInnerHTML={{ __html: marked(content) }}
-          ></div>
+          <div className="entry">
+            <MDXRemote {...source} />
+          </div>
         </article>
       </HeadContainer>
     </>
@@ -48,7 +43,7 @@ export async function getStaticPaths() {
 
   const paths = files.map((filename) => ({
     params: {
-      slug: filename.replace(".md", ""),
+      slug: filename.replace(".mdx", ""),
     },
   }));
 
@@ -60,17 +55,25 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("content/posts", slug + ".md"),
+    path.join("content/posts", slug + ".mdx"),
     "utf-8"
   );
 
-  const { data: frontmatter, content } = matter(markdownWithMeta);
+  // const { data: frontmatter, content } = matter(markdownWithMeta);
+
+  // // MDX text - can be from a local file, database, anywhere
+  // const source = content;
+  const mdxSource = await serialize(markdownWithMeta, {
+    parseFrontmatter: true,
+  });
+
+  const frontmatter = mdxSource.frontmatter;
 
   return {
     props: {
       frontmatter,
       slug,
-      content,
+      source: mdxSource,
     },
   };
 }
