@@ -15,9 +15,9 @@ export default function NowPlaying() {
               alt=""
               key={data.title}
             ></img>
-            <p className="ml-5 whitespace-nowrap overflow-scroll">
+            <p className="ml-5 whitespace-nowrap overflow-scroll dark:text-slate-400">
               <a
-                className="font-bold"
+                className="font-bold dark:text-slate-300"
                 rel="noreferrer"
                 target="_blank"
                 href={data.songUrl}

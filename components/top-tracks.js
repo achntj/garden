@@ -8,10 +8,10 @@ export default function TopTracks() {
     return (
       <>
         {data.tracks.map((track) => (
-          <a href={track.songUrl} key={track.songUrl}>
+          <a className="border-none" href={track.songUrl} key={track.songUrl}>
             <div
               key={track.title}
-              className="mt-5 rounded p-4 flex not-prose text-base font-normal transition hover:drop-shadow-md"
+              className="mt-5 rounded p-4 flex not-prose text-base font-normal transition hover:drop-shadow-md border-none"
             >
               <img className="w-16 h-16 rounded" src={track.imageUrl} alt="" />
               <p className="ml-5 overflow-scroll whitespace-nowrap">

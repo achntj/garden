@@ -95,10 +95,14 @@ export default function Home({ posts }) {
           .
         </p>
         {/* TODO - CTAs */}
-        {/* <div className="bg-green-200">
-        <h2>Projects</h2>
-        <p>See More</p>
-      </div> */}
+        {/* <div className="flex gap-6 sm:flex-row flex-col mt-10">
+          <div className="shadow-lg bg-emerald-100 dark:bg-zinc-800 py-2 px-4 rounded-xl w-full">
+            <h2 className="text-emerald-800 m-0">Projects</h2>
+          </div>
+          <div className="shadow-lg bg-teal-100 dark:bg-zinc-800 py-2 px-4 rounded-xl w-full">
+            <h2 className="text-teal-800 m-0">Essays</h2>
+          </div>
+        </div> */}
       </div>
     </HeadContainer>
   );
