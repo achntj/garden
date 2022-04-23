@@ -6,7 +6,7 @@ export default function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
   return getLayout(
     <>
-      <ThemeProvider attribute="class">
+      <ThemeProvider enableSystem={false} attribute="class">
         <Base>
           <Component {...pageProps} />
         </Base>
