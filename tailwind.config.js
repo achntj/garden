@@ -10,6 +10,7 @@ module.exports = {
         "Helvetica Neue",
         "Helvetica",
         "BlinkMacSystemFont",
+        "Arimo",
         "Segoe UI",
         "Roboto",
         "system-ui",
