@@ -95,9 +95,9 @@ export default function Home({ posts }) {
           .
         </p>
         {/* TODO - CTAs */}
-        <div className="flex gap-6 sm:flex-row flex-col mt-10">
+        <div className="flex gap-6 sm:flex-row flex-col mt-10 w-fit sm:w-full">
           <div
-            className="shadow-lg bg-emerald-100 dark:bg-zinc-800 py-2 px-4 rounded-xl w-full group transition
+            className="shadow-lg bg-emerald-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group transition
               ease-in-out
               hover:cursor-pointer"
           >
@@ -123,7 +123,7 @@ export default function Home({ posts }) {
             </Link>
           </div>
           <div
-            className="shadow-lg bg-teal-100 dark:bg-zinc-800 py-2 px-4 rounded-xl w-full group
+            className="shadow-lg bg-teal-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
               transition
               ease-in-out
               hover:cursor-pointer"

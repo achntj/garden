@@ -34,7 +34,7 @@ export default function Posts({ posts }) {
                     <span className="text-sky-400">
                       <b>{post.frontmatter.title}</b>
                     </span>
-                    <span className="ml-2 transition-[margin] group-hover:ml-5">
+                    <span className="ml-2 transition-[margin] sm:group-hover:ml-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="inline-block text-slate-600 dark:text-slate-400"

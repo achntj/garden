@@ -68,7 +68,7 @@ export default function Projects() {
             project.url && (
               <a href={project.url}>
                 <div
-                  className="min-h-[220px] flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group dark:!bg-gray-800"
+                  className="flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group dark:!bg-gray-800"
                   style={{ backgroundColor: `${project.color}` }}
                   key={project.name}
                 >
