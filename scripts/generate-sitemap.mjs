@@ -1,16 +1,16 @@
 import { writeFileSync } from "fs";
-import globby from "globby";
+import { globby } from "globby";
 import prettier from "prettier";
 
 async function generate() {
   const prettierConfig = await prettier.resolveConfig("./.prettierrc.js");
   const pages = await globby([
-    "pages/*.js",
-    "pages/*.mdx",
-    "content/**/*.md",
-    "!pages/_*.js",
+    "pages/*.tsx",
+    "data/**/*.mdx",
+    "!data/*.mdx",
+    "!pages/_*.tsx",
     "!pages/api",
-    "!pages/404.js",
+    "!pages/404.tsx",
   ]);
 
   const sitemap = `
@@ -20,15 +20,14 @@ async function generate() {
           .map((page) => {
             const path = page
               .replace("pages", "")
-              .replace("content", "")
-              .replace(".js", "")
-              .replace(".mdx", "")
-              .replace(".md", "");
+              .replace("data", "")
+              .replace(".tsx", "")
+              .replace(".mdx", "");
             const route = path === "/index" ? "" : path;
 
             return `
               <url>
-                  <loc>${`https://achintyajha.in${route}`}</loc>
+                  <loc>${`https://leerob.io${route}`}</loc>
               </url>
             `;
           })

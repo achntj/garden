@@ -2,7 +2,6 @@
 import Head from "next/head";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import HeadContainer from "../components/HeadContainer";
 
 export default function Base({ children, ...pageProps }) {
   return (
