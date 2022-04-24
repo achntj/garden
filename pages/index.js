@@ -104,7 +104,7 @@ export default function Home({ posts }) {
             <Link passHref href="/projects">
               <h2 className="text-emerald-800 m-0">
                 Projects
-                <span className="transition-[margin] group-hover:ml-5">
+                <span className="transition-[margin] sm:group-hover:ml-5">
                   <svg
                     className="inline-block mx-4 text-slate-600 dark:text-slate-400"
                     width="20"
@@ -131,7 +131,7 @@ export default function Home({ posts }) {
             <Link passHref href="/posts">
               <h2 className="text-teal-800 m-0">
                 Essays
-                <span className="transition-[margin] group-hover:ml-5">
+                <span className="transition-[margin] sm:group-hover:ml-5">
                   <svg
                     className="inline-block mx-4 text-slate-600 dark:text-slate-400"
                     width="20"
