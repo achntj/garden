@@ -1,76 +1,60 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { marked } from "marked";
-
-import ImageComp from "../../components/ImageComp";
 import HeadContainer from "../../components/HeadContainer";
 
-function cn(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import { allPosts } from 'contentlayer/generated'
+import { useMDXComponent } from 'next-contentlayer/hooks'
+
+import ImageComp from "../../components/ImageComp"
+
+const MDXcomponents = {
+  // Image: ImageComp,
+  ImageComp,
+};
+
 
 export default function PostPage({
-  frontmatter: { title, date, description, location, cover },
-  slug,
-  content,
+  post
 }) {
+  const MDXComponent = useMDXComponent(post.body.code)
   return (
     <>
       <HeadContainer
-        title={title}
-        description={description}
-        image={cover.image}
+        title={post.title}
+        description={post.description}
+        image={post.cover.image}
       >
         <article className="all_posts">
           <div className="hero">
-            <h1>{title}</h1>
+            <h1>{post.title}</h1>
             <p className="meta">
-              <span>{date}</span>
+              <span>{post.date}</span>
               <span style={{ float: "right" }}>
-                {location ? location : "New Delhi, India"}
+                {post.location ? post.location : "New Delhi, India"}
               </span>
             </p>
           </div>
-          <ImageComp props={cover} />
           <div
             className="entry"
-            dangerouslySetInnerHTML={{ __html: marked(content) }}
-          ></div>
+          >
+            <MDXComponent components={MDXcomponents}/>
+          </div>
         </article>
       </HeadContainer>
     </>
   );
 }
 
-export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("content/posts"));
-
-  const paths = files.map((filename) => ({
-    params: {
-      slug: filename.replace(".md", ""),
-    },
-  }));
-
+export const getStaticPaths = async () => {
   return {
-    paths,
+    paths: allPosts.map(p => ({ params: { slug: p.slug } })),
     fallback: false,
-  };
+  }
 }
 
-export async function getStaticProps({ params: { slug } }) {
-  const markdownWithMeta = fs.readFileSync(
-    path.join("content/posts", slug + ".md"),
-    "utf-8"
-  );
-
-  const { data: frontmatter, content } = matter(markdownWithMeta);
-
+export const getStaticProps = async ({ params }) => {
+  const post = allPosts.find(p => p.slug === params.slug)
   return {
     props: {
-      frontmatter,
-      slug,
-      content,
+      post,
     },
-  };
+  }
 }

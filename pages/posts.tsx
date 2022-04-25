@@ -4,6 +4,8 @@ import matter from "gray-matter";
 import { sortByDate } from "../utils";
 import Link from "next/link";
 import HeadContainer from "../components/HeadContainer";
+import { InferGetStaticPropsType } from 'next';
+import { allPosts } from 'contentlayer/generated';
 
 export default function Posts({ posts }) {
   return (
@@ -14,7 +16,7 @@ export default function Posts({ posts }) {
       >
         <div>
           <h1>Posts</h1>
-          {posts.map((post, index) => (
+          {posts.map(({ title, description, slug }, index) => (
             <>
               <p
                 className="
@@ -29,10 +31,10 @@ export default function Posts({ posts }) {
               hover:shadow-md
               dark:hover:shadow-none"
               >
-                <Link passHref key={index} href={`posts/${post.slug}`}>
+                <Link passHref key={index} href={`posts/${slug}`}>
                   <div>
                     <span className="text-sky-400">
-                      <b>{post.frontmatter.title}</b>
+                      <b>{title}</b>
                     </span>
                     <span className="ml-2 transition-[margin] sm:group-hover:ml-5">
                       <svg
@@ -54,7 +56,7 @@ export default function Posts({ posts }) {
                       </svg>
                     </span>
                     <br />
-                    {post.frontmatter.description}
+                    {description}
                   </div>
                 </Link>
               </p>
@@ -66,33 +68,11 @@ export default function Posts({ posts }) {
   );
 }
 
-export async function getStaticProps() {
-  // get files from the posts directory
-  const files = fs.readdirSync(path.join("content/posts"));
-
-  // get slug and frontmatter from posts
-  const posts = files.map((filename) => {
-    // create-slug
-    const slug = filename.replace(".md", "");
-
-    // Get frontmatter
-    const markdownWithMeta = fs.readFileSync(
-      path.join("content/posts", filename),
-      "utf-8"
-    );
-
-    const { data: frontmatter } = matter(markdownWithMeta);
-    return {
-      slug,
-      frontmatter,
-    };
-  });
-
-  // console.log(posts);
-
+export const getStaticProps = async () => {
+  const posts = allPosts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
   return {
     props: {
-      posts: posts.sort(sortByDate),
+      posts,
     },
-  };
+  }
 }
