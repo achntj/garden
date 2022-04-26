@@ -1,9 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import ImageComp from "./ImageComp"
+import Image from "next/image";
+import { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 
+function cn(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
 function Nav() {
+  const [isLoading, setLoading] = useState(true);
   return (
     <div className="rounded-b drop-shadow-lg p-4 mb-5">
       <div className="sm:flex justify-between items-center">
@@ -18,16 +24,20 @@ function Nav() {
                   width="40px"
                   height="40px"
                 /> */}
-                <ImageComp
-                props={
-                {
-                  alt: "site avatar",
-                  image:"avatar.png",
-                  width:40,
-                  height:40,
-                  classes: "sm:mb-0 rounded"
-                }
-                }
+                <Image
+                  alt="site avatar"
+                  src={`/images/avatar.png`}
+                  width={40}
+                  height={40}
+                  quality={100}
+                  priority
+                  className={cn(
+                    "duration-700 ease-in-out sm:mb-0 rounded",
+                    isLoading
+                      ? "grayscale blur-2xl scale-110"
+                      : "grayscale-0 blur-0 scale-100"
+                  )}
+                  onLoadingComplete={() => setLoading(false)}
                 />
               </a>
             </Link>

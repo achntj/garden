@@ -47,13 +47,9 @@ export default function Extras() {
           pursuits, which majorly include Taekwondo and Guitar. So here{"'"}s a
           small collection of a few major-certificates from the past year.
         </p>
-        <div className="entry">
           {extras.map((extra) => (
-            <div className="text-center extra" key={extra.image}>
-              <ImageComp props={extra}/>
-            </div>
+              <ImageComp key={extra.image} props={extra}/>
           ))}
-        </div>
       </div>
     </HeadContainer>
   );
