@@ -14,18 +14,18 @@ export default function ImageComp({ props }) {
         <div className="text-center extra" key={props.image}>
           <Image
             alt={props.alt}
-            src={`/images/posts/${props.image}`}
+            src={`/images/${props.image}`}
             width={props.width}
             height={props.height}
             className={cn(
-              "duration-700 ease-in-out",
+              `duration-700 ease-in-out ${props.classes}`,
               isLoading
                 ? "grayscale blur-2xl scale-110"
                 : "grayscale-0 blur-0 scale-100"
             )}
             onLoadingComplete={() => setLoading(false)}
           />
-          <em className="block m-5 text-[#666]">{props.desc}</em>
+          {props.desc && <em className="block m-5 text-[#666]">{props.desc}</em>}
         </div>
       </div>
     </>

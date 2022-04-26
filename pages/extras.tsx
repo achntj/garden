@@ -1,43 +1,37 @@
 import HeadContainer from "../components/HeadContainer";
-import Image from "next/image";
-import { useState } from "react";
-
-function cn(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import ImageComp from "../components/ImageComp"
 
 export default function Extras() {
   const extras = [
     {
-      image: "taekwondo",
+      image: "taekwondo.jpeg",
       alt: "Black Belt Certification",
       desc: "World Taekwondo - Taekwondo Black Belt Dan 1",
       width: 423.63,
       height: 600,
     },
     {
-      image: "guitar",
+      image: "guitar.jpeg",
       alt: "Guitar Grade 5 Certification",
       desc: "Trinity College London - Guitar Grade 5",
       width: 424.17,
       height: 600,
     },
     {
-      image: "sakura",
+      image: "sakura.jpeg",
       alt: "Sakura Science Program",
       desc: "Sakura Science Program, Japan - Robotics",
       width: 668,
       height: 478.5,
     },
     {
-      image: "nasa",
+      image: "nasa.jpeg",
       alt: "NASA Space Apps Challenge",
       desc: "NASA Space Apps Challenge - Global Nominee",
       width: 668,
       height: 485.81,
     },
   ];
-  const [isLoading, setLoading] = useState(true);
   return (
     <HeadContainer
       title="Extras"
@@ -56,20 +50,7 @@ export default function Extras() {
         <div className="entry">
           {extras.map((extra) => (
             <div className="text-center extra" key={extra.image}>
-              <Image
-                alt={extra.alt}
-                src={`/images/${extra.image}.jpeg`}
-                width={extra.width}
-                height={extra.height}
-                className={cn(
-                  "duration-1000 ease-in-out",
-                  isLoading
-                    ? "grayscale blur-2xl scale-110"
-                    : "grayscale-0 blur-0 scale-100"
-                )}
-                onLoadingComplete={() => setLoading(false)}
-              />
-              <em className="block m-5 text-[#666]">{extra.desc}</em>
+              <ImageComp props={extra}/>
             </div>
           ))}
         </div>
