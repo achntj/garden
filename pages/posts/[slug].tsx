@@ -3,6 +3,8 @@ import HeadContainer from "../../components/HeadContainer";
 import { allPosts } from 'contentlayer/generated'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
+// import 'prismjs/themes/prism-tomorrow.css'
+
 import ImageComp from "../../components/ImageComp"
 
 const MDXcomponents = {
