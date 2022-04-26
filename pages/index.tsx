@@ -1,11 +1,7 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { sortByDate } from "../utils";
 import Link from "next/link";
 import HeadContainer from "../components/HeadContainer";
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <HeadContainer title="Home">
       <div>
@@ -94,7 +90,6 @@ export default function Home({ posts }) {
           </a>
           .
         </p>
-        {/* TODO - CTAs */}
         <div className="flex gap-6 sm:flex-row flex-col mt-10 w-fit sm:w-full">
           <div
             className="shadow-lg bg-emerald-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group transition
@@ -154,38 +149,3 @@ export default function Home({ posts }) {
     </HeadContainer>
   );
 }
-
-export async function getStaticProps() {
-  // get files from the posts directory
-  const files = fs.readdirSync(path.join("content/posts"));
-
-  // get slug and frontmatter from posts
-  const posts = files.map((filename) => {
-    // create-slug
-    const slug = filename.replace(".md", "");
-
-    // Get frontmatter
-    const markdownWithMeta = fs.readFileSync(
-      path.join("content/posts", filename),
-      "utf-8"
-    );
-
-    const { data: frontmatter } = matter(markdownWithMeta);
-    return {
-      slug,
-      frontmatter,
-    };
-  });
-
-  // console.log(posts);
-
-  return {
-    props: {
-      posts: posts.sort(sortByDate),
-    },
-  };
-}
-
-// Home.getLayout = function getLayout(page) {
-//   return <Base title="Home">{page}</Base>;
-// };
