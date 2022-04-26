@@ -11,7 +11,7 @@ export default function Home() {
           src="images/me.jpeg"
           alt="Achintya Jha"
         /> */}
-          <b>Hi, I{"'"}m Achintya.</b>{" "}
+          <h3 className="my-0 text-gray-700">Hi, I{"'"}m Achintya!</h3>{" "}
           {/* <span className="hidden sm:inline">&rarr; </span>
           <span className="sm:inline-block block">
             pronounced [uh-chin-
@@ -24,7 +24,8 @@ export default function Home() {
             </a>
             -yaa]
           </span> */}
-          <br />I{"'"}m a high school senior at Ahlcon International School,
+          {/* <br /> */}
+          I{"'"}m a high school senior at Ahlcon International School,
           studying Computer Science. Currently, I am working on NLP at{" "}
           <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
             Tech Mahindra
@@ -81,6 +82,10 @@ export default function Home() {
             React
           </a>
           ,{" "}
+          <a target="_blank" rel="noreferrer" href="https://www.contentlayer.dev/">
+            Content Layer
+          </a>
+          ,{" "}
           <a target="_blank" rel="noreferrer" href="https://mdxjs.com/">
             MDX
           </a>
@@ -92,8 +97,7 @@ export default function Home() {
         </p>
         <div className="flex gap-6 sm:flex-row flex-col mt-10 w-fit sm:w-full">
           <div
-            className="shadow-lg bg-emerald-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group transition
-              ease-in-out
+            className="shadow-lg bg-emerald-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
               hover:cursor-pointer"
           >
             <Link passHref href="/projects">
@@ -119,8 +123,6 @@ export default function Home() {
           </div>
           <div
             className="shadow-lg bg-teal-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
-              transition
-              ease-in-out
               hover:cursor-pointer"
           >
             <Link passHref href="/posts">

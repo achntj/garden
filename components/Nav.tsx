@@ -11,7 +11,7 @@ function cn(...classes) {
 function Nav() {
   const [isLoading, setLoading] = useState(true);
   return (
-    <div className="rounded-b drop-shadow-lg p-4 mb-5">
+    <div className="rounded-b drop-shadow-lg p-4">
       <div className="sm:flex justify-between items-center">
         <div className="">
           <p className="">
