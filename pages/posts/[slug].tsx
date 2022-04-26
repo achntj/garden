@@ -22,7 +22,7 @@ export default function PostPage({
       <HeadContainer
         title={post.title}
         description={post.description}
-        image={post.cover.image}
+        image={post.cover}
       >
         <article className="all_posts">
           <div className="hero">
