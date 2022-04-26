@@ -83,7 +83,7 @@ export default function Home() {
           </a>
           ,{" "}
           <a target="_blank" rel="noreferrer" href="https://www.contentlayer.dev/">
-            Content Layer
+            Contentlayer
           </a>
           ,{" "}
           <a target="_blank" rel="noreferrer" href="https://mdxjs.com/">
