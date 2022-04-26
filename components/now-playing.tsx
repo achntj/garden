@@ -7,7 +7,7 @@ export default function NowPlaying() {
   // "not-playing";
   return (
     <>
-      <div className="not-prose mt-5 rounded p-4 flex text-base items-center">
+      <div className="not-prose mt-5 rounded py-4 flex text-base items-center">
         {data?.isPlaying ? (
           <>
             <img

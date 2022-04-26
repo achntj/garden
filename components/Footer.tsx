@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="prose">
       <NowPlaying />
-      <div className="text-gray-600 py-2  p-4 text-base">
+      <div className="text-gray-600 py-2 text-base">
         <div className="flex justify-between mb-5">
           <Link href="/design.txt">Design Influence</Link>
           <br />
