@@ -66,11 +66,10 @@ export default function Projects() {
         {projects.map(
           (project) =>
             project.url && (
-              <a href={project.url}>
+              <a key={project.name} href={project.url}>
                 <div
                   className="flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group dark:!bg-gray-800"
                   style={{ backgroundColor: `${project.color}` }}
-                  key={project.name}
                 >
                   <h3 className="text-white">{project.name}</h3>
                   {/* <p className="text-rose-500">{project.stack}</p> */}

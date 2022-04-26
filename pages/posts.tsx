@@ -1,10 +1,5 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import { sortByDate } from "../utils";
 import Link from "next/link";
 import HeadContainer from "../components/HeadContainer";
-import { InferGetStaticPropsType } from 'next';
 import { allPosts } from 'contentlayer/generated';
 
 export default function Posts({ posts }) {
@@ -17,22 +12,20 @@ export default function Posts({ posts }) {
         <div>
           <h1>Posts</h1>
           {posts.map(({ title, description, slug }, index) => (
-            <>
-              <p
-                className="
-              group
-              rounded
-              p-2
-              font-medium
-              transition
-              ease-in-out
-              mb-2
-              hover:cursor-pointer
-              hover:shadow-md
-              dark:hover:shadow-none"
-              >
-                <Link passHref key={index} href={`posts/${slug}`}>
-                  <div>
+                <Link passHref key={index} href={`/posts/${slug}`}>
+                  <div className="
+                    group
+                    rounded
+                    p-2
+                    font-medium
+                    transition
+                    ease-in-out
+                    mb-4
+                    hover:cursor-pointer
+                    hover:shadow-md
+                    dark:hover:shadow-none"
+                  >
+                  <p className="m-0">
                     <span className="text-sky-400">
                       <b>{title}</b>
                     </span>
@@ -57,10 +50,9 @@ export default function Posts({ posts }) {
                     </span>
                     <br />
                     {description}
-                  </div>
+                  </p>
+              </div>
                 </Link>
-              </p>
-            </>
           ))}
         </div>
       </HeadContainer>
