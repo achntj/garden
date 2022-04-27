@@ -11,7 +11,7 @@ export default function Home() {
           src="images/me.jpeg"
           alt="Achintya Jha"
         /> */}
-          <h3 className="my-0 text-gray-700">Hi, I{"'"}m Achintya!</h3>{" "}
+          <b>Hi, I{"'"}m Achintya!</b>{" "}
           {/* <span className="hidden sm:inline">&rarr; </span>
           <span className="sm:inline-block block">
             pronounced [uh-chin-
@@ -24,7 +24,7 @@ export default function Home() {
             </a>
             -yaa]
           </span> */}
-          {/* <br /> */}
+          <br />
           I{"'"}m a high school senior at Ahlcon International School,
           studying Computer Science. Currently, I am working on NLP at{" "}
           <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
