@@ -30,7 +30,7 @@ export default function PostPage({
             <p className="meta">
               <span>{post.date}</span>
               <span style={{ float: "right" }}>
-                {post.location ? post.location : "New Delhi, India"}
+                {post.location && post.location}
               </span>
             </p>
           </div>
