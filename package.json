@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^12.1.5",
     "contentlayer": "^0.2.4",
     "globby": "^11.1.0",
     "next": "^12.1.5",
