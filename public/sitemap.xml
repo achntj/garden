@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://achintyajha.in/extras</loc>
+    <loc>https://achintyajha.com/extras</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.in</loc>
+    <loc>https://achintyajha.com</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.in/posts</loc>
+    <loc>https://achintyajha.com/posts</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.in/projects</loc>
+    <loc>https://achintyajha.com/projects</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.in/setup</loc>
+    <loc>https://achintyajha.com/setup</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.in/spotify</loc>
+    <loc>https://achintyajha.com/spotify</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.in/posts/curation-algorithms</loc>
+    <loc>https://achintyajha.com/posts/contentlayer</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.in/posts/idle-custom-themes</loc>
+    <loc>https://achintyajha.com/posts/curation-algorithms</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.in/posts/remaking-wordle</loc>
+    <loc>https://achintyajha.com/posts/idle-custom-themes</loc>
+  </url>
+
+  <url>
+    <loc>https://achintyajha.com/posts/remaking-wordle</loc>
   </url>
 </urlset>
