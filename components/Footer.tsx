@@ -30,7 +30,7 @@ function Footer() {
                 ></path>
               </svg>
             </a>
-            <a
+            {/* <a
               className="!text-blue-500"
               href="https://linkedin.com/in/achintyajha"
             >
@@ -48,7 +48,7 @@ function Footer() {
                   fill="currentColor"
                 ></path>
               </svg>
-            </a>
+            </a> */}
             <a
               className="!text-[#171515]"
               href="https://github.com/achintyajha"
