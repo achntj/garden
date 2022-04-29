@@ -27,9 +27,6 @@ img {
   @apply absolute no-underline; /* Add invisible to show on hover only */
 
   margin-left: -1em;
-  padding-right: 0.5em;
-  width: 80%;
-  max-width: 700px;
   cursor: pointer;
 }
 

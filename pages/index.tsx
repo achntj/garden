@@ -59,13 +59,13 @@ export default function Home() {
           >
             GitHub
           </a>
-          {/* ,{" "}
+          ,{" "}
           <a
             className="!text-blue-500"
             href="https://linkedin.com/in/achintyajha"
           >
             LinkedIn
-          </a> */}
+          </a>
           , or via{" "}
           <a className="!text-rose-500" href="mailto:achintya@achintyajha.com">
             Email

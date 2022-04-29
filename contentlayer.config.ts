@@ -47,6 +47,7 @@ export default makeSource({
           properties: {
             className: ['anchor'],
           },
+          behavior: 'prepend'
         },
       ],
     ],
