@@ -33,8 +33,8 @@ export default function Home() {
           and building <a href="https://sentimate.org/">SentiMate</a> alongside.
         </p>
         <p>
-          You can find some of my other side projects{" "}
-          <Link href="/projects">here</Link> and the others at my{" "}
+          You can find some of my side projects{" "}
+          <Link href="/projects">here</Link> and the rest at my{" "}
           <a href="https://github.com/achintyajha">Github</a> profile. Apart
           from programming, I have been doing some{" "}
           <Link href="/extras">other stuff</Link>- primarily Taekwondo, music,
