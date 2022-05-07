@@ -23,6 +23,8 @@ img {
   margin: 0px auto;
 }
 
+/* Code Highlighting credits - Lee Robinson (https: //github.com/leerob/leerob.io/blob/main/styles/global.css) */
+
 .prose .anchor {
   @apply absolute no-underline; /* Add invisible to show on hover only */
 
@@ -62,11 +64,6 @@ code {
 .prose pre code {
   @apply text-gray-800 dark:text-gray-200 p-0;
   border: initial;
-}
-
-.prose img {
-  /* Don't apply styles to next/image */
-  @apply m-0;
 }
 
 .prose> :first-child {
