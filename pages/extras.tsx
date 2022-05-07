@@ -1,5 +1,6 @@
 import HeadContainer from "../components/HeadContainer";
-import ImageComp from "../components/ImageComp"
+import ImageComp from "../components/ImageComp";
+import EmojiHeader from "components/EmojiHeader";
 
 export default function Extras() {
   const extras = [
@@ -38,6 +39,7 @@ export default function Extras() {
       description="My other pursuits that form a big part of my life."
     >
       <div>
+        <EmojiHeader emoji="🥋" />
         <h1>
           Extras
           {/* <p className="text-xs font-normal">flex</p> */}
@@ -47,9 +49,9 @@ export default function Extras() {
           pursuits, which majorly include Taekwondo and Guitar. So here{"'"}s a
           small collection of a few major-certificates from the past year.
         </p>
-          {extras.map((extra) => (
-              <ImageComp key={extra.image} props={extra}/>
-          ))}
+        {extras.map((extra) => (
+          <ImageComp key={extra.image} props={extra} />
+        ))}
       </div>
     </HeadContainer>
   );

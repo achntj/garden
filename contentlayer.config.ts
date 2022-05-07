@@ -23,6 +23,7 @@ export const Post = defineDocumentType(() => ({
     description: { type: 'string', required: true },
     cover: { type: 'string', required: true },
     location: { type: 'string', required: false },
+    emoji: { type: 'string', required: false },
   },
   computedFields: {
     slug: {
