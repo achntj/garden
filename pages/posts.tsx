@@ -18,8 +18,6 @@ export default function Posts({ posts }) {
                     rounded
                     p-2
                     font-medium
-                    transition
-                    ease-in-out
                     mb-4
                     hover:cursor-pointer
                     hover:shadow-md
