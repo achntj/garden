@@ -24,12 +24,12 @@ export default function PostPage({
         description={post.description}
         image={post.cover}
       >
-        <article className="all_posts">
-          <div className="hero">
+        <article>
+          <div>
             <h1>{post.title}</h1>
-            <p className="meta">
+            <p className="flex justify-between">
               <span>{post.date}</span>
-              <span style={{ float: "right" }}>
+              <span>
                 {post.location && post.location}
               </span>
             </p>
