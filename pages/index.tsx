@@ -96,11 +96,11 @@ export default function Home() {
           .
         </p>
         <div className="flex gap-6 sm:flex-row flex-col mt-10 w-fit sm:w-full">
+        <Link passHref href="/projects">
           <div
             className="shadow-lg bg-emerald-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
               hover:cursor-pointer"
           >
-            <Link passHref href="/projects">
               <h2 className="text-emerald-800 m-0">
                 Projects
                 <span className="transition-[margin] sm:group-hover:ml-5">
@@ -119,13 +119,13 @@ export default function Home() {
                   </svg>
                 </span>
               </h2>
-            </Link>
           </div>
+          </Link>
+          <Link passHref href="/posts">
           <div
             className="shadow-lg bg-teal-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
               hover:cursor-pointer"
           >
-            <Link passHref href="/posts">
               <h2 className="text-teal-800 m-0">
                 Essays
                 <span className="transition-[margin] sm:group-hover:ml-5">
@@ -144,8 +144,8 @@ export default function Home() {
                   </svg>
                 </span>
               </h2>
-            </Link>
           </div>
+        </Link>
         </div>
       </div>
     </HeadContainer>
