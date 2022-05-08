@@ -7,7 +7,7 @@ export default function Home() {
     <HeadContainer title="Home">
       <div className="relative w-[120px] h-[150.72px] mb-5 mt-[10px]">
         <Image
-          src="/images/me.png"
+          src="/images/me.jpeg"
           alt="Picture of Achintya Jha"
           layout="fill"
           objectFit="cover"
