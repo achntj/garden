@@ -16,8 +16,8 @@ export default function Home() {
         />
       </div>
       <div>
-        <p>
-          <b>Hi, I{"'"}m Achintya!</b>{" "}
+        <strong className="text-base">Hi, I{"'"}m Achintya!</strong>{" "}
+        <p className="mt-0">
           {/* <span className="hidden sm:inline">&rarr; </span>
           <span className="sm:inline-block block">
             pronounced [uh-chin-
@@ -30,8 +30,8 @@ export default function Home() {
             </a>
             -yaa]
           </span> */}
-          <br />I{"'"}m a high school senior at Ahlcon International School,
-          studying Computer Science. Currently, I am working on NLP at{" "}
+          I{"'"}m a high school senior at Ahlcon International School, studying
+          Computer Science. Currently, I am working on NLP at{" "}
           <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
             Tech Mahindra
           </a>{" "}

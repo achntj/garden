@@ -22,13 +22,10 @@ export default function Posts({ posts }) {
                     mb-4
                     hover:cursor-pointer"
               >
-                <p className="m-0">
-                  <span className="text-violet-500 dark:text-gray-200">
-                    <b>{title}</b>
-                  </span>
-                  <br />
-                  {description}
-                </p>
+                <b className="text-violet-500 dark:text-gray-200 text-base">
+                  {title}
+                </b>
+                <p className="m-0">{description}</p>
               </div>
             </Link>
           ))}
