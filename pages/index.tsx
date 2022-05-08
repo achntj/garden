@@ -1,16 +1,22 @@
 import Link from "next/link";
 import HeadContainer from "../components/HeadContainer";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <HeadContainer title="Home">
+      <div className="relative w-[120px] h-[150.72px] mb-5 mt-[10px]">
+        <Image
+          src="/images/me.png"
+          alt="Picture of Achintya Jha"
+          layout="fill"
+          objectFit="cover"
+          className="rounded select-none"
+          priority
+        />
+      </div>
       <div>
         <p>
-          {/* <img
-          className="rounded w-[120px] h-[120px] mt-[10px] mb-5"
-          src="images/me.jpeg"
-          alt="Achintya Jha"
-        /> */}
           <b>Hi, I{"'"}m Achintya!</b>{" "}
           {/* <span className="hidden sm:inline">&rarr; </span>
           <span className="sm:inline-block block">
@@ -24,8 +30,7 @@ export default function Home() {
             </a>
             -yaa]
           </span> */}
-          <br />
-          I{"'"}m a high school senior at Ahlcon International School,
+          <br />I{"'"}m a high school senior at Ahlcon International School,
           studying Computer Science. Currently, I am working on NLP at{" "}
           <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
             Tech Mahindra
@@ -59,13 +64,13 @@ export default function Home() {
           >
             GitHub
           </a>
-          {/* ,{" "}
+          ,{" "}
           <a
             className="!text-blue-500"
             href="https://linkedin.com/in/achintyajha"
           >
             LinkedIn
-          </a> */}
+          </a>
           , or via{" "}
           <a className="!text-rose-500" href="mailto:achintya@achintyajha.com">
             Email
@@ -82,7 +87,11 @@ export default function Home() {
             React
           </a>
           ,{" "}
-          <a target="_blank" rel="noreferrer" href="https://www.contentlayer.dev/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.contentlayer.dev/"
+          >
             Contentlayer
           </a>
           ,{" "}
@@ -96,11 +105,11 @@ export default function Home() {
           .
         </p>
         <div className="flex gap-6 sm:flex-row flex-col mt-10 w-fit sm:w-full">
-        <Link passHref href="/projects">
-          <div
-            className="shadow-lg bg-emerald-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
+          <Link passHref href="/projects">
+            <div
+              className="shadow-lg bg-emerald-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
               hover:cursor-pointer"
-          >
+            >
               <h2 className="text-emerald-800 m-0">
                 Projects
                 <span className="transition-[margin] sm:group-hover:ml-5">
@@ -119,13 +128,13 @@ export default function Home() {
                   </svg>
                 </span>
               </h2>
-          </div>
+            </div>
           </Link>
           <Link passHref href="/posts">
-          <div
-            className="shadow-lg bg-teal-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
+            <div
+              className="shadow-lg bg-teal-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
               hover:cursor-pointer"
-          >
+            >
               <h2 className="text-teal-800 m-0">
                 Essays
                 <span className="transition-[margin] sm:group-hover:ml-5">
@@ -144,8 +153,8 @@ export default function Home() {
                   </svg>
                 </span>
               </h2>
-          </div>
-        </Link>
+            </div>
+          </Link>
         </div>
       </div>
     </HeadContainer>

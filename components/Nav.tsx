@@ -32,7 +32,7 @@ function Nav() {
                   quality={100}
                   priority
                   className={cn(
-                    "duration-700 ease-in-out sm:mb-0 rounded",
+                    "duration-700 ease-in-out sm:mb-0 rounded select-none",
                     isLoading
                       ? "grayscale blur-2xl scale-110"
                       : "grayscale-0 blur-0 scale-100"
