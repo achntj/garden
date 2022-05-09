@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import Image from "next/image";
 import { useState } from "react";
 function cn(...classes) {
@@ -25,7 +23,9 @@ export default function ImageComp({ props }) {
             )}
             onLoadingComplete={() => setLoading(false)}
           />
-          {props.desc && <em className="block m-5 text-[#666]">{props.desc}</em>}
+          {props.desc && (
+            <em className="block m-5 text-[#666]">{props.desc}</em>
+          )}
         </div>
       </div>
     </>
