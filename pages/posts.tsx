@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HeadContainer from "../components/HeadContainer";
 import { allPosts } from "contentlayer/generated";
+import { motion } from "framer-motion";
 
 export default function Posts({ posts }) {
   return (
@@ -13,7 +14,7 @@ export default function Posts({ posts }) {
           <h1>Posts</h1>
           {posts.map(({ title, description, slug }, index) => (
             <Link passHref key={index} href={`/posts/${slug}`}>
-              <div
+              <motion.div
                 className="
                     group
                     rounded
@@ -21,12 +22,15 @@ export default function Posts({ posts }) {
                     font-medium
                     mb-4
                     hover:cursor-pointer"
+                initial={{ opacity: 0, translateX: -50 }}
+                animate={{ opacity: 1, translateX: 0 }}
+                transition={{ duration: 0.5 + (index + 1) / 10 }}
               >
                 <b className="text-violet-500 dark:text-gray-200 text-base">
                   {title}
                 </b>
                 <p className="m-0">{description}</p>
-              </div>
+              </motion.div>
             </Link>
           ))}
         </div>

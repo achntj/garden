@@ -1,8 +1,15 @@
 import Link from "next/link";
 import HeadContainer from "../components/HeadContainer";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+import { useState } from "react";
+function cn(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function Home() {
+  const [isLoading, setLoading] = useState(true);
   return (
     <HeadContainer title="Home">
       <div className="relative w-[120px] h-[150.72px] mb-5 mt-[10px]">
@@ -11,7 +18,13 @@ export default function Home() {
           alt="Picture of Achintya Jha"
           layout="fill"
           objectFit="cover"
-          className="rounded select-none"
+          className={cn(
+            "rounded select-none",
+            isLoading
+              ? "grayscale blur-2xl scale-110"
+              : "grayscale-0 blur-0 scale-100"
+          )}
+          onLoadingComplete={() => setLoading(false)}
           priority
         />
       </div>
@@ -104,7 +117,12 @@ export default function Home() {
           </a>
           .
         </p>
-        <div className="flex gap-6 sm:flex-row flex-col mt-10 w-fit sm:w-full">
+        <motion.div
+          className="flex gap-6 sm:flex-row flex-col mt-10 w-fit sm:w-full"
+          initial={{ opacity: 0, translateY: 30 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.7 }}
+        >
           <Link passHref href="/projects">
             <div
               className="shadow-lg bg-emerald-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
@@ -155,7 +173,7 @@ export default function Home() {
               </h2>
             </div>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </HeadContainer>
   );
