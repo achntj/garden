@@ -1,4 +1,4 @@
-// components/Base.js
+// components/Base.tsx
 import Head from "next/head";
 import Nav from "./Nav";
 import Footer from "./Footer";

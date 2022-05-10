@@ -1,5 +1,6 @@
 import HeadContainer from "../components/HeadContainer";
-import ImageComp from "../components/ImageComp"
+import ImageComp from "../components/ImageComp";
+import { motion } from "framer-motion";
 
 export default function Extras() {
   const extras = [
@@ -47,9 +48,17 @@ export default function Extras() {
           pursuits, which majorly include Taekwondo and Guitar. So here{"'"}s a
           small collection of a few major-certificates from the past year.
         </p>
-          {extras.map((extra) => (
-              <ImageComp key={extra.image} props={extra}/>
-          ))}
+        {extras.map((extra) => (
+          <motion.div
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: false }}
+            key={extra.image}
+          >
+            <ImageComp props={extra} />
+          </motion.div>
+        ))}
       </div>
     </HeadContainer>
   );
