@@ -1,4 +1,5 @@
 import HeadContainer from "../components/HeadContainer";
+import PageIntro from "../components/PageIntro";
 import { motion } from "framer-motion";
 
 export default function Projects() {
@@ -57,13 +58,32 @@ export default function Projects() {
     <HeadContainer
       title="Projects"
       description="A curated list of select projects that I have created over the years."
+      intro="Check out my other projects at"
     >
       <div>
-        <h1>Projects</h1>
-        <p>
-          Check out my other projects at{" "}
-          <a href="https://github.com/achintyajha">Github</a>.
-        </p>
+        <div className="relative">
+          <div className="absolute -inset-px opacity-50 dark:bg-gradient-to-r dark:from-white dark:to-pink-600 bg-gradient-to-r from-[#dcd5fcec] via-[#c7fdf1d0] to-[#d3c8ffec] rounded-lg border-[1px] dark:blur transition duration-500"></div>
+          <div className="relative dark:bg-[#050505] rounded-lg p-8 mb-10 sm:flex items-end justify-between">
+            <motion.h1
+              initial={{ opacity: 0, translateX: -20 }}
+              animate={{ opacity: 1, translateX: 0 }}
+              transition={{ duration: 0.7 }}
+              className="sm:my-0"
+            >
+              Projects
+            </motion.h1>
+            <motion.p
+              className="my-0"
+              initial={{ opacity: 0, translateX: 20 }}
+              animate={{ opacity: 1, translateX: 0 }}
+              transition={{ duration: 0.7 }}
+            >
+              Check out my other projects on{" "}
+              <a href="https://github.com/achintyajha">Github</a>.
+            </motion.p>
+          </div>
+        </div>
+
         {projects.map(
           (project) =>
             project.url && (

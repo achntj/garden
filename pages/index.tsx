@@ -12,7 +12,7 @@ export default function Home() {
   const [isLoading, setLoading] = useState(true);
   return (
     <HeadContainer title="Home">
-      <motion.div
+      {/* <motion.div
         className="relative w-[120px] h-[150.72px] mb-5 mt-[10px]"
         initial={{ opacity: 0, translateX: -50 }}
         animate={{ opacity: 1, translateX: 0 }}
@@ -32,7 +32,7 @@ export default function Home() {
           onLoadingComplete={() => setLoading(false)}
           priority
         />
-      </motion.div>
+      </motion.div> */}
       <div>
         <strong className="text-base">Hi, I{"'"}m Achintya!</strong>{" "}
         <p className="mt-0">
