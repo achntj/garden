@@ -61,28 +61,33 @@ export default function Projects() {
       intro="Check out my other projects at"
     >
       <div>
-        <div className="relative">
-          <div className="absolute -inset-px opacity-50 dark:bg-gradient-to-r dark:from-white dark:to-pink-600 bg-gradient-to-r from-[#dcd5fcec] via-[#c7fdf1d0] to-[#d3c8ffec] rounded-lg border-[1px] dark:blur transition duration-500"></div>
-          <div className="relative dark:bg-[#050505] rounded-lg p-8 mb-10 sm:flex items-end justify-between">
-            <motion.h1
-              initial={{ opacity: 0, translateX: -20 }}
-              animate={{ opacity: 1, translateX: 0 }}
-              transition={{ duration: 0.7 }}
-              className="sm:my-0"
+        <PageIntro>
+          {" "}
+          <motion.h1
+            initial={{ opacity: 0, translateX: -20 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 0.7 }}
+            className="sm:my-0"
+          >
+            Projects
+          </motion.h1>
+          <motion.p
+            className="my-0"
+            initial={{ opacity: 0, translateX: 20 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            Check out my other projects on{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/achintyajha"
             >
-              Projects
-            </motion.h1>
-            <motion.p
-              className="my-0"
-              initial={{ opacity: 0, translateX: 20 }}
-              animate={{ opacity: 1, translateX: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              Check out my other projects on{" "}
-              <a href="https://github.com/achintyajha">Github</a>.
-            </motion.p>
-          </div>
-        </div>
+              Github
+            </a>
+            .
+          </motion.p>
+        </PageIntro>
 
         {projects.map(
           (project) =>
@@ -94,7 +99,7 @@ export default function Projects() {
                 transition={{ duration: 0.5 }}
                 key={project.name}
               >
-                <a href={project.url}>
+                <a target="_blank" rel="noreferrer" href={project.url}>
                   {/* tailwind custom bg class does not work when used with template literals. Workaround - Use html style for the moment*/}
                   <div
                     className="flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group dark:!bg-gray-800"

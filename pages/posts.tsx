@@ -2,6 +2,7 @@ import Link from "next/link";
 import HeadContainer from "../components/HeadContainer";
 import { allPosts } from "contentlayer/generated";
 import { motion } from "framer-motion";
+import PageIntro from "../components/PageIntro";
 
 export default function Posts({ posts }) {
   return (
@@ -11,7 +12,24 @@ export default function Posts({ posts }) {
         description="My thoughts on tech, design, and workflow."
       >
         <div>
-          <h1>Posts</h1>
+          <PageIntro>
+            <motion.h1
+              initial={{ opacity: 0, translateX: -20 }}
+              animate={{ opacity: 1, translateX: 0 }}
+              transition={{ duration: 0.7 }}
+              className="sm:my-0"
+            >
+              Posts
+            </motion.h1>
+            <motion.p
+              className="my-0"
+              initial={{ opacity: 0, translateX: 20 }}
+              animate={{ opacity: 1, translateX: 0 }}
+              transition={{ duration: 0.7 }}
+            >
+              Soon-to-be digital garden
+            </motion.p>
+          </PageIntro>
           {posts.map(({ title, description, slug }, index) => (
             <Link passHref key={index} href={`/posts/${slug}`}>
               <motion.div
