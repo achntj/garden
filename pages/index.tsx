@@ -50,16 +50,30 @@ export default function Home() {
           </span> */}
           I{"'"}m a high school senior at Ahlcon International School, studying
           Computer Science. Currently, I am working on NLP at{" "}
-          <a href="https://www.techmahindra.com/en-in/innovation/makers-lab/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.techmahindra.com/en-in/innovation/makers-lab/"
+          >
             Tech Mahindra
           </a>{" "}
-          and building <a href="https://sentimate.org/">SentiMate</a> alongside.
+          and building{" "}
+          <a target="_blank" rel="noreferrer" href="https://sentimate.org/">
+            SentiMate
+          </a>{" "}
+          alongside.
         </p>
         <p>
           You can find some of my side projects{" "}
           <Link href="/projects">here</Link> and the rest at my{" "}
-          <a href="https://github.com/achintyajha">Github</a> profile. Apart
-          from programming, I have been doing some{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/achintyajha"
+          >
+            Github
+          </a>{" "}
+          profile. Apart from programming, I have been doing some{" "}
           <Link href="/extras">other stuff</Link>- primarily Taekwondo, music,
           and writing.
         </p>
@@ -70,6 +84,8 @@ export default function Home() {
         <p>
           You can contact me through{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             className="!text-sky-600"
             href="https://www.twitter.com/achintyajha_"
           >
@@ -77,6 +93,8 @@ export default function Home() {
           </a>
           ,{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             className="!text-emerald-500"
             href="https://github.com/achintyajha"
           >
@@ -84,13 +102,20 @@ export default function Home() {
           </a>
           ,{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             className="!text-blue-500"
             href="https://linkedin.com/in/achintyajha"
           >
             LinkedIn
           </a>
           , or via{" "}
-          <a className="!text-rose-500" href="mailto:achintya@achintyajha.com">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="!text-rose-500"
+            href="mailto:achintya@achintyajha.com"
+          >
             Email
           </a>
           .

@@ -1,6 +1,7 @@
 import HeadContainer from "../components/HeadContainer";
 import PageIntro from "../components/PageIntro";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Projects() {
   const projects = [
@@ -140,6 +141,9 @@ export default function Projects() {
               </motion.div>
             )
         )}
+        <p>
+          (Find my dev setup <Link href="/setup">here</Link>)
+        </p>
       </div>
     </HeadContainer>
   );
