@@ -8,7 +8,11 @@ function Footer() {
       <NowPlaying />
       <div className="text-gray-600 py-2 text-base">
         <div className="flex justify-between mb-5">
-          <Link href="/design.txt">Design Influence</Link>
+          <Link href="/design.txt">
+            <a className="bg-gradient-to-r dark:from-cyan-600 dark:to-teal-300 from-pink-600 to-orange-400 bg-clip-text !text-transparent">
+              Design Influence
+            </a>
+          </Link>
           <br />
           <div className="flex space-x-2">
             <a

@@ -54,7 +54,8 @@ function Nav() {
             sm:mt-0
             dark:text-zinc-400
             not-prose
-            items-center"
+            items-center
+            dark:!text-cyan-500"
         >
           <Link href="/projects">Projects</Link>{" "}
           <Link href="/posts">Posts</Link> <Link href="/extras">Extras</Link>{" "}
