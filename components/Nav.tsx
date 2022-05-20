@@ -55,7 +55,11 @@ function Nav() {
             dark:text-zinc-400
             not-prose
             items-center
-            dark:!text-cyan-500"
+            dark:!bg-clip-text 
+            dark:!text-transparent
+            dark:!bg-gradient-to-r
+            dark:from-cyan-600
+            dark:to-teal-300"
         >
           <Link href="/projects">Projects</Link>{" "}
           <Link href="/posts">Posts</Link> <Link href="/extras">Extras</Link>{" "}
