@@ -62,7 +62,7 @@ export default function Projects() {
       intro="Check out my other projects at"
     >
       <div>
-        <PageIntro>
+        <PageIntro classes="">
           {" "}
           <motion.h1
             initial={{ opacity: 0, translateX: -20 }}

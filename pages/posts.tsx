@@ -12,7 +12,7 @@ export default function Posts({ posts }) {
         description="My thoughts on tech, design, and workflow."
       >
         <div>
-          <PageIntro>
+          <PageIntro classes="dark:to-cyan-600">
             <motion.h1
               initial={{ opacity: 0, translateX: -20 }}
               animate={{ opacity: 1, translateX: 0 }}
