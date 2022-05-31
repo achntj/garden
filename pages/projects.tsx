@@ -20,6 +20,13 @@ export default function Projects() {
       stack: "Next.JS, TypeScript, PostGres, Prisma, & TailwindCSS",
     },
     {
+      name: "PetiteURL",
+      url: "https://petite.vercel.app/",
+      desc: "THE URL Shortener that lets you choose your slug (if it's available) over random letters.",
+      color: "#3486eb",
+      stack: "Next.JS, TypeScript, PostGres, Prisma, & TailwindCSS",
+    },
+    {
       name: "StuClan",
       url: "https://talk.sentimate.org",
       desc: "A web based micro-blogging app primarily designed for helping out people solve problems relating to mental health and educational-stress.",
