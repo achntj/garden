@@ -12,23 +12,8 @@ export default function Posts({ posts }) {
         description="My thoughts on tech, design, and workflow."
       >
         <div>
-          <PageIntro classes="dark:!to-cyan-600">
-            <motion.h1
-              initial={{ opacity: 0, translateX: -20 }}
-              animate={{ opacity: 1, translateX: 0 }}
-              transition={{ duration: 0.7 }}
-              className="my-0"
-            >
-              Posts
-            </motion.h1>
-            <motion.p
-              className="sm:my-0 mb-0"
-              initial={{ opacity: 0, translateX: 20 }}
-              animate={{ opacity: 1, translateX: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              Soon-to-be digital garden
-            </motion.p>
+          <PageIntro header="Posts" darkTo="dark:to-cyan-600">
+            Soon-to-be digital garden
           </PageIntro>
           {posts.map(({ title, description, slug }, index) => (
             <Link passHref key={index} href={`/posts/${slug}`}>

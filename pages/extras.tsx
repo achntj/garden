@@ -40,8 +40,8 @@ export default function Extras() {
       description="My other pursuits that form a big part of my life."
     >
       <div>
-        <PageIntro classes="dark:!to-cyan-600">
-          <h1 className="my-0">Extras</h1>
+        <PageIntro header="Extras" darkTo="dark:to-orange-500">
+          {/* */}
         </PageIntro>
         <p>
           Apart from programming, I spend quite a bit of time in my other

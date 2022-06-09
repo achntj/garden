@@ -69,32 +69,16 @@ export default function Projects() {
       intro="Check out my other projects at"
     >
       <div>
-        <PageIntro classes="">
-          {" "}
-          <motion.h1
-            initial={{ opacity: 0, translateX: -20 }}
-            animate={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.7 }}
-            className="my-0"
+        <PageIntro header="Projects" darkTo="dark:to-pink-600">
+          Check out my other projects on{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/achintyajha"
           >
-            Projects
-          </motion.h1>
-          <motion.p
-            className="sm:my-0 mb-0"
-            initial={{ opacity: 0, translateX: 20 }}
-            animate={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.7 }}
-          >
-            Check out my other projects on{" "}
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/achintyajha"
-            >
-              Github
-            </a>
-            .
-          </motion.p>
+            Github
+          </a>
+          .
         </PageIntro>
 
         {projects.map(
