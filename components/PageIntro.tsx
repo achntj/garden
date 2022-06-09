@@ -15,14 +15,16 @@ export default function PageIntro({ children, darkTo, header }) {
         >
           {header}
         </motion.h1>
-        <motion.p
-          className="sm:my-0 mb-0"
-          initial={{ opacity: 0, translateX: 20 }}
-          animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          {children}
-        </motion.p>
+        {children && (
+          <motion.p
+            className="sm:my-0 mb-0"
+            initial={{ opacity: 0, translateX: 20 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            {children}
+          </motion.p>
+        )}
       </div>
     </div>
   );
