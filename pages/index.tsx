@@ -1,15 +1,16 @@
 import Link from "next/link";
 import HeadContainer from "../components/HeadContainer";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Socials from "../components/Socials";
 
-import { useState } from "react";
-function cn(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+//import Image from "next/image";
+//import { useState } from "react";
+//function cn(...classes) {
+//return classes.filter(Boolean).join(" ");
+//}
 
 export default function Home() {
-  const [isLoading, setLoading] = useState(true);
+  //const [isLoading, setLoading] = useState(true);
   return (
     <HeadContainer title="Home">
       {/* <motion.div
@@ -34,7 +35,11 @@ export default function Home() {
         />
       </motion.div> */}
       <div>
-        <strong className="text-base">Hi, I{"'"}m Achintya!</strong>{" "}
+        <div className="mb-10">
+          <h1 className="font-header mb-0">Achintya Jha</h1>
+          <p className="my-0">Programmer, Researcher, Writer.</p>
+          <Socials />
+        </div>
         <p className="mt-0">
           {/* <span className="hidden sm:inline">&rarr; </span>
           <span className="sm:inline-block block">
