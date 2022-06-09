@@ -1,6 +1,7 @@
 import HeadContainer from "../components/HeadContainer";
 import ImageComp from "../components/ImageComp";
 import { motion } from "framer-motion";
+import PageIntro from "../components/PageIntro";
 
 export default function Extras() {
   const extras = [
@@ -39,10 +40,9 @@ export default function Extras() {
       description="My other pursuits that form a big part of my life."
     >
       <div>
-        <h1>
-          Extras
-          {/* <p className="text-xs font-normal">flex</p> */}
-        </h1>
+        <PageIntro classes="dark:!to-cyan-600">
+          <h1 className="my-0">Extras</h1>
+        </PageIntro>
         <p>
           Apart from programming, I spend quite a bit of time in my other
           pursuits, which majorly include Taekwondo and Guitar. So here{"'"}s a

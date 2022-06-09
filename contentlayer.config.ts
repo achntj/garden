@@ -1,55 +1,56 @@
-import { defineDocumentType, makeSource } from 'contentlayer/source-files'
-import rehypeSlug from 'rehype-slug'
-import rehypeCodeTitles from 'rehype-code-titles'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import rehypePrism from 'rehype-prism-plus'
-import remarkGfm from 'remark-gfm';
+import { defineDocumentType, makeSource } from "contentlayer/source-files";
+import rehypeSlug from "rehype-slug";
+import rehypeCodeTitles from "rehype-code-titles";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypePrism from "rehype-prism-plus";
+import remarkGfm from "remark-gfm";
+import rehypeExternalLinks from "rehype-external-links";
 
-import type { DocumentGen } from 'contentlayer/core'
+import type { DocumentGen } from "contentlayer/core";
 
 export const urlFromFilePath = (doc: DocumentGen): string => {
-  return doc._raw.flattenedPath.replace(/pages\/?/, '')
-}
-
-
+  return doc._raw.flattenedPath.replace(/pages\/?/, "");
+};
 
 export const Post = defineDocumentType(() => ({
-  name: 'Post',
+  name: "Post",
   filePathPattern: `posts/*.mdx`,
-  contentType: 'mdx',
+  contentType: "mdx",
   fields: {
-    title: { type: 'string', required: true },
-    date: { type: 'string', required: true },
-    description: { type: 'string', required: true },
-    cover: { type: 'string', required: true },
-    location: { type: 'string', required: false },
+    title: { type: "string", required: true },
+    date: { type: "string", required: true },
+    description: { type: "string", required: true },
+    cover: { type: "string", required: true },
+    location: { type: "string", required: false },
   },
   computedFields: {
     slug: {
-      type: 'string',
-      resolve: doc => doc._raw.sourceFileName.replace(/\.mdx$/, ''),
+      type: "string",
+      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
     },
   },
-}))
+}));
 
 export default makeSource({
-  contentDirPath: 'content',
+  contentDirPath: "content",
   documentTypes: [Post],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
       rehypeSlug,
       rehypeCodeTitles,
+      rehypeExternalLinks,
       rehypePrism,
       [
         rehypeAutolinkHeadings,
         {
           properties: {
-            className: ['anchor'],
+            className: ["anchor"],
           },
-          behavior: 'prepend'
+          behavior: "prepend",
         },
       ],
     ],
   },
-})
+});
+

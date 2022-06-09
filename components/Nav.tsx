@@ -17,13 +17,6 @@ function Nav() {
           <p className="">
             <Link passHref href="/">
               <a>
-                {/* <img
-                  className="sm:mb-0 mb-3 w-10 rounded"
-                  src="/images/avatar.png"
-                  alt="site avatar"
-                  width="40px"
-                  height="40px"
-                /> */}
                 <Image
                   alt="site avatar"
                   src={`/images/avatar.png`}
@@ -61,8 +54,9 @@ function Nav() {
             dark:from-cyan-600
             dark:to-teal-300"
         >
-          <Link href="/projects">Projects</Link>{" "}
-          <Link href="/posts">Posts</Link> <Link href="/extras">Extras</Link>{" "}
+          <Link href="/projects">Projects</Link>
+          <Link href="/posts">Posts</Link>
+          <Link href="/extras">Extras</Link>
           <ThemeSwitcher />
         </nav>
       </div>

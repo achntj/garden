@@ -75,12 +75,12 @@ export default function Projects() {
             initial={{ opacity: 0, translateX: -20 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.7 }}
-            className="sm:my-0"
+            className="my-0"
           >
             Projects
           </motion.h1>
           <motion.p
-            className="my-0"
+            className="sm:my-0 mb-0"
             initial={{ opacity: 0, translateX: 20 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.7 }}
@@ -110,7 +110,7 @@ export default function Projects() {
                 <a target="_blank" rel="noreferrer" href={project.url}>
                   {/* tailwind custom bg class does not work when used with template literals. Workaround - Use html style for the moment*/}
                   <div
-                    className="flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group dark:!bg-gray-800"
+                    className="flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group dark:!bg-zinc-900"
                     style={{ backgroundColor: `${project.color}` }}
                   >
                     <h3 className="text-white">

@@ -17,12 +17,12 @@ export default function Posts({ posts }) {
               initial={{ opacity: 0, translateX: -20 }}
               animate={{ opacity: 1, translateX: 0 }}
               transition={{ duration: 0.7 }}
-              className="sm:my-0"
+              className="my-0"
             >
               Posts
             </motion.h1>
             <motion.p
-              className="my-0"
+              className="sm:my-0 mb-0"
               initial={{ opacity: 0, translateX: 20 }}
               animate={{ opacity: 1, translateX: 0 }}
               transition={{ duration: 0.7 }}
@@ -40,8 +40,8 @@ export default function Posts({ posts }) {
                     font-medium
                     mb-4
                     hover:cursor-pointer"
-                initial={{ opacity: 0, translateX: -50 }}
-                animate={{ opacity: 1, translateX: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 + (index + 1) / 10 }}
               >
                 <h3 className="text-violet-500 dark:text-gray-200 m-0">
