@@ -80,7 +80,8 @@ export default function Home() {
           </a>{" "}
           profile. Apart from programming, I have been doing some{" "}
           <Link href="/extras">other stuff</Link>- primarily Taekwondo, music,
-          and writing.
+          and writing. (<Link href="/now">Here&#39;s</Link> a list of things I'm
+          doing now.)
         </p>
         {/* <p className="flex items-center">📍 &rarr; New Delhi, India 🇮🇳</p>
       <p classNames="flex items-center">
