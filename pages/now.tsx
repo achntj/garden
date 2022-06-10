@@ -39,7 +39,7 @@ export default function Now() {
         <h1 className="mb-0">Reading List</h1>
         <div className="ml-5">
           {books.map((book) => (
-            <div className="flex justify-between items-center">
+            <div key={book.name} className="flex justify-between items-center">
               <p
                 title={book.status ? "Complete" : "Reading"}
                 className={`underline underline-offset-4 decoration-2 ${
