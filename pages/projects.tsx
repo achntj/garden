@@ -8,7 +8,7 @@ export default function Projects() {
     {
       name: "SentiMate",
       url: "https://sentimate.org",
-      desc: "A Natural Language Processing and Machine Learning based model that is capable of using text for identifying depression.",
+      desc: "A Natural Language Processing and Machine Learning based model that is capable of using text for detecting depression.",
       color: "#7b61ff",
       stack: "Flask, SciKit Learn, Pandas, SCSS, & Jekyll",
     },
