@@ -38,8 +38,10 @@ function Nav() {
         </div>
 
         <nav
-          className="flex
-            text-gray-700 text-base
+          className="
+            flex
+            text-gray-700
+            text-base
             space-x-5
             font-medium
             overflow-scroll
@@ -56,7 +58,6 @@ function Nav() {
         >
           <Link href="/projects">Projects</Link>
           <Link href="/posts">Posts</Link>
-          <Link href="/extras">Extras</Link>
           <ThemeSwitcher />
         </nav>
       </div>
