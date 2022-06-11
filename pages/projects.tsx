@@ -29,13 +29,13 @@ export default function Projects() {
     {
       name: "StuClan",
       url: "https://talk.sentimate.org",
-      desc: "A web based micro-blogging app primarily designed for helping out people solve problems relating to mental health and educational-stress.",
+      desc: "A micro-blogging web-app primarily designed for helping out students solve problems related to mental health and educational-stress.",
       color: "#18a0fb",
       stack: "React, Firebase",
     },
     {
       name: "Wordle Clone",
-      desc: "A (not nearly as interactive) clone of the popular game Wordle, written in python.",
+      desc: "A (not nearly as interactive) clone of the popular game Wordle. Written in python.",
       color: "#1bc47d",
       stack: "Python, Flask",
       url: "https://wordle-python.up.railway.app/",
