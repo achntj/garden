@@ -29,7 +29,7 @@ export default function Posts({ posts }) {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 + (index + 1) / 10 }}
               >
-                <h3 className="text-violet-500 dark:text-gray-200 m-0">
+                <h3 className="text-teal-500 dark:text-gray-200 m-0">
                   {title}
                 </h3>
                 <p className="m-0">{description}</p>
