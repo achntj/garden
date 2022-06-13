@@ -28,7 +28,7 @@ export default function Now() {
               width="20"
               height="20"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="#2c3e50"
               fill="none"
               strokeLinecap="round"
