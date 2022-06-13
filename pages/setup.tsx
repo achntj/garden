@@ -15,7 +15,7 @@ export default function Setup() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/achintyajha/dotfiles"
+            href="https://github.com/achintyajha/zsh"
           >
             here
           </a>
