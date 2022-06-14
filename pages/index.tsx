@@ -54,7 +54,15 @@ export default function Home() {
             -yaa]
           </span> */}
           I{"'"}m a high school senior at Ahlcon International School, studying
-          Computer Science. Currently, I am working on NLP at{" "}
+          Computer Science. Previously, I worked on{" "}
+          <span className="dark:text-emerald-500">
+            Natural Language Processing{" "}
+          </span>
+          and{" "}
+          <span className="dark:text-blue-400 whitespace-nowrap">
+            Machine Learning
+          </span>{" "}
+          at{" "}
           <a
             target="_blank"
             rel="noreferrer"
@@ -62,7 +70,7 @@ export default function Home() {
           >
             Tech Mahindra
           </a>{" "}
-          and building{" "}
+          and built{" "}
           <a target="_blank" rel="noreferrer" href="https://sentimate.org/">
             SentiMate
           </a>{" "}

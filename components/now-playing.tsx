@@ -10,7 +10,7 @@ export default function NowPlaying() {
       <div className="relative">
         <div className="absolute -inset-px dark:opacity-20 dark:bg-gradient-to-r dark:from-green-300 dark:to-pink-600 bg-white/40 rounded-lg border-[1px] blur"></div>
         <div className="relative dark:bg-[#050505] rounded-lg p-4 mb-10 sm:flex items-end justify-between">
-          <div className="not-prose flex text-base items-center">
+          <div className="not-prose overflow-scroll flex text-base items-center">
             {data?.isPlaying ? (
               <>
                 <img
@@ -19,7 +19,7 @@ export default function NowPlaying() {
                   alt=""
                   key={data.title}
                 ></img>
-                <p className="ml-5 whitespace-nowrap overflow-scroll dark:text-slate-400">
+                <p className="ml-5 whitespace-nowrap dark:text-slate-400">
                   <a
                     className="font-bold dark:text-slate-300"
                     rel="noreferrer"
