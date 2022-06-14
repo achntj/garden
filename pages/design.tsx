@@ -11,7 +11,7 @@ export default function Now() {
   ];
   return (
     <HeadContainer
-      title="Now"
+      title="Design"
       description="Websites that have shaped my ideas on design and the web."
     >
       <div>
