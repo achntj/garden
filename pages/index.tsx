@@ -55,11 +55,11 @@ export default function Home() {
           </span> */}
           I{"'"}m a high school senior at Ahlcon International School, studying
           Computer Science. Previously, I worked on{" "}
-          <span className="dark:text-emerald-500">
+          <span className="text-orange-600 dark:text-emerald-500">
             Natural Language Processing{" "}
           </span>
           and{" "}
-          <span className="dark:text-blue-400 whitespace-nowrap">
+          <span className="text-pink-600 dark:text-blue-400 whitespace-nowrap">
             Machine Learning
           </span>{" "}
           at{" "}
