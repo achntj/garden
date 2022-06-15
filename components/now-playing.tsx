@@ -26,7 +26,7 @@ export default function NowPlaying() {
                     target="_blank"
                     href={data.songUrl}
                   >
-                    Now Playing - {data.title}
+                    Now Playing &mdash; {data.title}
                   </a>
                   <br />
                   {data.artist}
