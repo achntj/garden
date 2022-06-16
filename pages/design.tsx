@@ -1,6 +1,6 @@
 import HeadContainer from "../components/HeadContainer";
 
-export default function Now() {
+export default function Design() {
   const sites = [
     { name: "Chase McCoy", link: "https://chasem.co/" },
     { name: "Kabir Goel", link: "https://kabirgoel.com/" },

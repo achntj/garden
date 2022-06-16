@@ -53,10 +53,9 @@ export default function Home() {
             </a>
             -yaa]
           </span> */}
-          Hi, I'm{" "}
-          <span className="text-emerald-600 dark:text-amber-400">Achintya</span>
-          ! I{"'"}m a high school senior at Ahlcon International School,
-          studying Computer Science. Previously, I worked on{" "}
+          Hi, I{"'"}m Achintya! I{"'"}m a high school senior at Ahlcon
+          International School, studying Computer Science. Previously, I worked
+          on{" "}
           <span className="text-orange-600 dark:text-emerald-500">
             Natural Language Processing{" "}
           </span>
@@ -93,7 +92,7 @@ export default function Home() {
           and writing. (<Link href="/now">Here&#39;s</Link> a list of things I
           {"'"}m doing now.)
         </p>
-        
+
         {/* <p className="flex items-center">📍 &rarr; New Delhi, India 🇮🇳</p>
       <p classNames="flex items-center">
         🎓 &rarr; CS @ Ahlcon International School
