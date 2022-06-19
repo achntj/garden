@@ -20,7 +20,7 @@ export default function Posts({ posts }) {
               <motion.div
                 className="
                     group
-                    rounded
+                    rounded-lg
                     px-4
                     py-2
                     font-medium
