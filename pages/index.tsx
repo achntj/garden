@@ -41,18 +41,6 @@ export default function Home() {
           <Socials />
         </div>
         <p className="mt-0">
-          {/* <span className="hidden sm:inline">&rarr; </span>
-          <span className="sm:inline-block block">
-            pronounced [uh-chin-
-            <a
-              href="https://en.wikipedia.org/wiki/Voiceless_dental_and_alveolar_plosives"
-              target="_blank"
-              rel="noreferrer"
-            >
-              t̪
-            </a>
-            -yaa]
-          </span> */}
           Hi, I{"'"}m Achintya! I{"'"}m a high school senior at Ahlcon
           International School, studying Computer Science. Previously, I worked
           on{" "}
