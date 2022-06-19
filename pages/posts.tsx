@@ -21,10 +21,14 @@ export default function Posts({ posts }) {
                 className="
                     group
                     rounded
-                    p-2
+                    px-4
+                    py-2
                     font-medium
                     mb-4
-                    hover:cursor-pointer"
+                    transition
+                    hover:cursor-pointer
+                    hover:bg-cyan-50
+                    dark:hover:bg-zinc-900"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 + (index + 1) / 10 }}
