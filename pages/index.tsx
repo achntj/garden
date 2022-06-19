@@ -37,7 +37,7 @@ export default function Home() {
       <div>
         <div className="mb-10">
           <h1 className="font-header mb-0">Achintya Jha</h1>
-          <p className="my-0">Programmer, Researcher, Writer.</p>
+          <p className="my-0">Programmer, Designer, Writer.</p>
           <Socials />
         </div>
         <p className="mt-0">
@@ -69,11 +69,16 @@ export default function Home() {
             rel="noreferrer"
             href="https://www.techmahindra.com/en-in/innovation/makers-lab/"
           >
-            Tech Mahindra
+            <span className="dark:underline dark:underline-offset-4 dark:decoration-pink-600 dark:decoration-2">
+              {" "}
+              Tech Mahindra
+            </span>
           </a>{" "}
           and built{" "}
           <a target="_blank" rel="noreferrer" href="https://sentimate.org/">
-            SentiMate
+            <span className="dark:underline dark:underline-offset-4 dark:decoration-cyan-600 dark:decoration-2 dark:hover:text-cyan-600">
+              SentiMate
+            </span>
           </a>{" "}
           alongside.
         </p>
@@ -85,18 +90,15 @@ export default function Home() {
             rel="noreferrer"
             href="https://github.com/achintyajha"
           >
-            Github
+            <span className="dark:underline dark:underline-offset-4 dark:decoration-green-600 dark:decoration-2 dark:hover:text-green-600">
+              Github
+            </span>
           </a>{" "}
           profile. Apart from programming, I have been doing some{" "}
           <Link href="/extras">other stuff</Link>- primarily Taekwondo, music,
           and writing. (<Link href="/now">Here&#39;s</Link> a list of things I
           {"'"}m doing now.)
         </p>
-
-        {/* <p className="flex items-center">📍 &rarr; New Delhi, India 🇮🇳</p>
-      <p classNames="flex items-center">
-        🎓 &rarr; CS @ Ahlcon International School
-      </p> */}
 
         <p className="text-sm">
           This website was built with{" "}
