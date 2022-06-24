@@ -13,7 +13,7 @@ export default function Posts({ posts }) {
       >
         <div>
           <PageIntro header="Posts" darkTo="dark:to-cyan-600">
-            Soon-to-be digital garden
+            My thoughts on tech, design, and workflow.
           </PageIntro>
           {posts.map(({ title, description, slug }, index) => (
             <Link passHref key={index} href={`/posts/${slug}`}>
@@ -25,7 +25,6 @@ export default function Posts({ posts }) {
                     py-2
                     font-medium
                     mb-4
-                    transition
                     hover:cursor-pointer
                     hover:bg-cyan-50
                     dark:hover:bg-zinc-900"
