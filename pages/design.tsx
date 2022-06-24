@@ -8,6 +8,7 @@ export default function Design() {
     { name: "Linus Lee", link: "https://thesephist.com/" },
     { name: "Arhaan Bahadur", link: "https://arhaanbahadur.co/" },
     { name: "Lee Robinson", link: "https://leerob.io/" },
+    { name: "Sarah Drasner", link: "https://sarah.dev/" },
   ];
   return (
     <HeadContainer
