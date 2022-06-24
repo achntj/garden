@@ -4,7 +4,7 @@ function cn(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function ImageComp({ props }) {
+export default function ImageComp(props) {
   const [isLoading, setLoading] = useState(true);
   return (
     <>
