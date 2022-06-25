@@ -56,7 +56,7 @@ export default function Extras() {
             viewport={{ once: false }}
             key={extra.image}
           >
-            <ImageComp props={extra} />
+            <ImageComp {...extra} />
           </motion.div>
         ))}
       </div>
