@@ -45,8 +45,8 @@ export default function Extras() {
         </PageIntro>
         <p>
           Apart from programming, I spend quite a bit of time in my other
-          pursuits, which majorly include Taekwondo and Guitar. So here{"'"}s a
-          small collection of a few major-certificates from the past year.
+          pursuits &mdash; Taekwondo and Guitar. So here{"'"}s a small
+          collection of a few certificates from the past year.
         </p>
         {extras.map((extra) => (
           <motion.div
