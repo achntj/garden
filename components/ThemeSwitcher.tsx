@@ -24,7 +24,7 @@ export default function ThemeSwitcher() {
       >
         {mounted && (
           <>
-            <MoonIcon />
+            <MoonIcon className="w-6 h-6 sm:w-5 sm:h-5" />
           </>
         )}
       </button>
@@ -40,7 +40,7 @@ export default function ThemeSwitcher() {
       >
         {mounted && (
           <>
-            <SunIcon />
+            <SunIcon className="w-6 h-6 sm:w-5 sm:h-5" />
           </>
         )}
       </button>
