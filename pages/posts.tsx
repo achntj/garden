@@ -27,8 +27,8 @@ export default function Posts({ posts }) {
                     mb-4
                     hover:cursor-pointer
                     hover:bg-white
-                    bg-opacity-10 
-                    backdrop-blur-lg 
+                    hover:bg-opacity-40 
+                    hover:backdrop-blur-lg 
                     hover:drop-shadow-lg
                     dark:hover:bg-zinc-900"
                 initial={{ opacity: 0 }}

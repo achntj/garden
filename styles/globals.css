@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  overflow: hidden;
+}
+
 body {
   background: radial-gradient(
       30% 55.51% at 50% 70%,
