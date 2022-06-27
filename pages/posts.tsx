@@ -9,7 +9,7 @@ export default function Posts({ posts }) {
     <>
       <HeadContainer
         title="Posts"
-        description="My thoughts on tech, design, and workflow."
+        description="My opinions on tech, design, and workflow."
       >
         <div>
           <PageIntro header="Posts" darkTo="dark:to-cyan-600">
