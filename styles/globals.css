@@ -22,20 +22,26 @@ body {
   background-attachment: fixed !important;
 }
 
-.customGradient {
-  background: radial-gradient(
-      30% 55.51% at 50% 70%,
-      #ffd3c7 0%,
-      rgba(255, 211, 200, 0.04) 100%
-    ),
-    radial-gradient(30% 80% at 94% 96%, #c8eaff 0%, rgba(230, 245, 255, 0) 70%),
-    radial-gradient(
-      44% 80% at 4% 94%,
-      rgba(107, 110, 154, 0.8) 0%,
-      rgba(225, 225, 234, 0) 100%
-    ),
-    #ffffff !important;
-  background-attachment: fixed !important;
+@layer components {
+  .customGradient {
+    background: radial-gradient(
+        30% 55.51% at 50% 70%,
+        #ffd3c7 0%,
+        rgba(255, 211, 200, 0.04) 100%
+      ),
+      radial-gradient(
+        30% 80% at 94% 96%,
+        #c8eaff 0%,
+        rgba(230, 245, 255, 0) 70%
+      ),
+      radial-gradient(
+        44% 80% at 4% 94%,
+        rgba(107, 110, 154, 0.8) 0%,
+        rgba(225, 225, 234, 0) 100%
+      ),
+      #ffffff !important;
+    background-attachment: fixed !important;
+  }
 }
 
 .prose {
@@ -57,6 +63,14 @@ img {
   box-shadow: 0 5px 12px -2px rgba(0, 0, 0, 0.4);
   display: block;
   margin: 0px auto;
+}
+
+.navSocials a {
+  @apply space-x-4 flex items-center hover:underline underline-offset-2;
+}
+
+.navSocials span {
+  @apply hidden sm:inline-block;
 }
 
 /* Code Highlighting credits - Lee Robinson (https: //github.com/leerob/leerob.io/blob/main/styles/global.css) */
