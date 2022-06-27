@@ -26,13 +26,16 @@ export default function Posts({ posts }) {
                     font-medium
                     mb-4
                     hover:cursor-pointer
-                    hover:bg-cyan-50
+                    hover:bg-white
+                    bg-opacity-10 
+                    backdrop-blur-lg 
+                    hover:drop-shadow-lg
                     dark:hover:bg-zinc-900"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 + (index + 1) / 10 }}
               >
-                <h3 className="text-teal-500 dark:text-gray-200 m-0">
+                <h3 className="text-cyan-600 dark:text-gray-200 m-0">
                   {title}
                 </h3>
                 <p className="m-0">{description}</p>

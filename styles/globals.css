@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: radial-gradient(
+      30% 55.51% at 50% 70%,
+      #ffd3c7 0%,
+      rgba(255, 211, 200, 0.04) 100%
+    ),
+    radial-gradient(30% 80% at 94% 96%, #c8eaff 0%, rgba(230, 245, 255, 0) 70%),
+    radial-gradient(
+      44% 80% at 4% 94%,
+      rgba(107, 110, 154, 0.8) 0%,
+      rgba(225, 225, 234, 0) 100%
+    ),
+    #ffffff !important;
+  background-attachment: fixed !important;
+}
+
+.customGradient {
+  background: radial-gradient(
+      30% 55.51% at 50% 70%,
+      #ffd3c7 0%,
+      rgba(255, 211, 200, 0.04) 100%
+    ),
+    radial-gradient(30% 80% at 94% 96%, #c8eaff 0%, rgba(230, 245, 255, 0) 70%),
+    radial-gradient(
+      44% 80% at 4% 94%,
+      rgba(107, 110, 154, 0.8) 0%,
+      rgba(225, 225, 234, 0) 100%
+    ),
+    #ffffff !important;
+  background-attachment: fixed !important;
+}
+
 .prose {
   max-width: 100%;
 }
@@ -42,10 +74,10 @@ img {
 
 .prose .anchor:after {
   @apply text-gray-300 dark:text-gray-700;
-  content:url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 28 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M17 17H14V15H17C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9H14V7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17ZM10 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H10V9H7C5.34315 9 4 10.3431 4 12C4 13.6569 5.34315 15 7 15H10V17ZM17 13H7V11H17V13Z' fill='rgb(46,58,89)'></path></svg>");
+  content: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 28 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M17 17H14V15H17C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9H14V7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17ZM10 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H10V9H7C5.34315 9 4 10.3431 4 12C4 13.6569 5.34315 15 7 15H10V17ZM17 13H7V11H17V13Z' fill='rgb(46,58,89)'></path></svg>");
 }
 
-.prose *:hover>.anchor {
+.prose *:hover > .anchor {
   @apply visible;
 }
 
@@ -66,7 +98,7 @@ code {
   border: initial;
 }
 
-.prose> :first-child {
+.prose > :first-child {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
@@ -127,8 +159,8 @@ code {
   @apply text-yellow-500;
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   @apply text-gray-800 dark:text-gray-50;
 }
 
@@ -147,7 +179,7 @@ pre {
   @apply px-5 py-3 text-sm font-bold text-gray-800 bg-gray-200 border border-b-0 border-gray-200 rounded-t-lg dark:text-gray-200 dark:border-gray-700 dark:bg-gray-800;
 }
 
-.rehype-code-title+pre {
+.rehype-code-title + pre {
   @apply mt-0 rounded-t-none;
 }
 

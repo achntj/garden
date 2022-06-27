@@ -123,7 +123,7 @@ export default function Home() {
         >
           <Link passHref href="/projects">
             <div
-              className="shadow-lg bg-emerald-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
+              className="bg-white bg-opacity-50 dark:bg-opacity-100 backdrop-blur-lg drop-shadow-lg dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
               hover:cursor-pointer"
             >
               <h2 className="text-emerald-800 m-0">
@@ -148,7 +148,7 @@ export default function Home() {
           </Link>
           <Link passHref href="/posts">
             <div
-              className="shadow-lg bg-teal-100 dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
+              className="bg-white bg-opacity-50 dark:bg-opacity-100 backdrop-blur-lg drop-shadow-lg dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
               hover:cursor-pointer"
             >
               <h2 className="text-teal-800 m-0">

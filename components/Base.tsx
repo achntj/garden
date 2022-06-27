@@ -22,13 +22,14 @@ export default function Base({ children, ...pageProps }) {
           }
         />
       </Head>
-      <div className="bg-gradient-to-r from-[#e6dfff] via-[#dcfff7] to-[#fff] dark:bg-[#050505] dark:bg-none prose-a:text-sky-500 prose-a:no-underline prose-a:transition dark:prose-a:text-zinc-300 hover:prose-a:text-sky-600 dark:hover:prose-a:text-pink-600 dark:prose-headings:text-slate-200 dark:prose-strong:text-zinc-300 prose-blockquote:border-emerald-400 dark:prose-blockquote:text-zinc-300">
-        <div className="max-w-[700px] mx-auto flex flex-col min-h-screen px-8 sm:px-4">
-          <Nav />
+      <div className="dark:bg-[#050505] dark:bg-none prose-a:text-cyan-600 prose-a:no-underline prose-a:transition dark:prose-a:text-zinc-300 hover:prose-a:text-cyan-800 dark:hover:prose-a:text-pink-600 dark:prose-headings:text-slate-200 dark:prose-strong:text-zinc-300 prose-blockquote:border-emerald-400 dark:prose-blockquote:text-zinc-300">
+        <Nav />
+        <div className="flex flex-col items-center sm:ml-40 min-h-screen px-8 sm:px-4">
           <div className="text-gray-700 prose flex-grow dark:text-zinc-400 prose-p:font-body">
-            {children}
+            <div className="max-w-[700px] mx-auto pt-10 pb-20 sm:pt-20">
+              {children}
+            </div>
           </div>
-          <Footer />
         </div>
       </div>
     </>
