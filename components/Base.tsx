@@ -8,6 +8,9 @@ import NowPlaying from "./now-playing";
 export default function Base({ children, ...pageProps }) {
   return (
     <>
+      {/* Although most pages already use the more verbose Head Component,
+          this exists as a fallback for pages which don't use that component. 
+          Don't delete this. */}
       <Head>
         <title>
           {pageProps.title
