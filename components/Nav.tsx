@@ -6,28 +6,28 @@ import {
   HomeIcon,
   PencilAltIcon,
   SparklesIcon,
+  TrendingUpIcon,
 } from "@heroicons/react/outline";
 import Socials from "./NavSocials";
 
 function Nav() {
   return (
-    <div className="shadow-2xl z-10 fixed top-auto bottom-0 w-full h-20 sm:top-0 flex items-center sm:flex-col py-5 sm:py-10 px-5 sm:dark:bg-neutral-900 sm:dark:border-r-[1px] dark:border-neutral-800 bg-white bg-opacity-20 drop-shadow-lg backdrop-blur-lg sm:w-auto sm:h-full justify-between overflow-x-scroll">
+    <div className="shadow-2xl z-10 fixed top-auto bottom-0 w-full h-20 sm:top-0 flex items-center sm:flex-col py-5 sm:py-10 px-5 dark:bg-neutral-900 sm:dark:border-r-[1px] dark:border-neutral-800 bg-white bg-opacity-20 dark:bg-opacity-100 drop-shadow-lg backdrop-blur-lg sm:w-auto sm:h-full justify-between overflow-y-hidden sm:overflow-scroll">
       <div className="space-between sm:space-x-0 flex sm:flex-col text-sm text-gray-700 dark:text-zinc-400">
         <NavLink href="/" name="Home">
-          <HomeIcon className="h-6 w-6 sm:h-4 sm:w-4" />
+          <HomeIcon />
         </NavLink>
         <NavLink href="/projects" name="Projects">
-          <CodeIcon className="h-6 w-6 sm:h-4 sm:w-4" />
+          <CodeIcon />
         </NavLink>
         <NavLink href="/posts" name="Posts">
-          <PencilAltIcon className="h-6 w-6 sm:h-4 sm:w-4" />
+          <PencilAltIcon />
         </NavLink>
         <NavLink href="/design" name="Design Inspiration">
-          <SparklesIcon className="h-6 w-6 sm:h-4 sm:w-4" />
+          <SparklesIcon />
         </NavLink>
         <NavLink href="/spotify" name="Listening to">
           <svg
-            className="h-6 w-6 sm:h-4 sm:w-4"
             xmlns="http://www.w3.org/2000/svg"
             width="48"
             height="48"
@@ -41,6 +41,9 @@ function Nav() {
               fill="currentColor"
             />
           </svg>
+        </NavLink>
+        <NavLink href="/now" name="Now">
+          <TrendingUpIcon />
         </NavLink>
         <h3 className="font-bold text-gray-700 text-base px-2 my-5 hidden sm:block">
           On the Web
