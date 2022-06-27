@@ -11,11 +11,13 @@ export default function ThemeSwitcher() {
 
   if (!mounted) return null;
   return (
-    <div className="flex rounded bg-[#f2f1f3] dark:bg-[#2b2b2e] p-1">
+    <div className="flex rounded-lg bg-zinc-300 dark:bg-[#2b2b2e] p-1 space-x-1">
       <button
         aria-label="Toggle Dark Mode"
         type="button"
-        className=" rounded-lg flex justify-center transition-all w-9 h-9 p-2 sm:hover:bg-zinc-300 sm:dark:hover:bg-zinc-700"
+        className={`${
+          theme === "dark" && "bg-zinc-600"
+        } rounded-lg flex justify-center transition-all w-9 h-9 p-2 sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-700`}
         onClick={() => {
           setTheme("dark");
         }}
@@ -29,7 +31,9 @@ export default function ThemeSwitcher() {
       <button
         aria-label="Toggle Dark Mode"
         type="button"
-        className=" rounded-lg flex justify-center transition-all w-9 h-9 p-2 sm:hover:bg-zinc-300 sm:dark:hover:bg-zinc-700"
+        className={`${
+          theme === "light" && "bg-white"
+        } rounded-lg flex justify-center transition-all w-9 h-9 p-2 sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-700`}
         onClick={() => {
           setTheme("light");
         }}
@@ -43,4 +47,3 @@ export default function ThemeSwitcher() {
     </div>
   );
 }
-//className="w-5 h-5 text-gray-800 dark:text-gray-200"

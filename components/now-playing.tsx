@@ -7,7 +7,7 @@ export default function NowPlaying() {
   // "not-playing";
   return (
     <>
-      <div className="relative dark:bg-neutral-900 rounded-lg p-4 mb-10 sm:flex items-end justify-between">
+      <div className="relative dark:bg-neutral-900 bg-white bg-opacity-50 shadow-lg backdrop-blur-lg dark:bg-opacity-100 rounded-lg p-4 mb-10 sm:flex items-end justify-between">
         <div className="not-prose overflow-scroll flex text-base items-center">
           {data?.isPlaying ? (
             <>
@@ -39,7 +39,7 @@ export default function NowPlaying() {
                 ></path>
               </svg>
               <p className="ml-2.5 dark:text-zinc-500">
-                Not Listening <span>(Spotify)</span>
+                Not Playing <span>(Spotify)</span>
               </p>
             </>
           )}
