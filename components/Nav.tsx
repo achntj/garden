@@ -12,7 +12,7 @@ import Socials from "./NavSocials";
 
 function Nav() {
   return (
-    <div className="shadow-2xl z-10 fixed top-auto bottom-0 w-full h-20 sm:top-0 flex items-center sm:flex-col py-5 sm:py-10 px-5 dark:bg-neutral-900 sm:dark:border-r-[1px] dark:border-neutral-800 bg-white bg-opacity-20 dark:bg-opacity-100 drop-shadow-lg backdrop-blur-lg sm:w-auto sm:h-full justify-between overflow-y-hidden sm:overflow-scroll">
+    <div className="shadow-2xl z-10 fixed top-auto bottom-0 w-full h-20 sm:top-0 flex sm:flex-col py-5 sm:py-10 px-5 dark:bg-neutral-900 sm:dark:border-r-[1px] dark:border-neutral-800 bg-white bg-opacity-20 dark:bg-opacity-100 drop-shadow-lg backdrop-blur-lg sm:w-56 sm:h-full justify-between overflow-y-hidden sm:overflow-scroll">
       <div className="space-between sm:space-x-0 flex sm:flex-col text-sm text-gray-700 dark:text-neutral-200 antialiased">
         <div className="flex sm:block space-y-0 sm:space-y-2">
           <NavLink href="/" name="Home">
