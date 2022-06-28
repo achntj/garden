@@ -1,7 +1,5 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import rehypeSlug from "rehype-slug";
 import rehypeCodeTitles from "rehype-code-titles";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrism from "rehype-prism-plus";
 import remarkGfm from "remark-gfm";
 import rehypeExternalLinks from "rehype-external-links";
@@ -36,21 +34,6 @@ export default makeSource({
   documentTypes: [Post],
   mdx: {
     remarkPlugins: [remarkGfm],
-    rehypePlugins: [
-      rehypeSlug,
-      rehypeCodeTitles,
-      rehypeExternalLinks,
-      rehypePrism,
-      [
-        rehypeAutolinkHeadings,
-        {
-          properties: {
-            className: ["anchor"],
-          },
-          behavior: "prepend",
-        },
-      ],
-    ],
+    rehypePlugins: [rehypeCodeTitles, rehypeExternalLinks, rehypePrism],
   },
 });
-

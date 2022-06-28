@@ -57,13 +57,6 @@ img {
 
 /* Code Highlighting credits - Lee Robinson (https: //github.com/leerob/leerob.io/blob/main/styles/global.css) */
 
-.prose .anchor {
-  @apply absolute no-underline; /* Add invisible to show on hover only */
-
-  margin-left: -1em;
-  cursor: pointer;
-}
-
 .anchor:hover {
   @apply visible;
 }
