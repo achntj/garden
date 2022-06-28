@@ -2,11 +2,12 @@ import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import NavLink from "./NavLink";
 import {
+  ChipIcon,
   CodeIcon,
   HomeIcon,
+  InformationCircleIcon,
   PencilAltIcon,
   SparklesIcon,
-  TrendingUpIcon,
 } from "@heroicons/react/outline";
 import Socials from "./NavSocials";
 
@@ -44,7 +45,10 @@ function Nav() {
             </svg>
           </NavLink>
           <NavLink href="/now" name="Now">
-            <TrendingUpIcon />
+            <InformationCircleIcon />
+          </NavLink>
+          <NavLink href="/uses" name="Uses">
+            <ChipIcon />
           </NavLink>
         </div>
         <h3 className="font-bold text-gray-700 text-base px-2 my-5 hidden sm:block">

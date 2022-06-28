@@ -1,10 +1,10 @@
 import HeadContainer from "../components/HeadContainer";
 
-export default function Setup() {
+export default function Uses() {
   return (
-    <HeadContainer title="Setup" description="My development setup.">
+    <HeadContainer title="Uses" description="My development setup.">
       <div>
-        <h1>Dev Setup & Toolkit</h1>
+        <h1>Uses</h1>
         <p>A not so comprehensive list of software / tools I use.</p>
         <h2>OS</h2>
         <p>MacOS</p>
