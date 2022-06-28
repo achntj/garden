@@ -8,8 +8,10 @@ export default function NavLink({ children, href, name }) {
     <Link passHref href={href}>
       <div
         className={`${
-          isActive ? "font-semibold dark:text-white dark:bg-neutral-600" : " "
-        } navLink flex items-center space-x-4 cursor-pointer hover:bg-white dark:hover:bg-neutral-600 rounded-lg transition p-2`}
+          isActive
+            ? "font-semibold text-zinc-600 dark:text-white bg-neutral-50 dark:bg-neutral-600"
+            : ""
+        } navLink flex items-center space-x-4 cursor-pointer hover:bg-neutral-50 dark:hover:bg-neutral-600 rounded-lg transition p-2`}
       >
         {children}
         <p className="hidden sm:block">{name}</p>
