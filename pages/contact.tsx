@@ -1,5 +1,6 @@
 import Container from "../components/Container";
 import { useState } from "react";
+import absoluteUrl from "next-absolute-url";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
@@ -14,7 +15,7 @@ export default function Contact() {
   const submitForm = async (e) => {
     e.preventDefault();
     if (sec.toLowerCase() === "white") {
-      const res = await fetch("http://localhost:3000/api/submit-form", {
+      const res = await fetch(`${origin}/api/submit-form`, {
         method: "POST",
         body: JSON.stringify({ name, email, message }),
       });
@@ -74,7 +75,7 @@ export default function Contact() {
           <input
             type="text"
             name="security"
-            placeholder="your answer..."
+            placeholder="Your answer..."
             value={sec}
             onChange={(e) => setSec(e.target.value)}
             required
@@ -103,3 +104,13 @@ export default function Contact() {
     </Container>
   );
 }
+
+Contact.getInitialProps = async (context) => {
+  const { req } = context;
+  // Hostname is needed on both front and back so we should
+  // post it to the frontend by returning it from getInitialProps
+  const origin = absoluteUrl(req).origin;
+  return {
+    origin,
+  };
+};
