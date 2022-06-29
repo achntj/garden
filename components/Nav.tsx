@@ -14,7 +14,10 @@ function Nav({ open, setOpen }: { open: any; setOpen: any }) {
         onClick={() => setOpen(false)}
         className="fixed top-0 left-0 m-5 h-6 w-6 sm:hidden"
       />
-      <div className="space-x-0 flex flex-col text-sm text-gray-700 dark:text-neutral-200 antialiased">
+      <div
+        onClick={() => setOpen(false)}
+        className="space-x-0 flex flex-col text-sm text-gray-700 dark:text-neutral-200 antialiased"
+      >
         <NavItems />
       </div>
 
