@@ -10,9 +10,11 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [sec, setSec] = useState("");
+  const [disable, setDisable] = useState(false);
 
   // Form submit handler
   const submitForm = async (e) => {
+    setDisable(true);
     e.preventDefault();
     if (sec.toLowerCase() === "white") {
       const res = await fetch(`${origin}/api/submit-form`, {
@@ -26,6 +28,7 @@ export default function Contact() {
         setEmail("");
         setMessage("");
         setSec("");
+        setDisable(false);
       } else {
         toast("Please recheck your inputs!", { type: "error" });
       }
@@ -96,6 +99,7 @@ export default function Contact() {
           <button
             className="bg-neutral-100 dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100 p-2 rounded-lg font-bold"
             type="submit"
+            disabled={disable}
           >
             Submit
           </button>
