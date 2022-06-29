@@ -1,6 +1,5 @@
 // components/Base.tsx
 import Nav from "./Nav";
-import MobileNav from "./MobileNav";
 import { useState } from "react";
 import { MenuIcon } from "@heroicons/react/outline";
 
@@ -12,12 +11,7 @@ export default function Base({ children, ...pageProps }) {
         <div className="p-5 sm:hidden">
           <MenuIcon onClick={() => setOpen(true)} className="h-6 w-6" />
         </div>
-        <div className="hidden sm:block">
-          <Nav />
-        </div>
-        <div className="sm:hidden">
-          <MobileNav open={open} setOpen={setOpen} />
-        </div>
+        <Nav open={open} setOpen={setOpen} />
         {children}
       </div>
     </>
