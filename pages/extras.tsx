@@ -1,7 +1,7 @@
-import HeadContainer from "../components/HeadContainer";
 import ImageComp from "../components/ImageComp";
 import { motion } from "framer-motion";
 import PageIntro from "../components/PageIntro";
+import Container from "components/Container";
 
 export default function Extras() {
   const extras = [
@@ -35,7 +35,7 @@ export default function Extras() {
     },
   ];
   return (
-    <HeadContainer
+    <Container
       title="Extras"
       description="My other pursuits that form a big part of my life."
     >
@@ -60,6 +60,6 @@ export default function Extras() {
           </motion.div>
         ))}
       </div>
-    </HeadContainer>
+    </Container>
   );
 }

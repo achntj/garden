@@ -1,7 +1,7 @@
-import HeadContainer from "../components/HeadContainer";
 import PageIntro from "../components/PageIntro";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Container from "components/Container";
 
 export default function Projects() {
   const projects = [
@@ -63,10 +63,9 @@ export default function Projects() {
     },
   ];
   return (
-    <HeadContainer
+    <Container
       title="Projects"
       description="A curated list of select projects that I have created over the years."
-      intro="Check out my other projects at"
     >
       <div>
         <PageIntro header="Projects" darkTo="dark:to-pink-600">
@@ -136,6 +135,6 @@ export default function Projects() {
           (Find my dev setup <Link href="/setup">here</Link>)
         </p>
       </div>
-    </HeadContainer>
+    </Container>
   );
 }

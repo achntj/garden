@@ -1,13 +1,12 @@
-import HeadContainer from "../components/HeadContainer";
 import TopTracks from "../components/top-tracks";
 import PageIntro from "../components/PageIntro";
-import { motion } from "framer-motion";
 import NowPlaying from "components/now-playing";
+import Container from "components/Container";
 
 export default function Spotify() {
   return (
     <>
-      <HeadContainer
+      <Container
         title="Spotify"
         description="My favourite songs listed at one place. Updated Live."
       >
@@ -20,7 +19,7 @@ export default function Spotify() {
         </PageIntro>
         <NowPlaying />
         <TopTracks />
-      </HeadContainer>
+      </Container>
     </>
   );
 }

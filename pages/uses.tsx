@@ -1,8 +1,8 @@
-import HeadContainer from "../components/HeadContainer";
+import Container from "components/Container";
 
 export default function Uses() {
   return (
-    <HeadContainer title="Uses" description="My development setup.">
+    <Container title="Uses" description="My development setup.">
       <div>
         <h1>Uses</h1>
         <p>A not so comprehensive list of software / tools I use.</p>
@@ -49,6 +49,6 @@ export default function Uses() {
         <h2>Scripting</h2>
         <p>Python, Shell Scripts (sh, bash)</p>
       </div>
-    </HeadContainer>
+    </Container>
   );
 }
