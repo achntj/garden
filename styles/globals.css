@@ -55,6 +55,10 @@ img {
   @apply h-6 w-6 sm:h-4 sm:w-4;
 }
 
+label {
+  @apply font-bold text-base;
+}
+
 /* Code Highlighting credits - Lee Robinson (https: //github.com/leerob/leerob.io/blob/main/styles/global.css) */
 
 .anchor:hover {
