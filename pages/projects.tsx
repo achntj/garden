@@ -131,9 +131,6 @@ export default function Projects() {
               </motion.div>
             )
         )}
-        <p>
-          (Find my dev setup <Link href="/setup">here</Link>)
-        </p>
       </div>
     </Container>
   );
