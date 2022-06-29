@@ -34,6 +34,7 @@ export default function Contact() {
       }
     } else {
       toast("That should have been easy 🤔", { type: "error" });
+      setDisable(false);
     }
   };
 
