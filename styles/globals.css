@@ -44,7 +44,7 @@ img {
 }
 
 .navSocials a {
-  @apply space-x-4 py-2 flex items-center hover:underline underline-offset-2;
+  @apply space-x-4 flex items-center hover:underline underline-offset-2;
 }
 
 .navLink svg {

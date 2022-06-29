@@ -1,4 +1,3 @@
-import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import NavItems from "./NavItems";
 import { XIcon } from "@heroicons/react/outline";
@@ -21,7 +20,7 @@ function Nav({ open, setOpen }: { open: any; setOpen: any }) {
         <NavItems />
       </div>
 
-      <div className="flex items-center justify-center my-10">
+      <div className="flex sm:items-center sm:justify-center my-10">
         <ThemeSwitcher />
       </div>
     </div>
