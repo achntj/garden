@@ -1,7 +1,7 @@
 import Link from "next/link";
-import HeadContainer from "../components/HeadContainer";
 import { motion } from "framer-motion";
 import Socials from "../components/Socials";
+import Container from "components/Container";
 
 //import Image from "next/image";
 //import { useState } from "react";
@@ -12,7 +12,7 @@ import Socials from "../components/Socials";
 export default function Home() {
   //const [isLoading, setLoading] = useState(true);
   return (
-    <HeadContainer title="Home">
+    <Container title="Home">
       {/* <motion.div
         className="relative w-[120px] h-[150.72px] mb-5 mt-[10px]"
         initial={{ opacity: 0, translateX: -50 }}
@@ -173,6 +173,6 @@ export default function Home() {
           </Link>
         </motion.div>
       </div>
-    </HeadContainer>
+    </Container>
   );
 }

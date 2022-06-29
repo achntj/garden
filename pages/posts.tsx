@@ -1,13 +1,13 @@
 import Link from "next/link";
-import HeadContainer from "../components/HeadContainer";
 import { allPosts } from "contentlayer/generated";
 import { motion } from "framer-motion";
 import PageIntro from "../components/PageIntro";
+import Container from "components/Container";
 
 export default function Posts({ posts }) {
   return (
     <>
-      <HeadContainer
+      <Container
         title="Posts"
         description="My opinions on tech, design, and workflow."
       >
@@ -43,7 +43,7 @@ export default function Posts({ posts }) {
             </Link>
           ))}
         </div>
-      </HeadContainer>
+      </Container>
     </>
   );
 }

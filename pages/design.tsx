@@ -1,4 +1,4 @@
-import HeadContainer from "../components/HeadContainer";
+import Container from "components/Container";
 
 export default function Design() {
   const sites = [
@@ -11,7 +11,7 @@ export default function Design() {
     { name: "Sarah Drasner", link: "https://sarah.dev/" },
   ];
   return (
-    <HeadContainer
+    <Container
       title="Design"
       description="Websites that have shaped my ideas on design and the web."
     >
@@ -42,6 +42,6 @@ export default function Design() {
           </svg>
         </div>
       ))}
-    </HeadContainer>
+    </Container>
   );
 }

@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function HeadContainer({ children, ...pageProps }) {
+export default function HeadContainer({ ...pageProps }) {
   const title = pageProps.title
     ? `${pageProps.title} | Achintya Jha`
     : "Achintya Jha";
@@ -14,29 +14,26 @@ export default function HeadContainer({ children, ...pageProps }) {
     : "https://achintyajha.com/images/avatar.png";
 
   return (
-    <>
-      <Head>
-        {/* <!-- HTML Meta Tags --> */}
-        <title>{title}</title>
-        <meta name="description" content={description} />
+    <Head>
+      {/* <!-- HTML Meta Tags --> */}
+      <title>{title}</title>
+      <meta name="description" content={description} />
 
-        {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://achintyajha.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={image} />
-        <meta property="og:site_name" content="Achintya Jha" />
+      {/* <!-- Facebook Meta Tags --> */}
+      <meta property="og:url" content="https://achintyajha.com/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={image} />
+      <meta property="og:site_name" content="Achintya Jha" />
 
-        {/* <!-- Twitter Meta Tags --> */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="achintyajha.com" />
-        <meta property="twitter:url" content="https://achintyajha.com/" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} />
-      </Head>
-      {children}
-    </>
+      {/* <!-- Twitter Meta Tags --> */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="achintyajha.com" />
+      <meta property="twitter:url" content="https://achintyajha.com/" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
+    </Head>
   );
 }

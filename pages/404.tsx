@@ -15,11 +15,7 @@ export default function Custom404() {
             That page doesn&lsquo;t exist🙀. You can try again by going{" "}
             <Link href="/">back to the homepage</Link>.
           </p>
-          <img
-            src="/images/404.gif"
-            alt="Error Image"
-            style={{ width: "400px" }}
-          />
+          <img className="w-[400px]" src="/images/404.gif" alt="Error Image" />
         </div>
       </div>
     </>

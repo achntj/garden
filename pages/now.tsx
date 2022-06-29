@@ -1,4 +1,4 @@
-import HeadContainer from "../components/HeadContainer";
+import Container from "components/Container";
 
 export default function Now() {
   const books = [
@@ -15,7 +15,7 @@ export default function Now() {
     },
   ];
   return (
-    <HeadContainer
+    <Container
       title="Now"
       description="Everything I'm learning / doing at the moment."
     >
@@ -59,6 +59,6 @@ export default function Now() {
           </p>
         </div>
       </div>
-    </HeadContainer>
+    </Container>
   );
 }
