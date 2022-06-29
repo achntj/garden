@@ -47,10 +47,6 @@ img {
   @apply space-x-4 flex items-center hover:underline underline-offset-2;
 }
 
-.navSocials span {
-  @apply hidden sm:inline-block;
-}
-
 .navLink svg {
   @apply h-6 w-6 sm:h-4 sm:w-4;
 }

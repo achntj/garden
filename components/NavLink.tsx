@@ -14,7 +14,7 @@ export default function NavLink({ children, href, name }) {
         } navLink flex items-center space-x-4 cursor-pointer hover:bg-neutral-50 dark:hover:bg-neutral-600 rounded-lg transition p-2`}
       >
         {children}
-        <p className="hidden sm:block">{name}</p>
+        <p className="block">{name}</p>
       </div>
     </Link>
   );

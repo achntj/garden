@@ -1,6 +1,6 @@
 export default function Socials() {
   return (
-    <div className="hidden sm:flex navSocials not-prose pl-2 space-x-0 space-y-2 flex-col">
+    <div className="flex navSocials not-prose pl-2 space-x-0 space-y-2 flex-col">
       <a href="https://twitter.com/achintyajha_">
         <svg
           className="text-sky-400 w-6 h-6 sm:w-4 sm:h-4"
