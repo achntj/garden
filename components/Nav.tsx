@@ -2,6 +2,7 @@ import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import NavLink from "./NavLink";
 import {
+  ChatAltIcon,
   ChipIcon,
   CodeIcon,
   HomeIcon,
@@ -43,6 +44,9 @@ function Nav() {
                 fill="currentColor"
               />
             </svg>
+          </NavLink>
+          <NavLink href="/contact" name="Contact">
+            <ChatAltIcon />
           </NavLink>
           <NavLink href="/now" name="Now">
             <InformationCircleIcon />
