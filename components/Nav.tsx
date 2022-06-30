@@ -7,7 +7,7 @@ function Nav({ open, setOpen }: { open: any; setOpen: any }) {
     <div
       className={`${
         open ? "" : "sm:translate-x-0 -translate-x-full"
-      } transition-all ease-in-out duration-200 space-x-0 shadow-2xl z-10 fixed bottom-0 top-0 flex flex-col pt-20 sm:pt-10 px-5 dark:bg-neutral-900 dark:border-r-[1px] dark:border-neutral-800 bg-white bg-opacity-60 sm:bg-opacity-20 dark:bg-opacity-100 drop-shadow-lg backdrop-blur-lg w-56 h-full overflow-scroll`}
+      } transition duration-150 space-x-0 shadow-2xl z-10 fixed bottom-0 top-0 flex flex-col pt-20 sm:pt-10 px-5 dark:bg-neutral-900 dark:border-r-[1px] dark:border-neutral-800 bg-white bg-opacity-60 sm:bg-opacity-20 dark:bg-opacity-100 drop-shadow-lg backdrop-blur-lg w-56 h-full overflow-scroll`}
     >
       <XIcon
         onClick={() => setOpen(false)}
@@ -15,7 +15,7 @@ function Nav({ open, setOpen }: { open: any; setOpen: any }) {
       />
       <div
         onClick={() => setOpen(false)}
-        className="space-x-0 flex flex-col text-sm text-gray-700 dark:text-neutral-200 antialiased"
+        className="transition-none space-x-0 flex flex-col text-sm text-gray-700 dark:text-neutral-200 antialiased"
       >
         <NavItems />
       </div>
