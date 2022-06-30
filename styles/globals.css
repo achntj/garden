@@ -51,6 +51,14 @@ img {
   margin: 0px auto;
 }
 
+.nav::-webkit-scrollbar {
+  width: 5px;
+}
+
+.nav::-webkit-scrollbar-thumb {
+  @apply bg-neutral-500 rounded;
+}
+
 .navSocials a {
   @apply space-x-4 flex items-center hover:underline underline-offset-2;
 }

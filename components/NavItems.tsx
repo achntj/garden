@@ -50,7 +50,7 @@ export default function NavItems() {
       <NavLink href="/uses" name="Uses">
         <ChipIcon />
       </NavLink>
-      <h3 className="font-bold text-gray-700 text-base px-2 my-5 block">
+      <h3 className="font-bold text-gray-700 text-base px-2 !my-5 block">
         On the Web
       </h3>
       <Socials />
