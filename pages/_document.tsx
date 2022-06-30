@@ -10,22 +10,16 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link
+            rel="preload"
+            href="/fonts/epilogue-regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
           <link rel="icon" href="/favicon.ico" />
+          <link rel="apple-touch-icon" href="/images/avatar.png" />
           <link rel="canonical" href="https://achintyajha.com/" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap"
-            rel="stylesheet"
-          />
         </Head>
         <body>
           <Main />

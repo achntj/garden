@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url(/fonts/epilogue-regular.woff2) format("woff2");
+}
+
 html {
   overflow: hidden;
 }

@@ -25,16 +25,6 @@ module.exports = {
         "system-ui",
         "sans-serif",
       ],
-      header: [
-        "Source Sans Pro",
-        "Helvetica Neue",
-        "Helvetica",
-        "BlinkMacSystemFont",
-        "Roboto",
-        "Segoe UI",
-        "system-ui",
-        "sans-serif",
-      ],
     },
     extend: {
       fontSize: {
