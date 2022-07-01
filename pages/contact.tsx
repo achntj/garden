@@ -17,12 +17,15 @@ export default function Contact() {
     setDisable(true);
     e.preventDefault();
     if (sec.toLowerCase() === "white") {
+      const id = toast.loading("Please wait...");
       const res = await fetch(`${origin}/api/submit-form`, {
         method: "POST",
         body: JSON.stringify({ name, email, message }),
       });
       // Success if status code is 201
       if (res.status === 201) {
+        toast.dismiss(id);
+        //toast.update(id, { render: "All is good", type: "success", isLoading: false });
         toast("🎉 I'll get in touch soon!", { type: "success" });
         setName("");
         setEmail("");
