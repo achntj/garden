@@ -1,8 +1,15 @@
 import ThemeSwitcher from "./ThemeSwitcher";
 import NavItems from "./NavItems";
 import { XIcon } from "@heroicons/react/outline";
+import { Dispatch, SetStateAction } from "react";
 
-function Nav({ open, setOpen }: { open: any; setOpen: any }) {
+function Nav({
+  open,
+  setOpen,
+}: {
+  open: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}) {
   return (
     <div
       className={`${
