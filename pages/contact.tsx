@@ -43,7 +43,7 @@ export default function Contact() {
 
   return (
     <Container title="Contact" description="Reach Out!">
-      <div className="">
+      <div className="dark:text-neutral-200">
         <ToastContainer
           position="bottom-center"
           autoClose={4000}
