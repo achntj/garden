@@ -23,19 +23,6 @@ export default function Now() {
         <h1 className="mb-0">Now</h1>
         <p className="text-sm">Updated June 10th, 2022</p>
         <p>Everything I{"'"}m learning / doing at the moment.</p>
-        <h1>Tech</h1>
-        <div className="ml-5">
-          <h2>Goals / In Progress</h2>
-          <p>
-            <li>Java</li>
-            <li>GraphQL</li>
-          </p>
-          <h2>Refining</h2>
-          <p>
-            <li>Zsh</li>
-            <li>VimScript</li>
-          </p>
-        </div>
         <h1 className="mb-0">Reading List</h1>
         <div className="ml-5">
           {books.map((book) => (
@@ -51,7 +38,7 @@ export default function Now() {
             </div>
           ))}
         </div>
-        <h1>Everything Else</h1>
+        <h1>Side Pursuits</h1>
         <div className="ml-5">
           <p>
             <li>Spanish</li>
