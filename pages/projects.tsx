@@ -34,6 +34,13 @@ export default function Projects() {
       stack: ["React", "Firebase"],
     },
     {
+      name: "Pandora's Box",
+      url: "https://pandoras-box.vercel.app",
+      desc: "A web data store for all your thoughts, pending tasks, and ideas.",
+      color: "#a868fc",
+      stack: ["Next.JS", "TypeScript", "PostGres", "Prisma", "TailwindCSS"],
+    },
+    {
       name: "Wordle Clone",
       url: "https://wordle-python.up.railway.app/",
       desc: "A (not nearly as interactive) clone of the popular game Wordle. Written in python.",
