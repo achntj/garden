@@ -36,14 +36,13 @@ export default function Home() {
       </motion.div> */}
       <div>
         <div className="mb-10">
-          <h1 className="text-2xl font-semibold mb-0">Achintya Jha</h1>
+          <h1 className="text-2xl mb-0 antialiased">Achintya Jha</h1>
           <p className="my-0">Programmer, Designer, Writer.</p>
           <Socials />
         </div>
         <p className="mt-0">
-          Hi, I{"'"}m Achintya! I{"'"}m a high school senior at Ahlcon
-          International School, studying Computer Science. Previously, I worked
-          on{" "}
+          I{"'"}m a high school senior at Ahlcon International School, studying
+          Computer Science. Previously, I worked on{" "}
           <span className="text-orange-600 dark:text-emerald-500">
             Natural Language Processing{" "}
           </span>
