@@ -36,7 +36,9 @@ export default function Home() {
       </motion.div> */}
       <div>
         <div className="mb-10">
-          <h1 className="text-2xl mb-0 antialiased">Achintya Jha</h1>
+          <h1 className="text-2xl text-zinc-700 mb-0 antialiased">
+            Achintya Jha
+          </h1>
           <p className="my-0">Programmer, Designer, Writer.</p>
           <Socials />
         </div>

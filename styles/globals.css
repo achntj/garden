@@ -59,10 +59,6 @@ img {
   @apply bg-neutral-500 rounded;
 }
 
-.navSocials a {
-  @apply space-x-4 flex items-center hover:underline underline-offset-2;
-}
-
 .navLink svg {
   @apply h-6 w-6 sm:h-4 sm:w-4;
 }
