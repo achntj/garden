@@ -1,9 +1,9 @@
 export default function Socials() {
   return (
-    <div className="flex navSocials not-prose pl-2 space-x-0 space-y-4 flex-col">
+    <div className="flex navSocials not-prose pl-2 bg-neutral-50 bg-opacity-50 dark:bg-neutral-800 w-fit p-2 rounded-lg space-x-4">
       <a href="https://twitter.com/achintyajha_">
         <svg
-          className="text-sky-400 w-6 h-6 sm:w-4 sm:h-4"
+          className="text-sky-400 w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           preserveAspectRatio="xMidYMid meet"
@@ -14,11 +14,10 @@ export default function Socials() {
             fill="currentColor"
           ></path>
         </svg>
-        <span>Twitter</span>
       </a>
       <a href="https://linkedin.com/in/achintyajha">
         <svg
-          className="text-blue-500 w-6 h-6 sm:w-4 sm:h-4"
+          className="text-blue-500 w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           preserveAspectRatio="xMidYMid meet"
@@ -29,11 +28,10 @@ export default function Socials() {
             fill="currentColor"
           ></path>
         </svg>
-        <span>LinkedIn</span>
       </a>
       <a href="https://github.com/achintyajha">
         <svg
-          className="text-[#171515] dark:text-white w-6 h-6 sm:w-4 sm:h-4"
+          className="text-[#171515] dark:text-white w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           preserveAspectRatio="xMidYMid meet"
@@ -45,7 +43,6 @@ export default function Socials() {
             fill="currentColor"
           ></path>
         </svg>
-        <span>GitHub</span>
       </a>
     </div>
   );
