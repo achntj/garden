@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://achintyajha.com/contact</loc>
+  </url>
+
+  <url>
+    <loc>https://achintyajha.com/design</loc>
+  </url>
+
+  <url>
     <loc>https://achintyajha.com/extras</loc>
   </url>
 
   <url>
+    <loc>https://achintyajha.com/guestbook</loc>
+  </url>
+
+  <url>
     <loc>https://achintyajha.com</loc>
+  </url>
+
+  <url>
+    <loc>https://achintyajha.com/now</loc>
   </url>
 
   <url>
@@ -17,11 +33,11 @@
   </url>
 
   <url>
-    <loc>https://achintyajha.com/setup</loc>
+    <loc>https://achintyajha.com/spotify</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.com/spotify</loc>
+    <loc>https://achintyajha.com/uses</loc>
   </url>
 
   <url>
@@ -29,11 +45,11 @@
   </url>
 
   <url>
-    <loc>https://achintyajha.com/posts/curation-algorithms</loc>
+    <loc>https://achintyajha.com/posts/idle-custom-themes</loc>
   </url>
 
   <url>
-    <loc>https://achintyajha.com/posts/idle-custom-themes</loc>
+    <loc>https://achintyajha.com/posts/pandora</loc>
   </url>
 
   <url>
