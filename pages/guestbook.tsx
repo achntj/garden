@@ -1,9 +1,14 @@
 import prisma from 'lib/prisma'
+import Container from 'components/Container'
 import Guestbook from 'components/Guestbook'
 export default function GuestbookPage({ fallbackData }) {
   return (
     <>
-      <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">
+      <Container 
+       title="Guestbook"
+       description=""
+       >
+      <div className="mx-auto justify-center">
         {/* <h1 className="mb-4 text-3xl font-bold 
       tracking-tight text-black dark:text-white md:text-5xl">
         Guestbook
@@ -22,6 +27,7 @@ export default function GuestbookPage({ fallbackData }) {
         </div>
         <Guestbook fallbackData={fallbackData} />
       </div>
+      </Container>
     </>
   )
 }
