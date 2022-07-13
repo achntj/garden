@@ -6,13 +6,13 @@ import { SessionProvider } from "next-auth/react";
 export default function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
-       <SessionProvider session={pageProps.session}>
-      <ThemeProvider enableSystem={false} attribute="class">
-        <Base>
-          <Component {...pageProps} />
-        </Base>
-      </ThemeProvider>
-      </SessionProvider>
+      <SessionProvider session={pageProps.session}>
+        <ThemeProvider enableSystem={false} attribute="class">
+          <Base>
+            <Component {...pageProps} />
+          </Base>
+        </ThemeProvider>
+        </SessionProvider>
     </>
   );
 }

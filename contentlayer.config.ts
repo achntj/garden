@@ -10,6 +10,8 @@ export const urlFromFilePath = (doc: DocumentGen): string => {
   return doc._raw.flattenedPath.replace(/pages\/?/, "");
 };
 
+
+
 export const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `posts/*.mdx`,
@@ -29,9 +31,29 @@ export const Post = defineDocumentType(() => ({
   },
 }));
 
+export const Librarydoc = defineDocumentType(() => ({
+  name: 'Librarydoc',
+  filePathPattern: 'library/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: { type: 'string', required: true },
+    date: { type: "string", required: false },
+    description: { type: "string", required: true },
+    cover: { type: "string", required: false },
+    location: { type: "string", required: false },
+    tags: { type: 'string', required: true },
+  },
+  computedFields: {
+    slug: {
+      type: "string",
+      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
+    },
+  },
+}));
+
 export default makeSource({
   contentDirPath: "content",
-  documentTypes: [Post],
+  documentTypes: [Post, Librarydoc],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypeCodeTitles, rehypeExternalLinks, rehypePrism],
