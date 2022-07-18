@@ -19,7 +19,7 @@ export default function Tracks() {
           >
             <div
               key={track.title}
-              className="mt-5 rounded p-4 flex not-prose text-base font-normal transition hover:shadow-md border-none"
+              className="mt-5 rounded p-4 flex not-prose text-base font-normal hover:shadow-md border-none"
             >
               <img className="w-16 h-16 rounded" src={track.imageUrl} alt="" />
               <div className="ml-5 overflow-scroll whitespace-nowrap">
