@@ -43,8 +43,8 @@ export default function Home() {
           <Socials />
         </div>
         <p className="mt-0">
-          I{"'"}m a high school senior at Ahlcon International School, studying
-          Computer Science. Previously, I worked on{" "}
+          I{"'"}m an incoming freshman at Arizona State University studying
+          Computer Science and Mathematics. Previously, I worked on{" "}
           <span className="text-orange-600 dark:text-emerald-500">
             Natural Language Processing{" "}
           </span>
