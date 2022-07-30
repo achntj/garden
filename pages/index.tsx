@@ -2,6 +2,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Socials from "../components/Socials";
 import Container from "components/Container";
+import University from "components/University";
 
 //import Image from "next/image";
 //import { useState } from "react";
@@ -43,8 +44,8 @@ export default function Home() {
           <Socials />
         </div>
         <p className="mt-0">
-          I{"'"}m an incoming freshman at Arizona State University studying
-          Computer Science and Mathematics. Previously, I worked on{" "}
+          Hi! I{"'"}m an incoming freshman at <University />, studying Computer
+          Science and Mathematics. Previously, I worked on{" "}
           <span className="text-orange-600 dark:text-emerald-500">
             Natural Language Processing{" "}
           </span>
