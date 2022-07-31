@@ -19,7 +19,7 @@ export default function Tracks() {
           >
             <div
               key={track.title}
-              className="mt-5 rounded p-4 flex justify-between text-base font-normal hover:dark:bg-neutral-900 hover:bg-white hover:shadow-md border-none"
+              className="mt-5 rounded p-4 flex justify-between space-x-4 text-base font-normal hover:dark:bg-neutral-900 hover:bg-white hover:shadow-md border-none"
             >
               <div className="flex items-center space-x-5 overflow-scroll whitespace-nowrap">
                 <p className="text-sm underline underline-offset-4">
@@ -34,7 +34,11 @@ export default function Tracks() {
                   </p>
                 </div>
               </div>
-              <img className="w-16 h-16 rounded" src={track.imageUrl} alt="" />
+              <img
+                className="w-16 h-16 rounded hidden xs:block"
+                src={track.imageUrl}
+                alt=""
+              />
             </div>
           </a>
         ))}
