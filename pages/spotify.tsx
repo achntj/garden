@@ -11,7 +11,7 @@ export default function Spotify() {
         description="My favourite songs listed at one place. Updated Live."
       >
         <PageIntro header="Listening" darkTo="dark:to-blue-800">
-          Straight from{" "}
+          Pulled live from{" "}
           <a href="https://open.spotify.com/user/1r6wxfc5wa72s61y2k92m8tsb">
             my Spotify account
           </a>
