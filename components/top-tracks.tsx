@@ -22,7 +22,7 @@ export default function Tracks() {
               className="mt-5 rounded p-4 flex justify-between space-x-4 text-base font-normal hover:dark:bg-neutral-900 hover:bg-white hover:shadow-md border-none"
             >
               <div className="flex items-center space-x-5 overflow-scroll whitespace-nowrap">
-                <p className="text-sm underline underline-offset-4">
+                <p className="text-sm underline underline-offset-4 decoration-double">
                   {index + 1}
                 </p>
                 <div>
