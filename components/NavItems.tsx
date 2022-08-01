@@ -8,7 +8,7 @@ import {
   PencilAltIcon,
   SparklesIcon,
 } from "@heroicons/react/outline";
-import Socials from "./NavSocials";
+import Socials from "./Socials";
 
 export default function NavItems() {
   return (
@@ -53,7 +53,10 @@ export default function NavItems() {
       <h3 className="font-bold text-gray-700 text-base px-2 !my-5 block">
         On the Web
       </h3>
-      <Socials />
+
+      <div className="flex not-prose pl-2 bg-neutral-50 bg-opacity-50 dark:bg-neutral-800 w-fit p-2 rounded-lg space-x-4">
+        <Socials />
+      </div>
     </div>
   );
 }

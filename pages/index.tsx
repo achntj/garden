@@ -41,7 +41,10 @@ export default function Home() {
             Achintya Jha
           </h1>
           <p className="my-0">Programmer, Designer, Writer.</p>
-          <Socials />
+
+          <div className="flex space-x-2">
+            <Socials />
+          </div>
         </div>
         <p className="mt-0">
           Hi! I{"'"}m an incoming freshman at <University />, studying Computer
