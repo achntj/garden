@@ -20,6 +20,18 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/images/avatar.png" />
           <link rel="canonical" href="https://achintyajha.com/" />
+          <link
+            rel="preload"
+            href="/api/top-tracks"
+            as="fetch"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/api/now-playing"
+            as="fetch"
+            crossOrigin="anonymous"
+          />
         </Head>
         <body>
           <Main />
