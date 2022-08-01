@@ -31,8 +31,8 @@ export default function HeadContainer({ ...pageProps }) {
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="achintyajha.com" />
       <meta property="twitter:url" content="https://achintyajha.com/" />
-      <meta property="twitter:creator" content="@achntyo" />
-      <meta name="twitter:site" content="@achntyo" />
+      <meta property="twitter:creator" content="@achntj" />
+      <meta name="twitter:site" content="@achntj" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
