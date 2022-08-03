@@ -6,8 +6,11 @@ export default function Uses() {
       <div>
         <h1>Uses</h1>
         <p>A not so comprehensive list of software / tools I use.</p>
-        <h2>OS</h2>
-        <p>MacOS</p>
+        <h2>This website</h2>
+        <p>
+          React-JavaScript ecosystem &mdash; Next.js, Contentlayer, Tailwind
+          CSS, Vercel, SWR.
+        </p>
         <h2>Shell</h2>
         <p>
           ZSH - Insanely fast, no frameworks, epic functionality. Find my zsh
@@ -42,6 +45,8 @@ export default function Uses() {
         </p>
         <h2>Command Line</h2>
         <p>Default MacOS Terminal (terminal.app)</p>
+        <h2>OS</h2>
+        <p>MacOS</p>
         <h2>Web Stack</h2>
         <p>Next.js, Prisma, Postgres, Vercel, Tailwind CSS</p>
         <h2>Other Software</h2>
