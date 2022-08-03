@@ -31,9 +31,9 @@ export default function Now() {
         <p className="text-sm">Updated August 3rd, 2022</p>
         <p>Everything I{"'"}m learning / doing at the moment.</p>
         <p>
-          As of now, I've completely stopped working on SentiMate as I'm
-          starting afresh with college. I'm mostly working on personal tools,
-          specifically my note management system &mdash;
+          As of now, I{"'"}ve completely stopped working on SentiMate as I{"'"}m
+          starting afresh with college. I{"'"}m mostly working on personal
+          tools, specifically my note management system &mdash;
           <a
             href="https://pandoras-box.vercel.app"
             rel="noreferrer"
