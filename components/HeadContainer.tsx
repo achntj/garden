@@ -7,7 +7,7 @@ export default function HeadContainer({ ...pageProps }) {
 
   const description = pageProps.description
     ? pageProps.description
-    : "Personal Website, Blog, and Virtual Residence of Achintya Jha - A Freshman at Arizona State University.";
+    : "Achintya Jha is an incoming freshman at Arizona State University, studying Computer Science and Mathematics.";
 
   const image = pageProps.image
     ? `https://achintyajha.com/images/posts/${pageProps.image}`
