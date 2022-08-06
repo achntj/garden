@@ -14,6 +14,7 @@ const MDXcomponents = {
 
 export default function PostPage({ post }) {
   const MDXComponent = useMDXComponent(post.body.code);
+  const readingTime = Math.round(post.body.raw.split(" ").length / 200) || 1;
   return (
     <>
       <Container
@@ -24,9 +25,12 @@ export default function PostPage({ post }) {
         <article>
           <div>
             <h1>{post.title}</h1>
-            <p className="flex justify-between">
+            <p className="flex flex-col sm:flex-row justify-between">
               <span>{post.date}</span>
               <span>{post.location && post.location}</span>
+            </p>
+            <p className="bg-yellow-100 inline-block px-2 dark:text-neutral-800 rounded-lg">
+              — {readingTime} minute read
             </p>
           </div>
           <div className="entry">
