@@ -47,8 +47,8 @@ export default function Home() {
           </div>
         </div>
         <p className="mt-0">
-          Hi! I{"'"}m an incoming freshman at <University />, studying Computer
-          Science and Mathematics. Previously, I worked on{" "}
+          Hi! I{"'"}m a freshman at <University />, studying Computer Science
+          and Mathematics. Previously, I worked on{" "}
           <span className="text-orange-600 dark:text-emerald-500">
             Natural Language Processing{" "}
           </span>
