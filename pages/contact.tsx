@@ -57,6 +57,10 @@ export default function Contact() {
         />
         <form autoComplete="off" className="" onSubmit={submitForm}>
           <h1 className="">Send a message!</h1>
+          <p className="text-sm">
+            (or send me an email at &#123;hi&#125; at &#123;achintyajha&#125;
+            dot &#123;com&#125;)
+          </p>
           <label htmlFor="name">Full Name</label>
           <input
             type="text"
