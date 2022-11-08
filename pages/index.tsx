@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Socials from "../components/Socials";
 import Container from "components/Container";
 import University from "components/University";
+import { DocumentTextIcon } from "@heroicons/react/outline";
 
 //import Image from "next/image";
 //import { useState } from "react";
@@ -44,6 +45,12 @@ export default function Home() {
 
           <div className="flex space-x-2">
             <Socials />
+            <a
+              href="/Achintya_Jha_Resume.pdf"
+              className="!text-black dark:!text-[#a0a0a0]"
+            >
+              <DocumentTextIcon className="h-6 w-6" />
+            </a>
           </div>
         </div>
         <p className="mt-0">
@@ -89,8 +96,8 @@ export default function Home() {
           </a>{" "}
           profile. Apart from programming, I have been doing some{" "}
           <Link href="/extras">other stuff</Link>- primarily Taekwondo, music,
-          and writing. (<Link href="/now">Here&#39;s</Link> a list of things I
-          {"'"}m doing now.)
+          and writing. <Link href="/coursework">Here&#39;s</Link> a list of the
+          courses I{"'"}m taking right now.
         </p>
 
         <p className="text-sm">
