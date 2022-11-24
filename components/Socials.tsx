@@ -1,7 +1,11 @@
 export default function Socials() {
   return (
     <>
-      <a className="!text-sky-400" href="https://twitter.com/achintyajha_">
+      <a
+        title="Twitter Profile"
+        className="!text-sky-400"
+        href="https://twitter.com/achintyajha_"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -16,7 +20,11 @@ export default function Socials() {
           ></path>
         </svg>
       </a>
-      <a className="!text-blue-500" href="https://linkedin.com/in/achintyajha">
+      <a
+        title="LinkedIn Profile"
+        className="!text-blue-500"
+        href="https://linkedin.com/in/achintyajha"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -31,7 +39,11 @@ export default function Socials() {
           ></path>
         </svg>
       </a>
-      <a className="!text-[#171515]" href="https://github.com/achintyajha">
+      <a
+        title="Github Profile"
+        className="!text-[#171515]"
+        href="https://github.com/achintyajha"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"

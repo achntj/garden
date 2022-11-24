@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Socials from "../components/Socials";
 import Container from "components/Container";
 import University from "components/University";
-import { DocumentTextIcon } from "@heroicons/react/outline";
+import { DocumentTextIcon } from "@heroicons/react/24/outline";
 
 //import Image from "next/image";
 //import { useState } from "react";
@@ -46,6 +46,7 @@ export default function Home() {
           <div className="flex space-x-2">
             <Socials />
             <a
+              title="Resume (PDF)"
               href="/Achintya_Jha_Resume.pdf"
               className="!text-black dark:!text-[#a0a0a0]"
             >
@@ -94,10 +95,12 @@ export default function Home() {
               Github
             </span>
           </a>{" "}
-          profile. Apart from programming, I have been doing some{" "}
+          profile.{" "}
+          {/* Apart from programming, I have been doing some{" "}
           <Link href="/extras">other stuff</Link>- primarily Taekwondo, music,
-          and writing. <Link href="/coursework">Here&#39;s</Link> a list of the
-          courses I{"'"}m taking right now.
+          and writing.*/}
+          <Link href="/coursework">Here&#39;s</Link> a list of the courses I
+          {"'"}m taking right now.
         </p>
 
         <p className="text-sm">

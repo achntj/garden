@@ -1,13 +1,13 @@
 import NavLink from "./NavLink";
 import {
-  ChatAltIcon,
-  ChipIcon,
-  CodeIcon,
+  ChatBubbleLeftEllipsisIcon,
+  CpuChipIcon,
+  CodeBracketIcon,
   HomeIcon,
   InformationCircleIcon,
-  PencilAltIcon,
+  PencilSquareIcon,
   SparklesIcon,
-} from "@heroicons/react/outline";
+} from "@heroicons/react/24/outline";
 import Socials from "./Socials";
 
 export default function NavItems() {
@@ -17,10 +17,10 @@ export default function NavItems() {
         <HomeIcon />
       </NavLink>
       <NavLink href="/projects" name="Projects">
-        <CodeIcon />
+        <CodeBracketIcon />
       </NavLink>
       <NavLink href="/posts" name="Posts">
-        <PencilAltIcon />
+        <PencilSquareIcon />
       </NavLink>
       <NavLink href="/design" name="Design Inspiration">
         <SparklesIcon />
@@ -42,13 +42,15 @@ export default function NavItems() {
         </svg>
       </NavLink>
       <NavLink href="/contact" name="Contact">
-        <ChatAltIcon />
+        <ChatBubbleLeftEllipsisIcon />
       </NavLink>
+      {/*
       <NavLink href="/now" name="Now">
         <InformationCircleIcon />
       </NavLink>
+        */}
       <NavLink href="/uses" name="Uses">
-        <ChipIcon />
+        <CpuChipIcon />
       </NavLink>
       <h3 className="font-bold text-gray-700 text-base px-2 !my-5 block">
         On the Web

@@ -7,6 +7,7 @@ export default function NavLink({ children, href, name }) {
   return (
     <Link passHref href={href}>
       <div
+        title={name + " (page link)"}
         className={`${
           isActive
             ? "font-semibold text-zinc-600 dark:text-white bg-neutral-50 dark:bg-neutral-600"
