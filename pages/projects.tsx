@@ -22,7 +22,7 @@ export default function Projects() {
     {
       name: "PetiteURL",
       url: "https://petite.vercel.app/",
-      desc: "THE URL Shortener that lets you choose your slug (if it's available) over random letters.",
+      desc: "Free to use URL Shortener that lets you choose your slug (if it's available) over random letters.",
       color: "#3486eb",
       stack: ["Next.JS", "TypeScript", "PostGres", "Prisma", "TailwindCSS"],
     },
@@ -42,7 +42,7 @@ export default function Projects() {
     },
     {
       name: "Wordle Clone",
-      url: "https://wordle-python.up.railway.app/",
+      url: "https://github.com/achintyajha/wordle/",
       desc: "A (not nearly as interactive) clone of the popular game Wordle. Written in python.",
       color: "#1bc47d",
       stack: ["Python", "Flask"],

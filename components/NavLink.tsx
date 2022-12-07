@@ -10,7 +10,7 @@ export default function NavLink({ children, href, name }) {
         title={name}
         className={`${
           isActive ? "underline underline-offset-4" : ""
-        } font-semibold navLink flex items-center space-x-4 cursor-pointer hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-lg p-2`}
+        } navLink flex items-center space-x-4 cursor-pointer hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-lg p-2`}
       >
         {children}
         <p className="block">{name}</p>

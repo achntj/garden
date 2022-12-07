@@ -41,7 +41,7 @@ export default function Home() {
           <h1 className="text-2xl text-zinc-700 mb-0 antialiased">
             Achintya Jha
           </h1>
-          <p className="my-0">Programmer & Designer.</p>
+          <p className="my-0">Programmer &#x2022; Designer</p>
 
           <Link href="/Achintya_Jha_Resume.pdf">
             <div className="flex space-x-2 cursor-pointer font-title hover:underline underline-offset-4">
