@@ -17,6 +17,13 @@ class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
+          <link
+            rel="preload"
+            href="/fonts/recife-regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/images/avatar.png" />
           <link rel="canonical" href="https://achintyajha.com/" />

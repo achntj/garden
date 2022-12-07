@@ -11,39 +11,15 @@ export default function ThemeSwitcher() {
 
   if (!mounted) return null;
   return (
-    <div className="flex rounded-lg bg-zinc-300 dark:bg-[#2b2b2e] p-1 space-x-1">
-      <button
-        aria-label="Toggle Dark Mode"
-        type="button"
-        className={`${
-          theme === "dark" && "bg-zinc-600"
-        } rounded-lg flex justify-center transition-all w-9 h-9 p-2 sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-700`}
-        onClick={() => {
-          setTheme("dark");
-        }}
-      >
-        {mounted && (
-          <>
-            <MoonIcon className="w-6 h-6 sm:w-5 sm:h-5" />
-          </>
-        )}
-      </button>
-      <button
-        aria-label="Toggle Dark Mode"
-        type="button"
-        className={`${
-          theme === "light" && "bg-white"
-        } rounded-lg flex justify-center transition-all w-9 h-9 p-2 sm:hover:bg-zinc-100 sm:dark:hover:bg-zinc-700`}
-        onClick={() => {
-          setTheme("light");
-        }}
-      >
-        {mounted && (
-          <>
-            <SunIcon className="w-6 h-6 sm:w-5 sm:h-5" />
-          </>
-        )}
-      </button>
-    </div>
+    <button
+      aria-label="Toggle Dark Mode"
+      type="button"
+      className="text-sm underline underline-offset-4"
+      onClick={() => {
+        setTheme(theme === "dark" ? "light" : "dark");
+      }}
+    >
+      {mounted && <>{theme === "dark" ? "Light Mode" : "Dark Mode"}</>}
+    </button>
   );
 }

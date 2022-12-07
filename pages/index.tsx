@@ -41,17 +41,16 @@ export default function Home() {
           <h1 className="text-2xl text-zinc-700 mb-0 antialiased">
             Achintya Jha
           </h1>
-          <p className="my-0">Programmer, Designer, Writer.</p>
+          <p className="my-0">Programmer & Designer.</p>
 
           <div className="flex space-x-2">
             <Socials />
-            <a
-              title="Resume (PDF)"
-              href="/Achintya_Jha_Resume.pdf"
-              className="!text-black dark:!text-[#a0a0a0]"
-            >
-              <DocumentTextIcon className="h-6 w-6" />
-            </a>
+            <Link href="/Achintya_Jha_Resume.pdf">
+              <DocumentTextIcon
+                title="Resume (PDF)"
+                className="h-6 w-6 !text-neutral-900 dark:!text-neutral-400"
+              />
+            </Link>
           </div>
         </div>
         <p className="mt-0">

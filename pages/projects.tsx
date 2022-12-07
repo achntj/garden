@@ -49,7 +49,7 @@ export default function Projects() {
     },
     {
       name: "Climate Crew",
-      url: "https://climate-crew.ml/",
+      url: "https://climate-crew.netlify.app/",
       desc: `[National Winner - NASA Space Apps 2020]\nThis website features self-authored unique stories, from our team, that provide a historical as well as mythological perspective to Climate.`,
       color: "#f97f0f",
       stack: ["Hugo", "Golang", "HTML", "SCSS"],
@@ -93,14 +93,14 @@ export default function Projects() {
               <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
                 key={project.name}
               >
                 <a target="_blank" rel="noreferrer" href={project.url}>
                   {/* tailwind custom bg class does not work when used with template literals. Workaround - Use html style for the moment*/}
                   <div
-                    className="flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group dark:!bg-zinc-900"
+                    className="flex flex-col justify-between p-5 my-2 rounded-[40px] mb-8 group dark:!bg-[#101010]"
                     style={{ backgroundColor: `${project.color}` }}
                   >
                     <h3 className="text-white">

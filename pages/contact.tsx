@@ -55,7 +55,7 @@ export default function Contact() {
           draggable={false}
           pauseOnHover
         />
-        <form autoComplete="off" className="" onSubmit={submitForm}>
+        <form autoComplete="off" className="font-body" onSubmit={submitForm}>
           <h1 className="">Send a message!</h1>
           <p className="text-sm">
             (or send me an email at &#123;hi&#125; at &#123;achintyajha&#125;

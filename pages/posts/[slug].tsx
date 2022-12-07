@@ -29,9 +29,11 @@ export default function PostPage({ post }) {
               <span>{post.date}</span>
               <span>{post.location && post.location}</span>
             </p>
+            {/*
             <p className="bg-yellow-100 inline-block px-2 dark:text-neutral-800 rounded-lg">
               — {readingTime} minute read
             </p>
+              */}
           </div>
           <div className="entry">
             <MDXComponent components={MDXcomponents} />
