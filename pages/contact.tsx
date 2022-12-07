@@ -105,7 +105,7 @@ export default function Contact() {
             className="w-full outline-none h-auto resize-none bg-transparent"
           ></textarea>
           <button
-            className="bg-neutral-100 dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100 p-2 rounded-lg font-bold"
+            className="bg-neutral-200 font-title dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100 p-2 rounded-lg font-bold"
             type="submit"
             disabled={disable}
           >

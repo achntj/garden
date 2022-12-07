@@ -14,7 +14,7 @@ function Nav({
     <div
       className={`${
         open ? "" : "sm:translate-x-0 -translate-x-full"
-      } nav font-title transition justify-between overflow-x-hidden space-x-0 z-10 fixed bottom-0 top-0 flex flex-col pt-20 sm:pt-10 px-5 w-56 h-full overflow-scroll sm:bg-transparent sm:dark:bg-transparent bg-white dark:bg-neutral-900`}
+      } nav font-title transition justify-between overflow-x-hidden space-x-0 z-10 fixed bottom-0 top-0 flex flex-col pt-20 sm:pt-10 px-5 w-64 h-full overflow-scroll sm:bg-transparent sm:dark:bg-transparent bg-white dark:bg-neutral-900`}
     >
       <XMarkIcon
         onClick={() => setOpen(false)}
@@ -22,7 +22,7 @@ function Nav({
       />
       <div
         onClick={() => setOpen(false)}
-        className="transition-none space-x-0 flex flex-col text-sm text-gray-700 dark:text-neutral-200 antialiased"
+        className="transition-none space-x-0 flex flex-col text-sm text-gray-700 dark:text-neutral-400 antialiased"
       >
         <NavItems />
       </div>

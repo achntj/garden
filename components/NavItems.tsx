@@ -22,9 +22,6 @@ export default function NavItems() {
       <NavLink href="/posts" name="Posts">
         <PencilSquareIcon />
       </NavLink>
-      <NavLink href="/design" name="Design Inspiration">
-        <SparklesIcon />
-      </NavLink>
       <NavLink href="/spotify" name="Listening to">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +38,9 @@ export default function NavItems() {
           />
         </svg>
       </NavLink>
+      <h3 className="font-bold text-gray-700 text-base px-2 !my-3 block">
+        Personal Bubble
+      </h3>
       <NavLink href="/contact" name="Contact">
         <ChatBubbleLeftEllipsisIcon />
       </NavLink>
@@ -49,14 +49,17 @@ export default function NavItems() {
         <InformationCircleIcon />
       </NavLink>
         */}
+      <NavLink href="/design" name="Design Inspiration">
+        <SparklesIcon />
+      </NavLink>
       <NavLink href="/uses" name="Uses">
         <CpuChipIcon />
       </NavLink>
-      <h3 className="font-bold text-gray-700 text-base px-2 !my-5 block">
-        On the Web
-      </h3>
 
-      <div className="flex not-prose pl-2 bg-neutral-50 bg-opacity-50 dark:bg-neutral-800 w-fit p-2 rounded-lg space-x-4">
+      <div className="flex flex-col pl-2 bg-neutral-50 bg-opacity-40 dark:bg-neutral-800 p-2 rounded-lg space-y-4">
+        <h3 className="font-bold text-gray-700 text-base px-2 !my-3 block">
+          On the Web
+        </h3>
         <Socials />
       </div>
     </div>

@@ -43,19 +43,20 @@ export default function Home() {
           </h1>
           <p className="my-0">Programmer & Designer.</p>
 
-          <div className="flex space-x-2">
-            <Socials />
-            <Link href="/Achintya_Jha_Resume.pdf">
+          <Link href="/Achintya_Jha_Resume.pdf">
+            <div className="flex space-x-2 cursor-pointer font-title hover:underline underline-offset-4">
               <DocumentTextIcon
                 title="Resume (PDF)"
                 className="h-6 w-6 !text-neutral-900 dark:!text-neutral-400"
               />
-            </Link>
-          </div>
+              <span>View Resume</span>
+            </div>
+          </Link>
         </div>
         <p className="mt-0">
-          Hi! I{"'"}m a freshman at <University />, studying Computer Science
-          and Mathematics. Previously, I worked on{" "}
+          Hi! I{"'"}m Achintya! I{"'"}m a full stack developer and software
+          engineer. I{"'"}m also a freshman at <University />, studying Computer
+          Science and Mathematics. Previously, I worked on{" "}
           <span className="text-orange-600 dark:text-emerald-500">
             Natural Language Processing{" "}
           </span>
