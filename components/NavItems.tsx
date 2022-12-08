@@ -7,6 +7,7 @@ import {
   InformationCircleIcon,
   PencilSquareIcon,
   SparklesIcon,
+  BookOpenIcon,
 } from "@heroicons/react/24/outline";
 import Socials from "./Socials";
 
@@ -22,6 +23,12 @@ export default function NavItems() {
       <NavLink href="/posts" name="Posts">
         <PencilSquareIcon />
       </NavLink>
+      <NavLink href="/contact" name="Contact">
+        <ChatBubbleLeftEllipsisIcon />
+      </NavLink>
+      <h3 className="font-bold text-gray-700 text-base px-2 block !my-4">
+        Digital Garden
+      </h3>
       <NavLink href="/spotify" name="Listening to">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,17 +45,11 @@ export default function NavItems() {
           />
         </svg>
       </NavLink>
-      <h3 className="font-bold text-gray-700 text-base px-2 !my-3 block">
-        Personal Bubble
-      </h3>
-      <NavLink href="/contact" name="Contact">
-        <ChatBubbleLeftEllipsisIcon />
-      </NavLink>
-      {/*
+
       <NavLink href="/now" name="Now">
         <InformationCircleIcon />
       </NavLink>
-        */}
+
       <NavLink href="/design" name="Design Inspiration">
         <SparklesIcon />
       </NavLink>
@@ -56,8 +57,12 @@ export default function NavItems() {
         <CpuChipIcon />
       </NavLink>
 
-      <div className="flex flex-col pl-2 bg-neutral-50 bg-opacity-40 dark:bg-neutral-800 p-2 rounded-lg space-y-4">
-        <h3 className="font-bold text-gray-700 text-base px-2 !my-3 block">
+      <NavLink href="/coursework" name="Course Work">
+        <BookOpenIcon />
+      </NavLink>
+
+      <div className="flex flex-col bg-neutral-50 bg-opacity-40 dark:bg-neutral-800 p-2 rounded-lg space-y-4">
+        <h3 className="font-bold text-gray-700 text-base mt-3 block">
           On the Web
         </h3>
         <Socials />

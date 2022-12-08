@@ -127,8 +127,16 @@ export default function Home() {
           , &{" "}
           <a target="_blank" rel="noreferrer" href="https://tailwindcss.com/">
             Tailwind CSS
+          </a>{" "}
+          [
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/achintyajha/www"
+          >
+            View Source
           </a>
-          .
+          ].
         </p>
         <motion.div
           className="flex gap-6 sm:flex-row flex-col mt-10 w-fit sm:w-full"
