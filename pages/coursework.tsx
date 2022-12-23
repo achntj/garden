@@ -7,7 +7,7 @@ export default function Uses() {
         <h1>Coursework</h1>
         <p>A list of courses I{"'"}m currently taking.</p>
         <h3>Fall 22</h3>
-        <ul>
+        <ul className="marker:text-black dark:marker:text-white">
           <li>CSE 110: Principles of Programming</li>
           <li>FSE 100: Introduction to Engineering</li>
           <li>MAT 265: Calculus for Engineers I</li>
