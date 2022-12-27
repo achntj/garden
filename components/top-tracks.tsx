@@ -8,7 +8,7 @@ export default function Tracks() {
 
   if (data) {
     return (
-      <div className="not-prose">
+      <div className="not-prose font-body">
         {data.tracks.map((track, index) => (
           <a
             target="_blank"
@@ -19,7 +19,7 @@ export default function Tracks() {
           >
             <div
               key={track.title}
-              className="mt-5 rounded p-4 flex justify-between space-x-4 text-base font-normal hover:dark:bg-neutral-900 hover:bg-white hover:shadow-md border-none"
+              className="mt-5 rounded p-4 flex justify-between space-x-4 text-base font-normal hover:dark:bg-neutral-800 hover:bg-white hover:shadow-md border-none"
             >
               <div className="flex items-center space-x-5 overflow-scroll whitespace-nowrap">
                 <p className="text-sm underline underline-offset-4">
@@ -37,7 +37,7 @@ export default function Tracks() {
               <img
                 className="w-16 h-16 rounded hidden xs:block"
                 src={track.imageUrl}
-                alt=""
+                alt={track.title}
               />
             </div>
           </a>
