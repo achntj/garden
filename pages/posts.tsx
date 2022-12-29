@@ -27,10 +27,8 @@ export default function Posts({ posts }) {
                     mb-4
                     hover:cursor-pointer
                     hover:bg-white
-                    hover:bg-opacity-40 
-                    hover:backdrop-blur-lg 
                     hover:drop-shadow-lg
-                    dark:hover:bg-zinc-900"
+                    dark:hover:bg-neutral-800"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 + (index + 1) / 10 }}
