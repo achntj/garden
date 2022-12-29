@@ -89,14 +89,6 @@ img {
   margin: 0px auto;
 }
 
-.nav::-webkit-scrollbar {
-  width: 5px;
-}
-
-.nav::-webkit-scrollbar-thumb {
-  @apply bg-neutral-500 rounded;
-}
-
 .navLink svg {
   @apply h-6 w-6 sm:h-5 sm:w-5;
 }
