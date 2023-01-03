@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Socials from "../components/Socials";
 import Container from "components/Container";
 import University from "components/University";
 import { DocumentTextIcon } from "@heroicons/react/24/outline";
@@ -86,11 +85,7 @@ export default function Home() {
         <p>
           You can find some of my side projects{" "}
           <Link href="/projects">here</Link> and the rest at my{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/achintyajha"
-          >
+          <a target="_blank" rel="noreferrer" href="https://github.com/achntj">
             <span className="dark:underline dark:underline-offset-4 dark:decoration-green-600 dark:decoration-2 dark:hover:text-green-600">
               Github
             </span>
@@ -132,7 +127,7 @@ export default function Home() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/achintyajha/www"
+            href="https://github.com/achntj/www"
           >
             View Source
           </a>

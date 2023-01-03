@@ -61,7 +61,7 @@ export default function NavItems() {
         <BookOpenIcon />
       </NavLink>
 
-      <div className="flex flex-col bg-neutral-50 bg-opacity-40 dark:bg-neutral-900 p-2 rounded-lg space-y-4">
+      <div className="flex flex-col bg-neutral-300 sm:bg-neutral-50 bg-opacity-40 dark:bg-neutral-900 p-2 rounded-lg space-y-4">
         <h3 className="font-bold text-gray-700 text-base mt-3 block">
           On the Web
         </h3>

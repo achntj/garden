@@ -21,8 +21,8 @@ export default function Projects() {
     },
     {
       name: "PetiteURL",
-      url: "https://petite.vercel.app/",
-      desc: "Free to use URL Shortener that lets you choose your slug (if it's available) over random letters.",
+      url: "https://go.achntj.com/",
+      desc: "Free to use URL Shortener that lets you choose your slug over random letters.",
       color: "#3486eb",
       stack: ["Next.JS", "TypeScript", "PostGres", "Prisma", "TailwindCSS"],
     },
@@ -35,14 +35,14 @@ export default function Projects() {
     },
     {
       name: "Pandora's Box",
-      url: "https://pandoras-box.vercel.app",
+      url: "https://pandora.achntj.com",
       desc: "A web data store for all your thoughts, pending tasks, and ideas.",
       color: "#a868fc",
       stack: ["Next.JS", "TypeScript", "PostGres", "Prisma", "TailwindCSS"],
     },
     {
       name: "Wordle Clone",
-      url: "https://github.com/achintyajha/wordle/",
+      url: "https://github.com/achntj/wordle/",
       desc: "A (not nearly as interactive) clone of the popular game Wordle. Written in python.",
       color: "#1bc47d",
       stack: ["Python", "Flask"],
@@ -77,11 +77,7 @@ export default function Projects() {
       <div>
         <PageIntro header="Projects" darkTo="dark:to-pink-600">
           Check out my other projects on{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/achintyajha"
-          >
+          <a target="_blank" rel="noreferrer" href="https://github.com/achntj">
             Github
           </a>
           .

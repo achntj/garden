@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Socials() {
   return (
     <>
-      <Link href="https://twitter.com/achintyajha_">
+      <Link href="https://twitter.com/achntj">
         <div
           title="Twitter Profile"
           className="flex items-center space-x-2 cursor-pointer hover:underline underline-offset-4"
@@ -45,7 +45,7 @@ export default function Socials() {
           <span>LinkedIn</span>
         </div>
       </Link>
-      <Link href="https://github.com/achintyajha">
+      <Link href="https://github.com/achntj">
         <div
           title="GitHub Profile"
           className="flex items-center space-x-2 cursor-pointer hover:underline underline-offset-4"
@@ -67,7 +67,7 @@ export default function Socials() {
           <span>GitHub</span>
         </div>
       </Link>
-      <div>@achntj, everywhere else.</div>
+      <div>@achntj, everywhere else</div>
     </>
   );
 }

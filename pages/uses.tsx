@@ -18,7 +18,7 @@ export default function Uses() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/achintyajha/zsh"
+            href="https://github.com/achntj/zsh"
           >
             here
           </a>
@@ -38,7 +38,7 @@ export default function Uses() {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/achintyajha/vim"
+            href="https://github.com/achntj/vim"
           >
             (N)vim Config
           </a>
