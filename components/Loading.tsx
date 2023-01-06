@@ -1,7 +1,7 @@
 export default function Loading() {
   return (
-    <div className="p-5 border dark:border-zinc-700 rounded-xl mb-5">
-      <div className="w-full flex items-center justify-center">
+    <div className="relative dark:bg-neutral-800 bg-white shadow-lg rounded-lg items-center p-4 flex justify-center">
+      <div className="not-prose overflow-scroll flex text-base items-center h-16">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -12,7 +12,7 @@ export default function Loading() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="h-4 ml-1 animate-spin opacity-80"
+          className="h-4 animate-spin opacity-80"
         >
           <line x1="12" y1="2" x2="12" y2="6" />
           <line x1="12" y1="18" x2="12" y2="22" />
