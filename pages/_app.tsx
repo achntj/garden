@@ -6,7 +6,7 @@ import Base from "../components/Base";
 export default function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
-      <ThemeProvider enableSystem={false} attribute="class">
+      <ThemeProvider defaultTheme="dark" enableSystem={false} attribute="class">
         <Base>
           <Component {...pageProps} />
         </Base>
