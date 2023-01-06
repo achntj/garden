@@ -1,6 +1,6 @@
 export default function University() {
   return (
-    <strong className="text-red-800">
+    <strong className="text-red-800 dark:!text-red-400">
       Arizona State{" "}
       <span className="whitespace-nowrap">
         University &mdash;

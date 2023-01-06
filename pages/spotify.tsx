@@ -18,6 +18,7 @@ export default function Spotify() {
           .
         </PageIntro>
         <NowPlaying />
+        <div className="mb-10" />
         <h3 className="underline underline-offset-4 text-center">
           Monthly Top 10
         </h3>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import absoluteUrl from "next-absolute-url";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 export default function Contact() {
   // Input states
@@ -56,11 +57,18 @@ export default function Contact() {
           pauseOnHover
         />
         <form autoComplete="off" className="font-body" onSubmit={submitForm}>
-          <h1 className="">Send a message!</h1>
-          <p className="text-sm">
-            (or send me an email at &#123;hi&#125; at &#123;achintyajha&#125;
-            dot &#123;com&#125;)
-          </p>
+          <h3 className="mb-0">Send Me an Email</h3>
+          <a
+            href="mailto:achntj@gmail.com"
+            className="flex items-baseline group space-x-4 !text-black dark:!text-white italic text-xl sm:text-3xl font-title !underline underline-offset-4"
+          >
+            <span>achntj@gmail.com</span>
+            <span>
+              <ArrowUpRightIcon className="h-4 w-4 group-hover:-translate-y-2 group-hover:translate-x-2 transition duration-100 ease-in-out" />
+            </span>
+          </a>
+          <h3 className="my-2">OR</h3>
+          <h1 className="text-3xl xs:text-4xl">Send a message!</h1>
           <label htmlFor="name">Full Name</label>
           <input
             type="text"

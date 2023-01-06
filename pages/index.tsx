@@ -2,194 +2,171 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Container from "components/Container";
 import University from "components/University";
-import { DocumentTextIcon } from "@heroicons/react/24/outline";
+import {
+  BookOpenIcon,
+  CodeBracketIcon,
+  DocumentTextIcon,
+} from "@heroicons/react/24/outline";
 
-//import Image from "next/image";
-//import { useState } from "react";
-//function cn(...classes) {
-//return classes.filter(Boolean).join(" ");
-//}
+import Image from "next/image";
+import { useState } from "react";
+import NowPlaying from "components/now-playing";
+function cn(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 export default function Home() {
-  //const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
   return (
     <Container title="Home">
-      {/* <motion.div
-        className="relative w-[120px] h-[150.72px] mb-5 mt-[10px]"
-        initial={{ opacity: 0, translateX: -50 }}
-        animate={{ opacity: 1, translateX: 0 }}
-        transition={{ duration: 0.7 }}
-      >
-        <Image
-          src="/images/me.jpeg"
-          alt="Picture of Achintya Jha"
-          layout="fill"
-          objectFit="cover"
-          className={cn(
-            "rounded select-none",
-            isLoading
-              ? "grayscale blur-2xl scale-110"
-              : "grayscale-0 blur-0 scale-100"
-          )}
-          onLoadingComplete={() => setLoading(false)}
-          priority
-        />
-      </motion.div> */}
-      <div>
-        <div className="mb-10">
-          <h1 className="text-2xl text-zinc-700 mb-0 antialiased">
-            Achintya Jha
-          </h1>
-          <p className="my-0">Programmer &#x2022; Designer</p>
-
-          <Link href="/Achintya_Jha_Resume.pdf">
-            <div className="flex space-x-2 cursor-pointer font-title hover:underline underline-offset-4">
-              <DocumentTextIcon
-                title="Resume (PDF)"
-                className="h-6 w-6 !text-neutral-900 dark:!text-neutral-400"
-              />
-              <span>View Resume</span>
-            </div>
-          </Link>
-        </div>
-        <p className="mt-0">
-          Hi! I{"'"}m Achintya! I{"'"}m a full stack developer and software
-          engineer. I{"'"}m also a freshman at <University />, studying Computer
-          Science and Mathematics. Previously, I worked on{" "}
-          <span className="text-orange-600 dark:text-emerald-500">
-            Natural Language Processing{" "}
-          </span>
-          and{" "}
-          <span className="text-pink-600 dark:text-blue-400 whitespace-nowrap">
-            Machine Learning
-          </span>{" "}
-          at{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.techmahindra.com/en-in/innovation/makers-lab/"
-          >
-            <span className="dark:underline dark:underline-offset-4 dark:decoration-pink-600 dark:decoration-2">
-              {" "}
-              Tech Mahindra
-            </span>
-          </a>{" "}
-          and built{" "}
-          <a target="_blank" rel="noreferrer" href="https://sentimate.org/">
-            <span className="dark:underline dark:underline-offset-4 dark:decoration-cyan-600 dark:decoration-2 dark:hover:text-cyan-600">
-              SentiMate
-            </span>
-          </a>{" "}
-          alongside.
-        </p>
-        <p>
-          You can find some of my side projects{" "}
-          <Link href="/projects">here</Link> and the rest at my{" "}
-          <a target="_blank" rel="noreferrer" href="https://github.com/achntj">
-            <span className="dark:underline dark:underline-offset-4 dark:decoration-green-600 dark:decoration-2 dark:hover:text-green-600">
-              Github
-            </span>
-          </a>{" "}
-          profile.{" "}
-          {/* Apart from programming, I have been doing some{" "}
-          <Link href="/extras">other stuff</Link>- primarily Taekwondo, music,
-          and writing.*/}
-          <Link href="/coursework">Here&#39;s</Link> a list of the courses I
-          {"'"}m taking right now.
-        </p>
-
-        <p className="text-sm">
-          This website was built with{" "}
-          <a target="_blank" rel="noreferrer" href="https://nextjs.org/">
-            Next.js
-          </a>
-          ,{" "}
-          <a target="_blank" rel="noreferrer" href="https://reactjs.org/">
-            React
-          </a>
-          ,{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.contentlayer.dev/"
-          >
-            Contentlayer
-          </a>
-          ,{" "}
-          <a target="_blank" rel="noreferrer" href="https://mdxjs.com/">
-            MDX
-          </a>
-          , &{" "}
-          <a target="_blank" rel="noreferrer" href="https://tailwindcss.com/">
-            Tailwind CSS
-          </a>{" "}
-          [
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/achntj/www"
-          >
-            View Source
-          </a>
-          ].
-        </p>
+      <div className="">
+        {/*
         <motion.div
-          className="flex gap-6 sm:flex-row flex-col mt-10 w-fit sm:w-full"
-          initial={{ opacity: 0, translateY: 30 }}
-          animate={{ opacity: 1, translateY: 0 }}
+          className="relative float-right w-48 h-60 mb-5 mt-[10px]"
+          initial={{ opacity: 0, translateX: -50 }}
+          animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <Link passHref href="/projects">
-            <div
-              className="bg-white bg-opacity-50 dark:bg-opacity-100 backdrop-blur-lg drop-shadow-lg dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
-              hover:cursor-pointer"
-            >
-              <h2 className="text-emerald-800 m-0">
-                Projects
-                <span className="transition-[margin] sm:group-hover:ml-5">
-                  <svg
-                    className="inline-block mx-4 text-slate-600 dark:text-slate-400"
-                    width="20"
-                    height="18"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.8125 6.00391C13.8125 5.80078 13.7344 5.61328 13.5781 5.46484L8.69531 0.589844C8.52344 0.425781 8.35156 0.355469 8.16406 0.355469C7.76562 0.355469 7.46094 0.644531 7.46094 1.04297C7.46094 1.23828 7.53125 1.41797 7.66406 1.54297L9.32031 3.23047L11.6875 5.39453L9.92969 5.28516H0.710938C0.296875 5.28516 0 5.58203 0 6.00391C0 6.41797 0.296875 6.71484 0.710938 6.71484H9.92969L11.6953 6.60547L9.32031 8.76953L7.66406 10.457C7.53906 10.582 7.46094 10.7617 7.46094 10.957C7.46094 11.3555 7.76562 11.6445 8.16406 11.6445C8.35156 11.6445 8.51562 11.5742 8.67969 11.4258L13.5781 6.53516C13.7344 6.38672 13.8125 6.19922 13.8125 6.00391Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </span>
-              </h2>
-            </div>
-          </Link>
-          <Link passHref href="/posts">
-            <div
-              className="bg-white bg-opacity-50 dark:bg-opacity-100 backdrop-blur-lg drop-shadow-lg dark:bg-zinc-800 p-4 sm:py-2 sm:px-4 rounded-xl sm:w-full group
-              hover:cursor-pointer"
-            >
-              <h2 className="text-teal-800 m-0">
-                Essays
-                <span className="transition-[margin] sm:group-hover:ml-5">
-                  <svg
-                    className="inline-block mx-4 text-slate-600 dark:text-slate-400"
-                    width="20"
-                    height="18"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.8125 6.00391C13.8125 5.80078 13.7344 5.61328 13.5781 5.46484L8.69531 0.589844C8.52344 0.425781 8.35156 0.355469 8.16406 0.355469C7.76562 0.355469 7.46094 0.644531 7.46094 1.04297C7.46094 1.23828 7.53125 1.41797 7.66406 1.54297L9.32031 3.23047L11.6875 5.39453L9.92969 5.28516H0.710938C0.296875 5.28516 0 5.58203 0 6.00391C0 6.41797 0.296875 6.71484 0.710938 6.71484H9.92969L11.6953 6.60547L9.32031 8.76953L7.66406 10.457C7.53906 10.582 7.46094 10.7617 7.46094 10.957C7.46094 11.3555 7.76562 11.6445 8.16406 11.6445C8.35156 11.6445 8.51562 11.5742 8.67969 11.4258L13.5781 6.53516C13.7344 6.38672 13.8125 6.19922 13.8125 6.00391Z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </span>
-              </h2>
-            </div>
-          </Link>
+          <Image
+            src="/images/me.jpeg"
+            alt="Picture of Achintya Jha"
+            layout="fill"
+            objectFit="cover"
+            className={cn(
+              "rounded select-none",
+              isLoading
+                ? "grayscale blur-2xl scale-110"
+                : "grayscale-0 blur-0 scale-100"
+            )}
+            onLoadingComplete={() => setLoading(false)}
+            priority
+          />
         </motion.div>
+        */}
+
+        <div className="">
+          <div className="mb-10">
+            <h1 className="text-4xl text-zinc-700 mb-0 antialiased">
+              Achintya Jha
+            </h1>
+            <h3 className="my-0">Programmer &#x2022; Designer</h3>
+          </div>
+          <div className="mt-0 text-xl font-bold">
+            <p>
+              I{"'"}m a{" "}
+              <span className="text-teal-600 dark:text-amber-400 whitespace-nowrap">
+                full stack developer
+              </span>{" "}
+              and software engineer.{" "}
+            </p>
+            <p>
+              I{"'"}m currently a freshman at <University />, studying Computer
+              Science and Mathematics.
+            </p>
+
+            <p>
+              I've worked on{" "}
+              <span className="text-orange-600 dark:text-emerald-500">
+                Natural Language Processing{" "}
+              </span>
+              and{" "}
+              <span className="text-pink-600 dark:text-blue-400 whitespace-nowrap">
+                Machine Learning
+              </span>{" "}
+              at{" "}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.techmahindra.com/en-in/innovation/makers-lab/"
+              >
+                <span className="dark:underline dark:underline-offset-4 dark:decoration-pink-600 dark:decoration-2">
+                  {" "}
+                  Tech Mahindra
+                </span>
+              </a>
+            </p>
+            <p>
+              Previously, I built{" "}
+              <a target="_blank" rel="noreferrer" href="https://sentimate.org/">
+                <span className="dark:underline dark:underline-offset-4 dark:decoration-cyan-600 dark:decoration-2 dark:hover:text-cyan-600">
+                  SentiMate
+                </span>
+              </a>
+              , a suite of mental health tools.
+            </p>
+          </div>
+          <div className="flex gap-6 justify-between lg:flex-row flex-col-reverse mt-10 md:w-full">
+            <div className="bg-white shadow-lg dark:bg-neutral-800 rounded-lg py-2 px-10 w-fit lg:w-[40%] hidden sm:block">
+              <h2>Quick Links</h2>
+              <div className="text-xl space-y-4 quickLinksDiv">
+                <Link href="/Achintya_Jha_Resume.pdf">
+                  <div className="">
+                    <DocumentTextIcon
+                      title="Resume (PDF)"
+                      className="h-6 w-6 !text-neutral-900 dark:!text-neutral-400"
+                    />
+                    <span>Resume</span>
+                  </div>
+                </Link>
+                <Link href="/projects">
+                  <div>
+                    {" "}
+                    <CodeBracketIcon
+                      title="Link to Projects"
+                      className="h-6 w-6 !text-neutral-900 dark:!text-neutral-400"
+                    />
+                    <span>Projects</span>
+                  </div>
+                </Link>
+                <Link href="">
+                  <div>
+                    {" "}
+                    <div
+                      title="GitHub Profile"
+                      className="flex items-center space-x-2 cursor-pointer hover:underline underline-offset-4"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 32 32"
+                        data-v-77f39053=""
+                        className="dark:text-white h-6 w-6 text-[#171515]"
+                      >
+                        <path
+                          d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.71 3.71 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2z"
+                          fillRule="evenodd"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>GitHub</span>
+                  </div>
+                </Link>
+                <Link href="/coursework">
+                  <div>
+                    {" "}
+                    <BookOpenIcon
+                      title="Link to Course Work"
+                      className="h-6 w-6 !text-neutral-900 dark:!text-neutral-400"
+                    />
+                    <span>Course Work</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="lg:w-[60%] w-full max-w-lg space-y-10 sm:space-y-4 flex flex-col justify-around">
+              <Link href="/contact">
+                <div className="flex justify-center h-full shadow-lg items-center bg-emerald-200 group hover:bg-emerald-300 dark:bg-neutral-800 dark:hover:bg-neutral-700 cursor-pointer rounded-lg px-10 py-6 sm:py-5">
+                  <h1 className="mb-4 text-4xl sm:text-5xl md:text-6xl underline underline-offset-4 decoration-amber-400 group-hover:decoration-yellow-500 decoration-8">
+                    Get in Touch
+                  </h1>
+                </div>
+              </Link>
+              <NowPlaying />
+            </div>
+          </div>
+        </div>
       </div>
     </Container>
   );

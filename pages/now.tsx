@@ -34,11 +34,7 @@ export default function Now() {
           As of now, I{"'"}ve completely stopped working on SentiMate as I{"'"}m
           starting afresh with college. I{"'"}m mostly working on personal
           tools, specifically my note management system &mdash;
-          <a
-            href="https://pandoras-box.vercel.app"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <a href="https://pandora.achntj.com" rel="noreferrer" target="_blank">
             Pandora
           </a>
           .

@@ -8,8 +8,39 @@ export default function Uses() {
         <p>A not so comprehensive list of software / tools I use.</p>
         <h2>This website</h2>
         <p>
-          React-JavaScript ecosystem &mdash; Next.js, Contentlayer, Tailwind
-          CSS, Vercel, SWR.
+          This website was built with{" "}
+          <a target="_blank" rel="noreferrer" href="https://nextjs.org/">
+            Next.js
+          </a>
+          ,{" "}
+          <a target="_blank" rel="noreferrer" href="https://reactjs.org/">
+            React
+          </a>
+          ,{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.contentlayer.dev/"
+          >
+            Contentlayer
+          </a>
+          ,{" "}
+          <a target="_blank" rel="noreferrer" href="https://mdxjs.com/">
+            MDX
+          </a>
+          , &{" "}
+          <a target="_blank" rel="noreferrer" href="https://tailwindcss.com/">
+            Tailwind CSS
+          </a>{" "}
+          [
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/achntj/www"
+          >
+            View Source
+          </a>
+          ].
         </p>
         <h2>Shell</h2>
         <p>

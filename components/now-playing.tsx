@@ -9,7 +9,7 @@ export default function NowPlaying() {
   if (data) {
     return (
       <>
-        <div className="relative dark:bg-neutral-800 bg-white shadow-lg rounded-lg p-4 mb-10 sm:flex items-end justify-between">
+        <div className="relative dark:bg-neutral-800 bg-white shadow-lg rounded-lg p-4 sm:flex items-end justify-between">
           <div className="not-prose overflow-scroll flex text-base items-center h-16">
             {data.isPlaying ? (
               <>

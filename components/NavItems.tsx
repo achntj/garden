@@ -8,6 +8,7 @@ import {
   PencilSquareIcon,
   SparklesIcon,
   BookOpenIcon,
+  DocumentTextIcon,
 } from "@heroicons/react/24/outline";
 import Socials from "./Socials";
 
@@ -17,11 +18,11 @@ export default function NavItems() {
       <NavLink href="/" name="Home">
         <HomeIcon />
       </NavLink>
+      <NavLink href="/Achintya_Jha_Resume.pdf" name="Resume">
+        <DocumentTextIcon />
+      </NavLink>
       <NavLink href="/projects" name="Projects">
         <CodeBracketIcon />
-      </NavLink>
-      <NavLink href="/posts" name="Posts">
-        <PencilSquareIcon />
       </NavLink>
       <NavLink href="/contact" name="Contact">
         <ChatBubbleLeftEllipsisIcon />
@@ -29,6 +30,9 @@ export default function NavItems() {
       <h3 className="font-bold text-gray-700 text-base px-2 block !my-4">
         Digital Garden
       </h3>
+      <NavLink href="/posts" name="Posts">
+        <PencilSquareIcon />
+      </NavLink>
       <NavLink href="/spotify" name="Listening to">
         <svg
           xmlns="http://www.w3.org/2000/svg"

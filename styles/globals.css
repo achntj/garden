@@ -23,7 +23,11 @@ html {
 }
 
 body {
-  @apply gradient sm:animGradient;
+  @apply bg-neutral-100 sm:animGradient;
+}
+
+.quickLinksDiv div {
+  @apply flex items-center space-x-2 cursor-pointer font-title hover:underline underline-offset-4;
 }
 
 @layer components {
