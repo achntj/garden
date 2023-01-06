@@ -65,7 +65,7 @@ export default function Home() {
             </p>
 
             <p>
-              I've worked on{" "}
+              I{"'"}ve worked on{" "}
               <span className="text-orange-600 dark:text-emerald-500">
                 Natural Language Processing{" "}
               </span>
