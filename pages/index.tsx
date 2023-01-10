@@ -59,10 +59,6 @@ export default function Home() {
               </span>{" "}
               and software engineer.{" "}
             </p>
-            <p>
-              I{"'"}m currently a freshman at <University />, studying Computer
-              Science and Mathematics.
-            </p>
 
             <p>
               I{"'"}ve worked on{" "}
@@ -93,6 +89,10 @@ export default function Home() {
                 </span>
               </a>
               , a suite of mental health tools.
+            </p>
+            <p className="text-sm">
+              I{"'"}m currently a freshman at <University />, studying Computer
+              Science and Mathematics.
             </p>
           </div>
           <div className="flex gap-6 justify-between lg:flex-row flex-col-reverse mt-10 md:w-full">
