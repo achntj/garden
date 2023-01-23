@@ -14,6 +14,15 @@ export default function Uses() {
           <li>TCL 275: Culture, Language & Learning</li>
           <li>ENG 107: First-Year Composition</li>
         </ul>
+        <h3>Spring 23</h3>
+        <ul className="marker:text-black dark:marker:text-white">
+          <li>CSE 205: Object-Oriented Programming and Data Structures</li>
+          <li>MAT 266: Calculus for Engineers II</li>
+          <li>ENG 102: First Year Composition</li>
+          <li>REL 101: Religion, Culture, Public Life</li>
+          <li>SOS 182: Water Planet</li>
+          <li>SOC 352: Social Change</li>
+        </ul>
       </div>
     </Container>
   );
