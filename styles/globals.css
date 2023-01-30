@@ -30,6 +30,15 @@ body {
   @apply flex items-center space-x-2 cursor-pointer font-title hover:underline underline-offset-4;
 }
 
+/*Scrollbars*/
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 @layer components {
   .animGradient {
     background-color: #fbda61;
