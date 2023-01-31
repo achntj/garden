@@ -34,9 +34,12 @@ body {
 body {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+  overflow: -moz-scrollbars-none; /* old mozilla */
 }
-body::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+::-webkit-scrollbar {
+  display: none;
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 @layer components {
