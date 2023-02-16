@@ -118,7 +118,7 @@ export default function Home() {
                     <span>Projects</span>
                   </div>
                 </Link>
-                <Link href="">
+                <Link href="https://github.com/achntj">
                   <div>
                     {" "}
                     <div
