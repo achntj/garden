@@ -21,7 +21,7 @@ export default function Uses() {
           <li>ENG 102: First Year Composition</li>
           <li>REL 101: Religion, Culture, Public Life</li>
           <li>SOS 182: Water Planet</li>
-          <li>SOC 352: Social Change</li>
+          <li>OGL 220: Behavioral Dynamics in Organizations</li>
         </ul>
       </div>
     </Container>
